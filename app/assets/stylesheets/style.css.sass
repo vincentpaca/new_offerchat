@@ -1,0 +1,226 @@
+@mixin container($margin)
+  margin-left: $margin
+  margin-right: $margin
+
+@mixin header
+  padding: 10px
+
+@mixin blockPosition($float,$width,$display)
+  float: $float
+  width: $width
+  display: $display
+
+@mixin button($background)
+  border-radius: 3px
+  font-size: 12px
+  font-weight: bold
+  background: $background
+  border: none
+  outline: none
+  color: #fff
+  padding: 5px 12px
+  display: inline-block
+
+@mixin status($background)
+  border-radius: 50%
+  background: $background
+  display: inline-block
+  width: 6px
+  height: 6px
+
+
+.group
+  &:before
+    content: ""
+    display: table
+  &:after
+    content: ""
+    display: table
+    clear: both
+  zoom: 1
+a
+  color: #0d5ea3
+  text-decoration: none
+a,button, input[type=submit]
+  cursor: pointer
+p
+  margin: 0 0 15px 0
+body
+  font: 
+    family: Arial, sans-serif
+    size: 13px
+  color: #464646
+
+.container
+  @include container(10px)
+
+.dashboard-header
+  padding: 5px 0
+  background: #5386bb
+  background: -webkit-gradient(linear, left top, left bottom, from(#5386bb), to(#4578ad))
+  background: -moz-linear-gradient(top,  #5386bb,  #4578ad)
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#5386bb', endColorstr='#4578ad')
+
+.logo
+  background: image-url('logo.png') no-repeat
+  width: 147px
+  height: 27px
+  display: block
+  float: left
+
+button.button, a.button
+  +button(#5f91cb)
+
+.scrollable
+  position: relative
+  overflow: hidden
+  height: 400px
+
+.dashboard-sidebar
+  width: 210px
+  border-right: 1px solid #ccc
+  background: #fafafa
+  float: left
+  overflow: hidden
+
+.dashboard-content
+  display: inline-block
+  vertical-align: top
+  float: left
+  width: 790px
+
+.dashboard
+  display: block
+  background: #ffffff
+
+.profile-container
+  height: 200px
+  background: #2e2e2e
+  position: relative
+
+.user-thumbnail
+  height: 200px
+  width: 100%
+  background-repeat: no-repeat
+
+.user-profile
+  position: absolute
+  cursor: pointer
+  bottom: 0
+  width: 190px
+  padding: 10px
+  color: #fff
+  background: rgba(0,0,0,.5)
+
+.user-settings
+  margin-top: 5px
+  padding: 3px 0
+  border-top: 1px solid rgba(255,255,255,.2)
+  .option-status
+    padding: 5px
+    display: block
+    color: #fff
+    -webkit-transition: all .1s ease-in-out
+    -moz-transition: all .1s ease-in-out
+    -o-transition: all .1s ease-in-out
+    transition: all .1s ease-in-out
+    &:hover
+      background: rgba(255,255,255,.20)
+
+
+.nav-parent
+  cursor: pointer
+  text-shadow: 0 1px 0 #fff
+  border-top: 1px solid #e1e1e1
+  padding: 10px
+  &:hover 
+    background: #e9e9e9
+  &.selected
+    background: #5a8dc2
+    color: #fff
+    text-shadow: 0 -1px 0 rgba(0,0,0,.2)
+    border-bottom: 1px solid #3f76b0
+    box-shadow: 0 2px 3px rgba(0,0,0,.2) inset
+
+.section-nav:last-child .nav-parent
+  border-bottom: 1px solid #e1e1e1
+
+
+.nav
+  padding: 10px
+  cursor: pointer
+  font-size: 11px
+  font-weight: bold
+  text-shadow: 0 1px 0 #fff
+  -webkit-transition: all .1s ease-in-out
+  -moz-transition: all .1s ease-in-out
+  -o-transition: all .1s ease-in-out
+  transition: all .1s ease-in-out
+  &:hover
+    background: #f1f1f1
+.nav-bg
+  background: #fff
+
+label.chat-count
+  cursor: pointer
+  position: relative
+  top: -2px
+  float: right
+  text-shadow: 0 1px 0 #000
+  display: inline-block
+  padding: 3px
+  background: #222
+  color: #eee
+  font-size: 12px
+  font-weight: bold
+  border-radius: 3px
+  &.nu
+    font-size: 11px
+    top: -3px
+.chat-view
+  @include blockPosition(left,550px,inline-block)
+  
+.chat-view-inner
+  border-right: 1px solid #e1e1e1
+  min-height: 600px
+.chat-sidebar-wrapper
+  @include blockPosition(left,240px,inline-block)
+.chat-sidebar
+  
+  height: 100px
+  padding: 10px
+.chat-header
+  @include header
+  text-shadow: 0 1px 0 #fff
+  background: #fafafa
+.chat-body
+  min-height: 400px
+  position: relative
+.chat-content-area
+  position: absolute
+  bottom: 0
+  @include header
+.chat-response-wrapper
+  border-top: 1px solid #e1e1e1
+  background: #fafafa
+  padding: 10px
+.visitor-info-wrapper
+  display: inline-block
+.visitor-username
+  font:
+    size: 18px
+    weight: bold
+  margin-right: 10px
+.visitor-current-status
+  margin-top: 10px
+  color: #999
+.status
+  @include status(#ccc)
+.status.online
+  @include status(#9ed711)
+.status.away
+  @include status(#ec2c2c)
+.status.offline
+  @include status(#cdcdcd)
+
+
