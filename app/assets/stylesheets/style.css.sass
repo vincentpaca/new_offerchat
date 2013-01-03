@@ -73,7 +73,7 @@ button.button, a.button
 
 .scrollable
   position: relative
-  overflow: hidden
+  overflow-y: auto
   height: 400px
 
 .dashboard-sidebar
@@ -193,17 +193,33 @@ label.chat-count
   @include header
   text-shadow: 0 1px 0 #fff
   background: #fafafa
+  border-bottom: 1px solid #e1e1e1
 .chat-body
   min-height: 400px
   position: relative
 .chat-content-area
   position: absolute
   bottom: 0
-  @include header
+  @include container(10px)
+.chat-group
+  margin: 20px 0 30px 0
 .chat-response-wrapper
   border-top: 1px solid #e1e1e1
   background: #fafafa
   padding: 10px
+.chat-message-1
+  p
+    margin: 5px 0
+
+ul.chat-options > li
+  display: inline-block
+  font:
+    size: 11px
+    weight: bold
+  margin-right: 15px
+ul.chat-options > li > a:hover
+  text-decoration: underline
+
 .visitor-info-wrapper
   display: inline-block
 .visitor-username
