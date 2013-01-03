@@ -9,7 +9,7 @@
           = link_to 'http://www.example.com/auth/facebook?origin=/items/1', '#' 
     .chat-body
       .chat-content-area
-        %ul.chat-list
+        %ul.chat-list.scrollable
           %li.chat-group.ls
             .chat-status-inner
               %p Visitor-y43fddp has entered the chat
@@ -22,17 +22,32 @@
               %p fdsfsdfds
               %p How will this work?
           %li.chat-group.group
-            %ul.chat-options.ui-button-group
-              %li 
-                =link_to 'Save response','#'
-              %li 
-                =link_to 'Edit','#'
+            .chat-options.ui-button-group.hide
+              %button.btn
+                Save Response
             %div
               %strong 
                 %span._uB Jonathan (You)
             .chat-message-1
               %p The second, older syntax is known as the indented syntax (or just “.sass”). Inspired by Haml’s terseness, it’s intended for people who prefer conciseness over similarity to CSS. Instead of brackets and semicolons
-              
+          %li.chat-group.group
+            %div
+              %strong 
+                %span._uB Visitor-y43fddp
+            .chat-message-1
+              %p Hello?
+              %p fdsfsdfds
+              %p How will this work?
+          %li.chat-group.group
+            .chat-options.ui-button-group.hide
+              %button.btn
+                Save Response
+            %div
+              %strong 
+                %span._uB Jonathan (You)
+            .chat-message-1
+              %p The second, older syntax is known as the indented syntax (or just “.sass”). Inspired by Haml’s terseness, it’s intended for people who prefer conciseness over similarity to CSS. Instead of brackets and semicolons
+              %p The second, older syntax is known as the indented syntax (or just “.sass”). Inspired by Haml’s terseness, it’s intended for people who prefer conciseness over similarity to CSS. Instead of brackets and semicolons
           %li.chat-group.ls
             .chat-status-inner.red
               %p Visitor-y43fddp has left the conversation

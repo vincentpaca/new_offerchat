@@ -71,6 +71,23 @@ body
 button.button, a.button
   +button(#5f91cb)
 
+.btn
+  display: inline-block
+  color: #454545
+  cursor: pointer
+  margin-bottom: 0
+  text-align: center
+  background: #f4f4f4
+  text-shadow: 0 1px 0 #fff
+  outline: none
+  border: 1px solid #ccc
+  padding: 3px 7px
+  box-shadow: 0 1px 0 #fff inset
+  
+  &:active
+    background: #f0f0f0
+    box-shadow: 0 1px 1px rgba(0,0,0,.1) inset
+
 .scrollable
   position: relative
   overflow-y: auto
@@ -183,14 +200,15 @@ label.chat-count
     font-size: 11px
     top: -3px
 .chat-view
-  @include blockPosition(left,80%,inline-block)
+  @include blockPosition(left,70%,inline-block)
   min-width: 550px
   
 .chat-view-inner
   border-right: 1px solid #e1e1e1
+  overflow: hidden
   min-height: 600px
 .chat-sidebar-wrapper
-  @include blockPosition(left,20%,inline-block)
+  @include blockPosition(left,30%,inline-block)
 .chat-sidebar
   height: 100px
   padding: 10px
@@ -199,6 +217,7 @@ label.chat-count
   text-shadow: 0 1px 0 #fff
   background: #fafafa
   border-bottom: 1px solid #e1e1e1
+  box-shadow: 0 1px 3px rgba(0,0,0,.1)
 .chat-body
   min-height: 400px
   position: relative
@@ -207,6 +226,8 @@ label.chat-count
   position: absolute
   bottom: 0
   width: 100%
+.chat-message-1
+  width: 80%
 .chat-group
   padding: 10px
   border-bottom: 1px dashed #e1e1e1
@@ -238,39 +259,44 @@ label.chat-count
 .chat-options
   float: right
   margin: 15px 0 15px 15px
-ul.ui-button-group > li
-  display: inline-block
-  float: left
-  font:
-    size: 11px
-    weight: bold
-  margin-right: 15px
 
-ul.ui-button-group > li
-  margin-right: 0
-  border-right: 1px solid #c1c1c1
-  border-top: 1px solid #c1c1c1
-  border-bottom: 1px solid #c1c1c1
   
-  overflow: hidden
+.ui-button-group
+  -webkit-transition: all .1s ease-in-out
+  -moz-transition: all .1s ease-in-out
+  -o-transition: all .1s ease-in-out
+  transition: all .1s ease-in-out
+  position: relative
+  display: inline-block
+  *display: inline
+  *margin-left: .3em
+  font-size: 0
+  white-space: nowrap
+  vertical-align: middle
+  *zoom: 1
+  &:first-child
+    *margin-left: 0
+  & + .ui-button-group
+    margin-left: 5px
+  & > .btn
+    position: relative
+    border-radius: 0
+    font:
+      size: 11px
+      weight: bold
+    & + .btn
+      margin-left: -3px
+    &:first-child
+      border-bottom-left-radius: 3px
+      border-top-left-radius: 3px
+      margin-left: 0
+    &:last-child
+      border-top-right-radius: 3px
+      border-bottom-right-radius: 3px
 
-ul.ui-button-group > li:first-child
-  border-left: 1px solid #c1c1c1
-  border-top-left-radius: 3px
-  border-bottom-left-radius: 3px
-ul.ui-button-group > li:last-child
-  border-left: 0
-  border-top-right-radius: 3px
-  border-bottom-right-radius: 3px
-ul.ui-button-group
-  a
-    text-decoration: none
-    display: inline-block
-    padding: 4px 7px
-    background: #f5f5f5
-    box-shadow: 0 1px 0 #fff inset
-    color: #454545
-    text-shadow: 0 1px 0 #fff
+  &.hide
+    opacity: .5
+  
 
 .visitor-info-wrapper
   display: inline-block

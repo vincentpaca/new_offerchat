@@ -6,5 +6,11 @@ $(document).ready(function(){
             updateOnContentResize: false
         }
 	});	
+
+  $(".chat-group").hover(function(){
+    $(this).find('.chat-options').removeClass('hide');
+  }, function(){
+      $(this).find('.chat-options').addClass('hide');
+  });
 	
 });
