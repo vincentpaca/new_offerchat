@@ -101,6 +101,8 @@ button.button, a.button
   background: #2e2e2e
   position: relative
 
+.user-current-status
+  margin-top: 5px
 .user-thumbnail
   height: 200px
   width: 100%
@@ -212,6 +214,7 @@ label.chat-count
   border-bottom: 0
 .chat-group.ls
   margin: 5px 0 5px 0
+  padding: 3px
 .chat-response-wrapper
   border-top: 1px solid #e1e1e1
   background: #fafafa
@@ -232,7 +235,10 @@ label.chat-count
 ._uB
   color: #000
 
-ul.chat-options > li
+.chat-options
+  float: right
+  margin: 15px 0 15px 15px
+ul.ui-button-group > li
   display: inline-block
   float: left
   font:
@@ -240,9 +246,7 @@ ul.chat-options > li
     weight: bold
   margin-right: 15px
 
-ul.chat-option-actions
-
-ul.chat-option-actions > li
+ul.ui-button-group > li
   margin-right: 0
   border-right: 1px solid #c1c1c1
   border-top: 1px solid #c1c1c1
@@ -250,15 +254,15 @@ ul.chat-option-actions > li
   
   overflow: hidden
 
-ul.chat-option-actions > li:first-child
+ul.ui-button-group > li:first-child
   border-left: 1px solid #c1c1c1
   border-top-left-radius: 3px
   border-bottom-left-radius: 3px
-ul.chat-option-actions > li:last-child
+ul.ui-button-group > li:last-child
   border-left: 0
   border-top-right-radius: 3px
   border-bottom-right-radius: 3px
-.chat-option-actions
+ul.ui-button-group
   a
     text-decoration: none
     display: inline-block
