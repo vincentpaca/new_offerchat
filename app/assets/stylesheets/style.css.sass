@@ -80,15 +80,17 @@ button.button, a.button
   width: 210px
   border-right: 1px solid #ccc
   background: #fafafa
-  float: left
+  position: absolute
+  top: 0
+
   overflow: hidden
 
 .dashboard-content
-  display: inline-block
-  vertical-align: top
-  float: left
-  width: 790px
-  max-width: 80%
+  position: absolute
+  left: 211px
+  top: 0
+  right: 0
+  bottom: 0
 
 .dashboard
   display: block
@@ -187,9 +189,7 @@ label.chat-count
   min-height: 600px
 .chat-sidebar-wrapper
   @include blockPosition(left,20%,inline-block)
-  max-width: 240px
 .chat-sidebar
-  
   height: 100px
   padding: 10px
 .chat-header
@@ -200,28 +200,73 @@ label.chat-count
 .chat-body
   min-height: 400px
   position: relative
+  overflow: hidden
 .chat-content-area
   position: absolute
   bottom: 0
-  @include container(10px)
+  width: 100%
 .chat-group
-  margin: 20px 0 30px 0
+  padding: 10px
+  border-bottom: 1px dashed #e1e1e1
+.chat-group:last-child
+  border-bottom: 0
+.chat-group.ls
+  margin: 5px 0 5px 0
 .chat-response-wrapper
   border-top: 1px solid #e1e1e1
   background: #fafafa
   padding: 10px
-.chat-message-1
+.chat-group
   p
-    margin: 5px 0
+    margin: 7px 0
+.chat-status-inner
+  text-align: center
+  p
+    color: #999
+    font:
+      style: italic
+      size: 12px
+.chat-status-inner.red p
+  color: #e56e6e
+
+._uB
+  color: #000
 
 ul.chat-options > li
   display: inline-block
+  float: left
   font:
     size: 11px
     weight: bold
   margin-right: 15px
-ul.chat-options > li > a:hover
-  text-decoration: underline
+
+ul.chat-option-actions
+
+ul.chat-option-actions > li
+  margin-right: 0
+  border-right: 1px solid #c1c1c1
+  border-top: 1px solid #c1c1c1
+  border-bottom: 1px solid #c1c1c1
+  
+  overflow: hidden
+
+ul.chat-option-actions > li:first-child
+  border-left: 1px solid #c1c1c1
+  border-top-left-radius: 3px
+  border-bottom-left-radius: 3px
+ul.chat-option-actions > li:last-child
+  border-left: 0
+  border-top-right-radius: 3px
+  border-bottom-right-radius: 3px
+.chat-option-actions
+  a
+    text-decoration: none
+    display: inline-block
+    padding: 4px 7px
+    background: #f5f5f5
+    box-shadow: 0 1px 0 #fff inset
+    color: #454545
+    text-shadow: 0 1px 0 #fff
 
 .visitor-info-wrapper
   display: inline-block

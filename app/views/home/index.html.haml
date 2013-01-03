@@ -10,23 +10,31 @@
     .chat-body
       .chat-content-area
         %ul.chat-list
-          %li.chat-group
+          %li.chat-group.ls
+            .chat-status-inner
+              %p Visitor-y43fddp has entered the chat
+          %li.chat-group.group
             %div
-              %strong Visitor-y43fddp
+              %strong 
+                %span._uB Visitor-y43fddp
             .chat-message-1
               %p Hello?
               %p fdsfsdfds
               %p How will this work?
-          %li.chat-group
+          %li.chat-group.group
             %div
-              %strong Jonathan (You)
+              %strong 
+                %span._uB Jonathan (You)
             .chat-message-1
               %p This is the latest reply from you
-              %ul.chat-options
+              %ul.chat-options.chat-option-actions
                 %li 
                   =link_to 'Save as response','#'
                 %li 
                   =link_to 'Edit','#'
+          %li.chat-group.ls
+            .chat-status-inner.red
+              %p Visitor-y43fddp has left the conversation
 
     .chat-response-wrapper
       sdfdsfds
