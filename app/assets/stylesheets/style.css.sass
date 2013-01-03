@@ -49,8 +49,10 @@ a,button, input[type=submit]
   cursor: pointer
 p
   margin: 0 0 15px 0
-input
+input, textarea
   outline: none
+  box-sizing: border-box
+  -moz-box-sizing: border-box
 body
   font: 
     family: Arial, sans-serif
@@ -99,7 +101,7 @@ button.button, a.button
   overflow-y: auto
   height: 400px
   &.sL
-    height: 550px
+    height: 515px
 
 .dashboard-sidebar
   width: 210px
@@ -107,7 +109,6 @@ button.button, a.button
   background: #fafafa
   position: absolute
   top: 0
-
   overflow: hidden
 
 .dashboard-content
@@ -250,6 +251,16 @@ label.chat-count
   border-top: 1px solid #e1e1e1
   background: #fafafa
   padding: 10px
+.chat-area
+  background: #fff
+  border: 1px solid #e1e1e1
+  position: relative
+  textarea
+    width: 100%
+    padding: 5px
+    resize: none
+    border: none
+
 .chat-group
   p
     margin: 7px 0
@@ -295,6 +306,7 @@ label.chat-count
     border: 0
     background: transparent
     background-image: url('icon-sprite.png')
+    background-position: 0 0
     width: 16px
     height: 16px
     position: absolute
