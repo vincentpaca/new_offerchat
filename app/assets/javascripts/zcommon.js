@@ -5,7 +5,14 @@ $(document).ready(function(){
             updateOnBrowserResize: true,
             updateOnContentResize: false
         }
-	});	
+	});
+  $(".scrollable-responses").mCustomScrollbar({
+    autoDraggerLength: true,
+    advanced: {
+            updateOnBrowserResize: true,
+            updateOnContentResize: false
+        }
+  }); 
 
   $(".chat-group").hover(function(){
     $(this).find('.chat-options').removeClass('hide');

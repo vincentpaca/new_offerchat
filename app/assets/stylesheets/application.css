@@ -17,6 +17,7 @@ html::-webkit-scrollbar{
     width:7px;
     height:7px;
     background:none;
+
    
 }
 
@@ -36,3 +37,4 @@ html::-webkit-scrollbar-thumb:hover{
 html::-webkit-scrollbar-thumb:active{
     background-color:#888;
 }
+
