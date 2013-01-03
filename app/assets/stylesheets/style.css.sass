@@ -88,6 +88,7 @@ button.button, a.button
   vertical-align: top
   float: left
   width: 790px
+  max-width: 80%
 
 .dashboard
   display: block
@@ -178,13 +179,15 @@ label.chat-count
     font-size: 11px
     top: -3px
 .chat-view
-  @include blockPosition(left,550px,inline-block)
+  @include blockPosition(left,80%,inline-block)
+  min-width: 550px
   
 .chat-view-inner
   border-right: 1px solid #e1e1e1
   min-height: 600px
 .chat-sidebar-wrapper
-  @include blockPosition(left,240px,inline-block)
+  @include blockPosition(left,20%,inline-block)
+  max-width: 240px
 .chat-sidebar
   
   height: 100px
