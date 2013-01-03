@@ -1,76 +1,76 @@
 !!!
 %html
-%head
-  %title Offerchat Prototype
-  = stylesheet_link_tag    "application", :media => "all"
-  = javascript_include_tag "application"
-  = csrf_meta_tags
+  %head
+    %title Offerchat Prototype
+    = stylesheet_link_tag    "application", :media => "all"
+    = javascript_include_tag "application"
+    = csrf_meta_tags
 
-%body
-  .dashboard.group
-    .dashboard-header.group
-      .container
-        %a.logo    
-    %div.group{ :style => 'position:relative; width:1001px' }
-      .dashboard-sidebar
-        .profile-container
-          .user-thumbnail{ :style => "background-image: url(#{ image_path('person1.jpg') })" }
-          .user-profile
-            %strong Jonathan
-            .user-current-status 
-              %span.status.online  
-              Online
-            .user-settings
-              .user-select-status
-                .option-status
-                  %span.status.away
-                  Away
-                .option-status
-                  %span.status.offline 
-                  Offline
+  %body
+    .dashboard.group
+      .dashboard-header.group
+        .container
+          %a.logo    
+      %div.group{ :style => 'position:relative; width:1001px' }
+        .dashboard-sidebar
+          .profile-container
+            .user-thumbnail{ :style => "background-image: url(#{ image_path('person1.jpg') })" }
+            .user-profile
+              %strong Jonathan
+              .user-current-status 
+                %span.status.online  
+                Online
+              .user-settings
+                .user-select-status
+                  .option-status
+                    %span.status.away
+                    Away
+                  .option-status
+                    %span.status.offline 
+                    Offline
 
-        .sidebar-inner.scrollable
-          .section-nav
-            .nav-parent.selected
-              BuyRealMarketing
-            .nav-bg
-              .nav
-                Chats
-                %label.chat-count.nu 10
-              .nav
-                History
-              .nav
-                Canned Responses
-            .nav-parent
-              Buzzednow.com
-              %label.chat-count 10
-            .nav-parent
-              Buzzednow.com
-              %label.chat-count 10
-            .nav-parent
-              Buzzednow.com
-              %label.chat-count 10
-            .nav-parent
-              Buzzednow.com
-              %label.chat-count 10
-            .nav-parent
-              Buzzednow.com
-              %label.chat-count 10
-            .nav-parent
-              Buzzednow.com
-              %label.chat-count 10
-            .nav-parent
-              Buzzednow.com
-              %label.chat-count 10
-            .nav-parent
-              Buzzednow.com
-              %label.chat-count 10
-            .nav-parent
-              Buzzednow.com
-              %label.chat-count 10
-          .section-nav
-            .nav-parent
-              Quick Seo Results 
-      .dashboard-content
-        = yield
+          .sidebar-inner.scrollable
+            .section-nav
+              .nav-parent.selected
+                BuyRealMarketing
+              .nav-bg
+                .nav
+                  Chats
+                  %label.chat-count.nu 10
+                .nav
+                  History
+                .nav
+                  Canned Responses
+              .nav-parent
+                Buzzednow.com
+                %label.chat-count 10
+              .nav-parent
+                Buzzednow.com
+                %label.chat-count 10
+              .nav-parent
+                Buzzednow.com
+                %label.chat-count 10
+              .nav-parent
+                Buzzednow.com
+                %label.chat-count 10
+              .nav-parent
+                Buzzednow.com
+                %label.chat-count 10
+              .nav-parent
+                Buzzednow.com
+                %label.chat-count 10
+              .nav-parent
+                Buzzednow.com
+                %label.chat-count 10
+              .nav-parent
+                Buzzednow.com
+                %label.chat-count 10
+              .nav-parent
+                Buzzednow.com
+                %label.chat-count 10
+            .section-nav
+              .nav-parent
+                Quick Seo Results 
+        .dashboard-content
+          = yield
     
