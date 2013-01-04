@@ -1,7 +1,20 @@
 .chat-view
   .chat-view-inner
     .chat-header
-      .chat-timer
+      .chat-side-info
+        %span.chat-timer 
+          %i.timer-icon
+          3:32
+        .dropdown-group
+          %button.btn.active
+            Actions
+            %span.caret
+          %ul.dropdown-menu
+            %li
+              = link_to 'Transfer','#'
+            %li
+              = link_to 'End chat','#'
+
         
       .visitor-info-wrapper
         %span.visitor-username y43fddp
