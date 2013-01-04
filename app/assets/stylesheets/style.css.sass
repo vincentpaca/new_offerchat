@@ -90,6 +90,7 @@ button.button, a.button
   outline: none
   border: 1px solid #ccc
   padding: 3px 7px
+  border-radius: 3px
   box-shadow: 0 1px 0 #fff inset
   
   &:active
@@ -255,10 +256,26 @@ label.chat-count
   background: #fff
   border: 1px solid #e1e1e1
   position: relative
-  textarea
+  padding: 0
+
+  button.send-msg-btn
+    position: absolute
+    right: 10px
+    top: 10px
+    width: 16px
+    height: 16px
+    background: transparent
+    background-image: url('icon-sprite.png')
+    background-position: 0 -16px
+    
+    border: 0
+
+  &.active
+    border-color: #65a2e6
+
+  input[type=text]
     width: 100%
     padding: 5px
-    resize: none
     border: none
 
 .chat-group

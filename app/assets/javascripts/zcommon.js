@@ -13,6 +13,11 @@ $(document).ready(function(){
             updateOnContentResize: false
         }
   }); 
+  
+
+    $(".chat-area input[type=text]").focus();
+    $(".chat-area").addClass('active');
+  
 
   $(".chat-group").hover(function(){
     $(this).find('.chat-options').removeClass('hide');

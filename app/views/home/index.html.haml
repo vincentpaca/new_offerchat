@@ -1,6 +1,8 @@
 .chat-view
   .chat-view-inner
     .chat-header
+      .chat-timer
+        
       .visitor-info-wrapper
         %span.visitor-username y43fddp
         %span.visitor-location Cebu, Philippines
@@ -54,7 +56,8 @@
 
     .chat-response-wrapper
       .chat-area
-        %textarea
+        %input{ :type => 'text', :placeholder => 'Enter your message' }
+          %button.send-msg-btn{ :type => 'submit' }
 .chat-sidebar-wrapper
   .chat-sidebar
     .module-header
