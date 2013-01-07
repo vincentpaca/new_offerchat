@@ -1,0 +1,57 @@
+{
+  "name": "",
+  "glyphs": [
+    {
+      "search": [
+        "plus"
+      ],
+      "code": 43,
+      "from": 43,
+      "uid": "44e04715aecbca7f266a17d5a7863c68",
+      "css": "plus",
+      "orig_css": "plus",
+      "orig_code": 43,
+      "src": "fontawesome"
+    },
+    {
+      "search": [
+        "location",
+        "mark",
+        "marker"
+      ],
+      "code": 59172,
+      "uid": "a42b598e4298f3319b25a2702a02e7ff",
+      "css": "location",
+      "orig_css": "location",
+      "orig_code": 59172,
+      "src": "entypo",
+      "from": 59172
+    },
+    {
+      "search": [
+        "arrow",
+        "down"
+      ],
+      "code": 59228,
+      "uid": "8704cd847a47b64265b8bb110c8b4d62",
+      "css": "down-open",
+      "orig_css": "down-open",
+      "orig_code": 59228,
+      "src": "entypo",
+      "from": 59228
+    },
+    {
+      "search": [
+        "search",
+        "find"
+      ],
+      "code": 128269,
+      "from": 128269,
+      "uid": "t6cy82vd3t5piy0j3uknrlrzpg1ld8y3",
+      "css": "search",
+      "orig_css": "search",
+      "orig_code": 128269,
+      "src": "typicons"
+    }
+  ]
+}
