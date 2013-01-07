@@ -2,6 +2,10 @@
   margin-left: $margin
   margin-right: $margin
 
+@mixin iconSize($width,$height)
+  width: $width
+  height: $height
+
 @mixin header
   padding: 10px
 
@@ -27,6 +31,18 @@
   display: inline-block
   width: 6px
   height: 6px
+
+i.icon
+  background-image: url('icon-sprite.png')
+  background-repeat: no-repeat
+  display: inline-block
+  position: relative
+
+i.icon.map-pin
+  background-position: 0 -50px
+  @include iconSize(12px,16px)
+  top: 2px
+
 
 h1,h2,h3
   color: #333
@@ -110,15 +126,17 @@ button.button, a.button
   left: 0
   z-index: 1000
   float: left
-  min-width: 160px
-  padding: 5px 0
+  min-width: 160px  
   box-shadow: 0 1px 5px rgba(0,0,0,.15)
   margin: 2px 0 0 2px
   list-style: none
   background-color: #fff
-  border: 1px solid rgba(0,0,0,.2)
-  border-radius: 3px
+  border: 1px solid #ccc
 
+.dropdown-menu > li
+  border-bottom: 1px solid #e1e1e1
+  &:last-child
+    border-bottom: none
 .dropdown-menu > li > a
   display: block
   padding: 5px
@@ -271,6 +289,7 @@ label.chat-count
   background: #fafafa
   border-bottom: 1px solid #e1e1e1
   box-shadow: 0 1px 3px rgba(0,0,0,.1)
+  height: 45px
 .chat-body
   min-height: 400px
   position: relative
@@ -446,6 +465,8 @@ i.timer-icon
   background-repeat: no-repeat
   background-position: 0 -32px
   display: inline-block
+
+
 
 .visitor-info-wrapper
   display: inline-block
