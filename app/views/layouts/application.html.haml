@@ -19,9 +19,11 @@
             .user-profile
               %strong Jonathan
               .user-current-status 
-                %span.status.online  
-                Online
-              .user-settings
+                / %span.status.online  
+                / Online
+                .status-connection
+                  Connecting...
+              .user-settings{ :style => 'display: none' }
                 .user-select-status
                   .option-status
                     %span.status.away
