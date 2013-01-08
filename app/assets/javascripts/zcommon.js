@@ -22,6 +22,24 @@ $(document).ready(function(){
     $(".chat-area").addClass('active');
   
 
+    
+$(function(){
+  $('#more-info').click(function() {
+    $(".visitor-more-info").slideToggle('fast');
+  if($(this).val() == "more info") {
+    $(this).html("less info");
+    $(this).val('less info');
+
+  }
+  else {
+    $(this).html("more info");
+    $(this).val("more info");
+  }
+});
+});
+
+  
+
   $(".chat-group").hover(function(){
     $(this).find('.chat-options').removeClass('hide');
   }, function(){

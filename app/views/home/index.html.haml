@@ -2,11 +2,11 @@
   .chat-view-inner
     .chat-header
       .chat-side-info
-        %span.chat-timer 
-          %i.timer-icon
-          3:32
+        / %span.chat-timer 
+        /   %i.timer-icon
+        /   3:32
         .dropdown-group
-          %button.btn.active
+          %button.btn
             Actions
             %span.caret
           %ul.dropdown-menu
@@ -18,14 +18,38 @@
       %button.back        
       .visitor-info-wrapper
         %span.visitor-username y43fddp
-        %span.visitor-location 
-          %i.icon.map-pin
-          Cebu, Philippines
+        %ul.visitor-info-list
+          %li 
+            %span.visitor-location 
+              %i.icon.map-pin
+              Cebu, Philippines
+          %li
+            %span.visitor-browser
+              %i.icon.browser-mozilla
+              Mozilla Firefox 4.0
+          %li
+            %span.visitor-system
+              %i.icon.system-linux
+              Linux
+          %li
+            %button.btn.small#more-info{ :value => 'more info' }
+              more info 
         .visitor-current-status 
           viewing
           = link_to 'http://www.example.com/auth/facebook?origin=/items/1', '#' 
-        .visitor-more-info
-          
+      .visitor-more-info
+        
+        %ul._y5
+          %li
+            .info-label From 
+            .info-value http://www.offerchat.com
+          %li
+            .info-label Time spent 
+            .info-value 15:30
+          %li
+            .info-label IP Address
+            .info-value 192.168.14.34
+
     .chat-body
       .chat-content-area
         %ul.chat-list.scrollable
