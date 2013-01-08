@@ -1,6 +1,7 @@
 NewOfferchat::Application.routes.draw do
   root :to => "home#index"
   get :users, :controller => :home, :action => :users
+  get :chats, :controller => :home, :action => :chats
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
