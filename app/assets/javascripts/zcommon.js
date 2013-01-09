@@ -44,6 +44,7 @@ $(function(){
 });
 });
 
+
   
 
   $(".chat-group").hover(function(){

@@ -13,28 +13,3 @@
  */
 
 
-html::-webkit-scrollbar{
-    width:7px;
-    height:7px;
-    background:none;
-
-   
-}
-
-html::-webkit-resizer{
-    -webkit-border-radius:4px;
-    background-color:#666;
-}
-html::-webkit-scrollbar-thumb{
-    min-height:0.8em;
-    min-width:0.8em;
-    background-color: rgba(0, 0, 0, .25);
-    /*box-shadow: inset 1px 1px 0 rgba(0,0,0,.1),inset -1px -1px 0 rgba(0,0,0,.07);*/
-}
-html::-webkit-scrollbar-thumb:hover{
-    background-color: #bbb;
-}
-html::-webkit-scrollbar-thumb:active{
-    background-color:#888;
-}
-
