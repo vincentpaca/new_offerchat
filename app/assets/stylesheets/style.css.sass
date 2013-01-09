@@ -8,6 +8,8 @@
 
 @mixin header
   padding: 10px
+  background: #fafafa
+  border-bottom: 1px solid #e1e1e1
 
 @mixin blockPosition($float,$width,$display)
   float: $float
@@ -309,9 +311,10 @@ a.nav-parent
 .section-nav:last-child .nav-parent
   border-bottom: 1px solid #e1e1e1
 
-
-.nav
+a.nav, .nav
   padding: 10px
+  color: #434343
+  display: block
   cursor: pointer
   font-size: 11px
   font-weight: bold
@@ -327,10 +330,21 @@ a.nav-parent
     background: #e1e1e1
     box-shadow: 0 1px 2px rgba(0,0,0,.2) inset
     padding-left: 15px
+    text-shadow: 0 1px 0 #f1f1f1
 
 .nav-bg
   background: #fff
 
+.page-header
+  @include header
+  text-shadow: 0 1px 0 #fff
+  h3
+    font-size: 20px
+.header-search
+  display: inline-block
+  width: 300px
+  &.right
+    float: right
 label.chat-count
   cursor: pointer
   position: relative
@@ -347,6 +361,17 @@ label.chat-count
   &.nu
     font-size: 11px
     top: -3px
+
+.msg-count-tag
+  display: inline-block
+  background: #666
+  color: #fff
+  font-size: 11px
+  font-weight: bold
+  padding: 2px 5px
+  line-height: 1
+  border-radius: 3px
+
 .chat-view
   @include blockPosition(left,70%,inline-block)
   min-width: 550px
@@ -368,8 +393,7 @@ label.chat-count
   width: 100%
   min-height: 64px
   text-shadow: 0 1px 0 #fff
-  background: #fafafa
-  border-bottom: 1px solid #e1e1e1
+  
   box-shadow: 0 1px 3px rgba(0,0,0,.1)
 .chat-body
   min-height: 400px
@@ -451,6 +475,7 @@ label.chat-count
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1)
 .search-input
   border: 1px solid #d1d1d1
+  background: #fff
   cursor: text
   display: block
   width: 100%
@@ -470,8 +495,8 @@ label.chat-count
     width: 16px
     height: 16px
     position: absolute
-    right: 5px
-    top: 5px
+    right: 3px
+    top: 3px
     font:
       size: 11px
       weight: bold
@@ -652,5 +677,75 @@ button.back
   z-index: 1040
   background-color: black
   opacity: .6
+
+.table-wrapper
+  border-top: 1px solid #eee
+  border-bottom: 1px solid #eee
+table
+  max-width: 100%
+  background-color: transparent
+  border-collapse: collapse
+  border-spacing: 0
+  &.table
+    background-color: #fff
+
+.table
+  width: 100%
+  th
+    font-weight: bold
+  thead
+    border-bottom: 1px solid #eee
+  thead.small th
+    font-size: 11px
+  thead th
+    vertical-align: bottom
+    color: #999
+  tbody
+    tr:last-child
+      /*border-bottom: 1px solid #eee
+.table.chat-list
+  tbody
+    tr
+      cursor: pointer
+
+.table th, .table td
+  padding: 5px
+  line-height: 20px
+  text-align: left
+  vertical-align: top
+
+.table td
+  /* border-top: 1px solid #eee
+  .xT
+    white-space: nowrap
+    overflow: hidden
+    display: inline-block
+
+
+.table td._uY,
+.table th._uY
+  padding-left: 15px
+
+.table caption + thead tr:first-child th,
+.table caption + thead tr:first-child td,
+.table colgroup + thead tr:first-child th,
+.table colgroup + thead tr:first-child td,
+.table thead:first-child tr:first-child th,
+.table thead:first-child tr:first-child td
+  border-top: 0
+
+.table
+  tbody + tbody
+    border-top: 2px solid #dddddd
+.table-hover tbody tr:hover td,
+.table-hover tbody tr:hover th 
+  background-color: #f5f5f5
+
+.table-header
+  padding: 10px
+  margin: 15px 0 0
+  h3
+    font-size: 12px
+    font-weight: bold
 
 
