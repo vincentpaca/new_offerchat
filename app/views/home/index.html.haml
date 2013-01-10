@@ -1,17 +1,6 @@
 .chat-view
   .chat-view-inner
     .chat-header
-      .chat-side-info
-        .dropdown-group
-          %button.btn
-            Actions
-            %span.caret
-          %ul.dropdown-menu
-            %li
-              = link_to 'Transfer','#'
-            %li
-              = link_to 'End chat','#'
-
       %button.back        
       .visitor-info-wrapper
         %span.visitor-username y43fddp
@@ -29,8 +18,17 @@
               %i.icon.system-linux
               Linux
           %li
-            %button.btn.small#more-info{ :value => 'more info' }
+            %button.btn.small#more-info{ :value => 'more info', :style => 'width:80px' }
               more info 
+            .dropdown-group
+              %button.btn.small
+                Actions
+                %span.caret
+              %ul.dropdown-menu{ :style => 'display: block' } 
+                %li
+                  = link_to 'Transfer','#'
+                %li
+                  = link_to 'End chat','#'
         .visitor-current-status 
           viewing
           = link_to 'http://www.example.com/auth/facebook?origin=/items/1', '#' 

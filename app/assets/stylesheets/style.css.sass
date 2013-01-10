@@ -198,14 +198,16 @@ button
   z-index: 1000
   float: left
   min-width: 160px  
-  box-shadow: 0 1px 5px rgba(0,0,0,.15)
+  box-shadow: 0 1px 3px rgba(0,0,0,.10)
   margin: 2px 0 0 2px
   list-style: none
   background-color: #fff
-  border: 1px solid #ccc
+  border: 1px solid #e1e1e1
 
 .dropdown-menu > li
   border-bottom: 1px solid #e1e1e1
+  margin: 0 0 0 0 !important
+  display: block !important
   &:last-child
     border-bottom: none
 .dropdown-menu > li > a
@@ -605,6 +607,7 @@ button.back
     size: 18px
     weight: bold
   margin-right: 10px
+  color: #333
 .visitor-current-status
   margin-top: 10px
   color: #999
@@ -689,83 +692,14 @@ button.back
   background-color: black
   opacity: .6
 
-.table-wrapper
-  border-bottom: 1px solid #e1e1e1
-table
-  min-width: 100%
-  background-color: transparent
-  border-collapse: collapse
-  border-spacing: 0
-  &.table
-    background-color: #fff
-
-.table
-  width: 100%
-  th
-    font-weight: bold
-  thead
-    border-bottom: 1px solid #e1e1e1
-  thead.small th
-    font-size: 11px
-  thead th
-    vertical-align: bottom
-    color: #999
-  tbody
-    tr:last-child
-      /*border-bottom: 1px solid #eee
-.table.chat-list
-  tbody
-    tr
-      cursor: pointer
-
-.table th, .table td
-  padding: 5px
-  line-height: 20px
-  text-align: left
-  vertical-align: top
-
-.table td
-  /* border-top: 1px solid #eee
-  height: 20px 
-  overflow: hidden
-  .xT
-    
-    overflow: hidden
-    display: inline-block
-
-
-.table td._uY,
-.table th._uY
-  padding-left: 15px
-
-.table caption + thead tr:first-child th,
-.table caption + thead tr:first-child td,
-.table colgroup + thead tr:first-child th,
-.table colgroup + thead tr:first-child td,
-.table thead:first-child tr:first-child th,
-.table thead:first-child tr:first-child td
-  border-top: 0
-
-.table
-  tbody + tbody
-    border-top: 2px solid #dddddd
-.table-hover tbody tr:hover td,
-.table-hover tbody tr:hover th 
-  background-color: #f5f5f5
-
-.table-header
-  padding: 10px
-  margin: 15px 0 0
-  h3
-    font-size: 12px
-    font-weight: bold
 
 
 /* NEW TABLELESS LAYOUT
 .table-wrapper
   width: 100%
+  
+
 .table-row
-  cursor: pointer
   display: block
   padding: 5px 15px
   overflow: hidden
@@ -773,11 +707,28 @@ table
   -moz-transition: all .1s ease-in-out
   -o-transition: all .1s ease-in-out
   transition: all .1s ease-in-out
+  border-bottom: 1px solid #f5f5f5
+  &:last-child
+    border-bottom: none
   &.table-head
     font-size: 11px
+    color: #999
     font-weight: bold
-  &:hover
-    background: #f5f5f5
+    border-bottom: 1px solid #e1e1e1
+    position: relative
+    
+    z-index: 1000
+  &.table-body
+    cursor: pointer
+    &:hover
+      background: #f5f5f5
+  &.trow-unread
+    .visitor-cell, .message-cell
+      color: #222
+      font-weight: bold
+    .msg-count-tag
+      background: #5A8DC2
+
 .td-container
   display: inline-block
   float: left
@@ -789,13 +740,13 @@ table
   &.visitor-cell
     width: 115px
   &.location-cell
-    width: 200px
+    width: 23%
   &.system-info-cell
     width: 103px
   &.time-cell
-    width: 70px
+    width: 80px
   &.message-cell
-    width: 315px
+    width: 30.22%
 
   .td-content
     vertical-align: top
@@ -803,16 +754,15 @@ table
 .xT
   display: inline-block
 
+.table-section
+  margin-bottom: 20px
+  border-bottom: 1px solid #e1e1e1
+  &:last-child
+    margin-bottom: 0
+.table-head-label
+  font-size: 14px
+  padding: 10px
 
-@media (min-width: 1200px)
-  .td-container
-    &.message-cell
-      width: 500px
-@media (min-width: 768px) and (max-width: 979px)
-  .td-container
-    &.message-cell
-      width: 300px
-@media (max-width: 1055px)
-  .td-container
-    &.message-cell
-      width: 315px
+
+
+      
