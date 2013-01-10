@@ -41,10 +41,14 @@ $(function(){
     $(this).html("more info");
     $(this).val("more info");
   }
+
 });
 });
 
-
+$('.table-head-collapsible').click(function(){
+    $(this).next().toggle('fast');
+    // console.log(this.)
+  });
   
 
   $(".chat-group").hover(function(){

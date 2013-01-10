@@ -149,6 +149,7 @@ button
     outline: none
 
 
+
 .btn
   display: inline-block
   color: #454545
@@ -184,6 +185,22 @@ button
   &.active
     @extend :active
     background: #e1e1e1
+  &.rounded
+    border-radius: 50%
+    width: 20px
+    height: 20px
+    padding: 0
+
+  span.minimize
+    @include iconSize(11px,11px)
+    background-image: image-url('icon-sprite.png')
+    background-position: -15px -95px
+    display: inline-block
+  span.maximize
+    @extend .minimize
+    background-position: 0 -95px
+
+
 
 
 .dropdown-group
@@ -755,14 +772,11 @@ button.back
   display: inline-block
 
 .table-section
-  margin-bottom: 20px
   border-bottom: 1px solid #e1e1e1
-  &:last-child
-    margin-bottom: 0
 .table-head-label
   font-size: 14px
   padding: 10px
-
-
+.table-head-collapsible
+  cursor: pointer
 
       
