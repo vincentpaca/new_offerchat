@@ -47,7 +47,13 @@ $(function(){
 
 $('.table-head-collapsible').click(function(){
     $(this).next().toggle('fast');
-    // console.log(this.)
+    if($('.btn.rounded > span', this).attr('class') == 'maximize'){
+      $('.btn.rounded > span', this).removeClass('maximize');
+      $('.btn.rounded > span', this).addClass('minimize');
+    } else{
+        $('.btn.rounded > span', this).removeClass('minimize');
+        $('.btn.rounded > span', this).addClass('maximize');
+    }
   });
   
 
