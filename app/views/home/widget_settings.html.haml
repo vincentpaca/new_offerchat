@@ -1,0 +1,27 @@
+.page-header.group
+  %h3 Widget Settings
+  .module-header._c8
+    .ui-button-group
+      %button.btn.active Style and Color
+      %button.btn Post chat survey
+      %button.btn Offline form
+      %button.btn Pre chat form
+      %button.btn Embed widget
+
+.page-body._tL
+  Access advanced customization options with a live preview of the widget on your website.
+
+  .block.tr.group
+    .label 
+      Play sound for messages
+    .dropdown-group
+      %button.btn.small
+        Select a condition 
+        %span.caret
+      %ul.dropdown-menu{ :style => 'display: none' }
+        %li
+          = link_to 'Reach a destination URL','#'
+        %li
+          = link_to 'Visitor time on site','#'
+        %li
+          = link_to 'Visitor time on url','#'

@@ -4,7 +4,7 @@ NewOfferchat::Application.routes.draw do
   get :chats, :controller => :home, :action => :chats
   get :settings, :controller => :home, :action => :settings
   get :triggers, :controller => :home, :action => :triggers
-  get :responses, :controller => :home, :action => :responses
+  get :widget_settings, :controller => :home, :action => :widget_settings
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

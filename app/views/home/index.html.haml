@@ -1,34 +1,30 @@
 .chat-view
   .chat-view-inner
-    .chat-header
-      %button.back        
+    .chat-header      
+      %button.close-dark#closeChat{ :title => 'End this chat',:style => 'top: 5px' }
       .visitor-info-wrapper
-        %span.visitor-username y43fddp
         %ul.visitor-info-list
+          %li._c3
+            %button.btn.rounded._nY5
+              %span.back        
+          %li
+            %span.visitor-username y43fddp
           %li 
             %span.visitor-location 
               %i.icon.map-pin
               Cebu, Philippines
           %li
             %span.visitor-browser{ :title => 'Mozilla Firefox 4.0' }
-              %i.icon.browser-mozilla
-              
+              %i.icon.browser-mozilla              
           %li
             %span.visitor-system{ :title => 'Linux' }
-              %i.icon.system-linux
+              %i.icon.system-linux             
           %li
             %a#more-info{ :style => 'display: inline-block; width: 70px;  text-align: center;' }
               more info 
-          %li
-            .dropdown-group
-              %button.btn.small
-                Actions
-                %span.caret
-              %ul.dropdown-menu
-                %li
-                  = link_to 'Transfer','#'
-                %li
-                  = link_to 'End chat','#'
+          %li            
+            %button.btn.small
+              Transfer chat            
         
       .visitor-more-info        
         %ul._y5
@@ -72,7 +68,7 @@
           %li.chat-group.ls.group
             .chat-status-inner.o_4
               %em 
-                visitor-y43fddp visits
+                visitor-y43fddp is currently viewing
                 =link_to 'https://mail.google.com/mail/u/0/#inbox','#'
               
           %li.chat-group.group

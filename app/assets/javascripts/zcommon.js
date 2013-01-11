@@ -25,8 +25,15 @@ $("#addResponseBtn").click(function(){
   $("#addResponseModal").removeClass('hide');
   $(".modal-backdrop").removeClass('hide');
 });
+$("#addTriggerBtn").click(function(){
+  $("#addTriggerModal").removeClass('hide');
+  $(".modal-backdrop").removeClass('hide');
+});
 $(".close").click(function(){
   $(".modal,.modal-backdrop").addClass('hide');
+});
+$("#closeChat").click(function(){
+  $(".dialog-box,.modal-backdrop").removeClass('hide');
 });
     
 $(function(){
@@ -44,6 +51,12 @@ $(function(){
 
 });
 });
+$("#closeChat").click(function(){
+  $(".dialog-box").removeClass(".hide");
+});
+$(".dropdown-group > .btn").click(function(){
+  $(".dropdown-menu").toggle();
+});
 
 $('.table-head-collapsible').click(function(){
     $(this).next().toggle('fast');
@@ -56,6 +69,7 @@ $('.table-head-collapsible').click(function(){
     }
   });
   
+
 
   $(".chat-group").hover(function(){
     $(this).find('.chat-options').removeClass('hide');

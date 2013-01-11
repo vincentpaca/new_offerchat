@@ -45,6 +45,8 @@
                   History
                 %a.nav
                   Chat settings
+                %a.nav
+                  Widget settings
             .section-nav
               %a.nav-parent
                 Buzzednow.com
@@ -82,7 +84,16 @@
                 Quick Seo Results 
         .dashboard-content.group
           = yield
-    
+    .modal.dialog-box.hide
+      .modal-header
+        %button.close
+        %h2 Action required
+      .modal-body
+        Are you sure you want to end this chat?
+      .modal-footer
+        %button.btn.action.small End chat
+        %button.btn.small Cancel
+
     .modal.hide#addResponseModal
       .modal-header
         %button.close
@@ -104,11 +115,12 @@
         %button.btn.action.small Create response
         %button.btn.small Cancel
 
-    .modal#addTriggerModal
+    .modal.hide#addTriggerModal
       .modal-header
         %button.close
         %h2 Create a trigger
       .modal-body
+        %p Use triggers to automate customized chat responses for different groups of visitors.
         .form-wrapper
           .field-wrapper
             %fieldset
@@ -142,7 +154,7 @@
         %button.btn.action.small Create trigger
         %button.btn.small Cancel
 
-    .modal-backdrop
+    .modal-backdrop.hide
 
     .modal-loader-wrapper.hide
       #floatingCirclesG
