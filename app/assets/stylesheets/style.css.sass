@@ -1,3 +1,4 @@
+@import url(http://fonts.googleapis.com/css?family=Droid+Sans:400,700)
 @mixin container($margin)
   margin-left: $margin
   margin-right: $margin
@@ -98,7 +99,7 @@ a
 a,button, input[type=submit]
   cursor: pointer
 p
-  margin: 0 0 15px 0
+  margin: 5px 0 10px 0
 input, textarea
   outline: none
   margin: 0
@@ -111,12 +112,19 @@ textarea
   min-height: 90px
   font-family: Arial, sans-serif
   resize: vertical
+em
+  font-style: italic
 body
   font: 
     family: Arial, sans-serif
     size: 13px
   color: #636363
 
+.block
+  margin: 20px 0 20px 0
+  &.tr
+    border-bottom: 1px solid #e1e1e1
+    padding: 10px 0
 .container
   @include container(10px)
 
@@ -142,8 +150,10 @@ button
     float: right
     position: relative
     background-image: image-url('icon-sprite.png')
+    background-color: transparent
     background-repeat: no-repeat
-    background-position: -29px -70px
+    background-position: -43px -70px
+    opacity: .7
     @include iconSize(16px,16px)
     border: none
     outline: none
@@ -152,15 +162,15 @@ button
 
 .btn
   display: inline-block
-  color: #454545
+  color: #565656
   cursor: pointer
   margin-bottom: 0
   text-align: center
-  background: #f4f4f4
+  background: #f7f7f7
   text-shadow: 0 1px 0 #fff
   outline: none
   border: 1px solid #ccc
-  padding: 3px 10px
+  padding: 4px 10px
   border-radius: 3px
   box-shadow: 0 1px 0 #fff inset
   &.right
@@ -173,18 +183,29 @@ button
     color: #fff
     font-weight: bold
     text-shadow: 0 -1px 0 rgba(0,0,0,.2)
-    box-shadow: 0 1px 0 #38b3f3 inset
+    box-shadow: 0 1px 0 rgba(255,255,255,.2) inset
     border: 1px solid #1485c1
     &:active
       background: #209cdd
+      box-shadow: 0 1px 1px rgba(0,0,0,.1) inset
+  &.action-delete
+    @extend .action
+    background: #eb4141
+    border: 1px solid #dc2828
+    &:active
+      background: #e63c3c
       box-shadow: 0 1px 1px rgba(0,0,0,.1) inset
 
   &:active
     background: #f1f1f1
     box-shadow: 0 1px 1px rgba(0,0,0,.1) inset
   &.active
-    @extend :active
-    background: #e1e1e1
+    box-shadow: 0 1px 3px rgba(0,0,0,.2) inset
+    background: #d8d8d8
+    color: #333
+    text-shadow: 0 1px 0 #e6e6e6
+    border-top: 1px solid #a1a1a1
+
   &.rounded
     border-radius: 50%
     width: 20px
@@ -322,7 +343,7 @@ a.nav-parent
   cursor: pointer
   text-shadow: 0 1px 0 #fff
   border-top: 1px solid #e1e1e1
-  padding: 10px
+  padding: 15px
   display: block
   color: #454545
   &:hover 
@@ -366,6 +387,11 @@ a.nav, .nav
   text-shadow: 0 1px 0 #fff
   h3
     font-size: 20px
+.page-body
+  padding: 10px
+  line-height: 1.4
+  &._tL
+    max-width: 600px
 .header-search
   display: inline-block
   width: 300px
@@ -417,13 +443,13 @@ label.chat-count
   -moz-box-sizing: border-box
   z-index: 100
   width: 100%
-  min-height: 64px
+  min-height: 49px
   text-shadow: 0 1px 0 #fff
   
   box-shadow: 0 1px 3px rgba(0,0,0,.1)
 .chat-body
   min-height: 400px
-  padding-top: 63px
+  padding-top: 49px
   position: relative
   overflow: hidden
 .chat-content-area
@@ -439,7 +465,6 @@ label.chat-count
 .chat-group:last-child
   border-bottom: 0
 .chat-group.ls
-  margin: 5px 0 5px 0
   padding: 3px
 .chat-response-wrapper
   border-top: 1px solid #e1e1e1
@@ -481,6 +506,10 @@ label.chat-count
     font:
       style: italic
       size: 12px
+  &.o_4
+    text-align: left
+    padding: 5px  
+    color: #999  
 .chat-status-inner.red p
   color: #e56e6e
 
@@ -496,6 +525,10 @@ label.chat-count
     padding-top: 15px
   padding: 10px
   border-bottom: 1px solid #e1e1e1
+  &._c8
+    margin: 15px 0 5px 0
+    padding: 0
+    border: none
   .ui-button-group
     margin-top: -5px
 .search-wrapper
@@ -635,7 +668,7 @@ button.back
 .visitor-more-info
   display: none
   margin-top: 10px
-  padding: 10px
+  padding: 5px
   border: 1px dashed #d1d1d1
   background: #fff
 
@@ -643,7 +676,9 @@ button.back
   li
     display: inline-block
     text-shadow: 0 1px 0 #fff
-    margin-right: 30px
+    word-space: nowrap
+    
+    margin: 5px 30px 5px 5px
     &:last-child
       margin-right: 0
     .info-label
@@ -661,7 +696,10 @@ button.back
 .status.offline
   @include status(#cdcdcd)
 
-
+.label
+  line-height: 27px
+  color: #333
+  display: inline-block
 .field-wrapper
   margin: 10px 0
   fieldset
@@ -682,18 +720,23 @@ button.back
   width: 560px
   margin-left: -280px
   background-color: #fff
+  border-radius: 5px
   outline: none
-  &.hide
-    display: none
   .modal-header, .modal-body, .modal-footer
     padding: 10px
   .modal-header
-    background: #f1f1f1
-    text-shadow: 0 1px 0 #fff
+    background: #5386BB
+    color: #fff
+    text-shadow: 0 -1px 0 rgba(0,0,0,.15)
+    border-top-left-radius: 5px
+    border-top-right-radius: 5px
     h2
+      color: #fff
       font-size: 16px
   .modal-footer
     border-top: 1px solid #e1e1e1
+    border-bottom-left-radius: 5px
+    border-bottom-right-radius: 5px
   .label-container  
     min-width: 150px
     vertical-align: top
@@ -713,14 +756,20 @@ button.back
   background-color: black
   opacity: .6
 
+.modal-loader-wrapper
+  position: fixed
+  left: 50%
+  top: 30%
+  margin-left: -15px
+  z-index: 9999
 
+.hide
+  display: none
 
 /* NEW TABLELESS LAYOUT
 .table-wrapper
   width: 100%
-  border-bottom: 1px solid #e1e1e1
   
-
 .table-row
   display: block
   padding: 5px 15px
@@ -769,16 +818,27 @@ button.back
     width: 80px
   &.message-cell
     width: 30.22%
+  &.message-trigger-cell
+    width: 43.33%
+  &.general-cell
+    width: 30%
+  &.action-cell
+    width: 150px
+    text-align: right
 
   .td-content
     vertical-align: top
     line-height: 20px
+    span
+      vertical-align: middle
 .xT
   display: inline-block
+
 .table-head-label
   font-size: 14px
   padding: 10px
 .table-head-collapsible
   cursor: pointer
-
+.table-footer
+  padding: 10px
       

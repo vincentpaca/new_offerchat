@@ -7,6 +7,7 @@
     = csrf_meta_tags
 
 
+
   %body
     .dashboard.group
       .dashboard-header.group
@@ -42,6 +43,8 @@
                   %label.chat-count.nu 10
                 %a.nav
                   History
+                %a.nav
+                  Chat settings
             .section-nav
               %a.nav-parent
                 Buzzednow.com
@@ -79,6 +82,7 @@
                 Quick Seo Results 
         .dashboard-content.group
           = yield
+    
     .modal.hide#addResponseModal
       .modal-header
         %button.close
@@ -100,4 +104,53 @@
         %button.btn.action.small Create response
         %button.btn.small Cancel
 
-    .modal-backdrop.hide
+    .modal#addTriggerModal
+      .modal-header
+        %button.close
+        %h2 Create a trigger
+      .modal-body
+        .form-wrapper
+          .field-wrapper
+            %fieldset
+              .label-container
+                %label Condition
+              .input-container
+                .dropdown-group
+                  %button.btn.small
+                    Select a condition 
+                    %span.caret
+                  %ul.dropdown-menu{ :style => 'display: none' }
+                    %li
+                      = link_to 'Reach a destination URL','#'
+                    %li
+                      = link_to 'Visitor time on site','#'
+                    %li
+                      = link_to 'Visitor time on url','#'
+            %fieldset
+              .label-container
+                %label Value
+              .input-container
+                / %input.full{ :type => 'text', :placeholder => 'http://' }
+                %input.full{ :type => 'text', :placeholder => '10', :style => 'width: 40px' }
+                secs
+            %fieldset
+              .label-container
+                %label Message to visitor
+              .input-container
+                %textarea.full
+      .modal-footer
+        %button.btn.action.small Create trigger
+        %button.btn.small Cancel
+
+    .modal-backdrop
+
+    .modal-loader-wrapper.hide
+      #floatingCirclesG
+        #frotateG_01.f_circleG
+        #frotateG_02.f_circleG
+        #frotateG_03.f_circleG
+        #frotateG_04.f_circleG
+        #frotateG_05.f_circleG
+        #frotateG_06.f_circleG
+        #frotateG_07.f_circleG
+        #frotateG_08.f_circleG

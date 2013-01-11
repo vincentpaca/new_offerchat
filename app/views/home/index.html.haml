@@ -10,30 +10,27 @@
               %i.icon.map-pin
               Cebu, Philippines
           %li
-            %span.visitor-browser
+            %span.visitor-browser{ :title => 'Mozilla Firefox 4.0' }
               %i.icon.browser-mozilla
-              Mozilla Firefox 4.0
+              
           %li
-            %span.visitor-system
+            %span.visitor-system{ :title => 'Linux' }
               %i.icon.system-linux
-              Linux
           %li
-            %button.btn.small#more-info{ :value => 'more info', :style => 'width:80px' }
+            %a#more-info{ :style => 'display: inline-block; width: 70px;  text-align: center;' }
               more info 
+          %li
             .dropdown-group
               %button.btn.small
                 Actions
                 %span.caret
-              %ul.dropdown-menu{ :style => 'display: block' } 
+              %ul.dropdown-menu
                 %li
                   = link_to 'Transfer','#'
                 %li
                   = link_to 'End chat','#'
-        .visitor-current-status 
-          viewing
-          = link_to 'http://www.example.com/auth/facebook?origin=/items/1', '#' 
-      .visitor-more-info
         
+      .visitor-more-info        
         %ul._y5
           %li
             .info-label From 
@@ -44,6 +41,10 @@
           %li
             .info-label IP Address
             .info-value 192.168.14.34
+          %li
+            .info-label System/Browser
+            .info-value Windows 8/Mozilla Firefox 17.1
+          
 
     .chat-body
       .chat-content-area
@@ -68,6 +69,12 @@
                 %span._uB Jonathan (You)
             .chat-message-1
               %p The second, older syntax is known as the indented syntax (or just “.sass”). Inspired by Haml’s terseness, it’s intended for people who prefer conciseness over similarity to CSS. Instead of brackets and semicolons
+          %li.chat-group.ls.group
+            .chat-status-inner.o_4
+              %em 
+                visitor-y43fddp visits
+                =link_to 'https://mail.google.com/mail/u/0/#inbox','#'
+              
           %li.chat-group.group
             %div
               %strong 

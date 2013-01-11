@@ -31,16 +31,16 @@ $(".close").click(function(){
     
 $(function(){
   $('#more-info').click(function() {
-    $(".visitor-more-info").slideToggle('fast');
-  if($(this).val() == "more info") {
-    $(this).html("less info");
-    $(this).val('less info');
+    console.log($('.visitor-more-info').is(':visible'));
 
+  if($('.visitor-more-info').is(':visible') == true ) {
+    $(this).text("more info");
+    console.log(this);
   }
   else {
-    $(this).html("more info");
-    $(this).val("more info");
+    $(this).text("hide info");
   }
+  $(".visitor-more-info").slideToggle('fast');
 
 });
 });
