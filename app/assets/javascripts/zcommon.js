@@ -76,5 +76,10 @@ $('.table-head-collapsible').click(function(){
   }, function(){
       $(this).find('.chat-options').addClass('hide');
   });
+
+  $(".swatch-selector a").click(function(){
+    $(".swatch-selector a").removeClass('selected');
+    $(this).addClass('selected');
+  });
 	
 });
