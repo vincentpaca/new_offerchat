@@ -129,6 +129,8 @@ body
     border-bottom: 1px solid #e1e1e1
     padding: 10px 0
     margin: 0
+
+
 .container
   @include container(10px)
 
@@ -170,7 +172,7 @@ button
   display: inline-block
   color: #565656
   cursor: pointer
-  margin-bottom: 0
+  margin: 0 0 0 0
   text-align: center
   background: #f7f7f7
   text-shadow: 0 1px 0 #fff
@@ -260,7 +262,7 @@ button
   background-color: #fff
   border: 1px solid #d1d1d1
   &.wS
-    min-width: 90px
+    min-width: 120px
 
 .dropdown-menu > li
   margin: 0 0 0 0 !important
@@ -886,8 +888,18 @@ button.back
   width: 248px
   height: 180px
   overflow: hidden
-  border: 1px solid #ccc
-
+  border: 3px solid transparent
+  opacity: .7
+  -webkit-transition: all .1s ease-in-out
+  -moz-transition: all .1s ease-in-out
+  -o-transition: all .1s ease-in-out
+  transition: all .1s ease-in-out
+  &:hover
+    opacity: 1
+  &.selected
+    @extend :hover
+    border-color: #3ea4e5
+    
 .offerchat-widget-wrapper
   .offerchat-widget-head
     min-height: 14px
@@ -903,6 +915,10 @@ button.back
     left: 20px
   &.offerchat-position-right
     right: 20px
+
+  &.oF
+    height: 180px
+    overflow: hidden
 
 .offerchat-block
   padding: 5px
@@ -981,7 +997,8 @@ button.back
   margin: 0 0 5px 0
   input[type=text].offerchat-input
     height: 28px
-
+.offerchat-rating-container
+  margin: 5px 0 0 0
 input[type=text].offerchat-input
   width: 100%
   box-sizing: border-box
@@ -1004,6 +1021,8 @@ textarea.offerchat-input
   display: block
   resize: none
   height: 45px
+  min-height: 45px
+  max-height: 45px
 
 .offerchat-response-wrapper
   padding: 5px 5px 0 5px
@@ -1081,3 +1100,4 @@ a.offerchat-logo-link
 
 
 /* END WIDGET PREVIEW
+
