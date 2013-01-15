@@ -94,27 +94,6 @@
         %button.btn.action.small End chat
         %button.btn.small Cancel
 
-    .modal.hide#addResponseModal
-      .modal-header
-        %button.close
-        %h2 Add a response
-      .modal-body
-        .form-wrapper
-          .field-wrapper
-            %fieldset
-              .label-container
-                %label Command
-              .input-container
-                %input{ :type => 'text' }
-            %fieldset
-              .label-container
-                %label Message
-              .input-container
-                %textarea.full
-      .modal-footer
-        %button.btn.action.small Create response
-        %button.btn.small Cancel
-
     .modal.hide#addTriggerModal
       .modal-header
         %button.close
@@ -162,6 +141,30 @@
                 %textarea.full
       .modal-footer
         %button.btn.action.small Create trigger
+        %button.btn.small Cancel
+
+    .modal.hide#addResponseModal
+      .modal-header
+        %button.close
+        %h2 Create a canned response
+      .modal-body
+        %p Use canned responses to respond quickly with standard phrases.
+        .form-wrapper
+          .field-wrapper
+           
+            %fieldset
+              .label-container
+                %label Shortcut
+              .input-container
+                %input.full{ :type => 'text', :placeholder => 'Canned response name' }
+               
+            %fieldset
+              .label-container
+                %label Message
+              .input-container
+                %textarea.full
+      .modal-footer
+        %button.btn.action.small Create canned response
         %button.btn.small Cancel
 
     .modal-backdrop.hide

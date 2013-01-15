@@ -1,245 +1,86 @@
 .page-header.group
   .header-search.right
     %span.search-input.group
-      %input{ :type => 'text', :placeholder => 'Search a conversation' }
+      %input{ :type => 'text', :placeholder => 'Search a Canned Response' }
       %button{ :type => 'submit' }
-  %h3 Canned Responses
+  %h3 Chat Settings
+  .module-header._c8
+    .ui-button-group
+      %button.btn Notifications
+      %button.btn Triggers
+      %button.btn.active Responses
+      %button.btn Timeout
+      %button.btn Chat limits
 
-.table-wrapper
-  .table-row.table-head.group
-    .td-container.status-cell
-      .td-content
-        &nbsp;
-    .td-container.visitor-cell
-      .td-content
-        Visitor
-    .td-container.time-cell
-      .td-content
-        Time spent
-    .td-container.message-cell
-      .td-content
-        Message
-    .td-container.location-cell
-      .td-content
-        Location
-    .td-container.system-info-cell
-      .td-content
-        Browser / System
+.page-body
+  %p
+    Canned response allow you to respond quickly with standard phrases, such as greetings or answers to frequently asked questions.
+    %button.btn.small.action#addResponseBtn
+      + Create a canned response
 
-  .table-row.table-body.group.trow-unread
-    .td-container.status-cell
-      .td-content
-        %span.status.online
-    .td-container.visitor-cell
-      .td-content
-        visitor-4fdf321
-    .td-container.time-cell
-      .td-content
-        6 mins
-    .td-container.message-cell
-      .td-content
-        %span.msg-count-tag 3
-        Lorem ipsum dolor sitt, consetur adiping elitLorem ipsum dolor sitt, consetur adiping elit
-    .td-container.location-cell
-      .td-content
-        %i.icon.map-pin
-        The United Kingdom Of Great Britain And Northern Ireland
-    .td-container.system-info-cell
-      .td-content
-        .xT{ :title => 'Mozilla Firefox 4.0' }
-          %i.icon.browser-mozilla
-        .xT{ :title => 'Windows 7' }
-          %i.icon.system-windows
+  .block
+    .table-wrapper
+      .table-row-wrapper.table-row-selectable
 
-  .table-row.table-body.group
-    .td-container.status-cell
-      .td-content
-        %span.status.online
-    .td-container.visitor-cell
-      .td-content
-        visitor-4fdf321
-    .td-container.time-cell
-      .td-content
-        3 mins
-    .td-container.message-cell
-      .td-content
-        %span.msg-count-tag 3
-        Lorem ipsum dolor sitt, consetur adiping elit
-    .td-container.location-cell
-      .td-content
-        %i.icon.map-pin
-        Nueva Ecija, Philippines
-    .td-container.system-info-cell
-      .td-content
-        .xT{ :title => 'Mozilla Firefox 4.0' }
-          %i.icon.browser-mozilla
-        .xT{ :title => 'Windows 7' }
-          %i.icon.system-windows
+        / No chat triggers are added yet
+        .table-row.table-head.group
+          .td-container.status-cell
+            .td-content
+              %input{ :type => 'checkbox' }
+          .td-container.general-cell
+            .td-content
+              Shortcut
+          .td-container.general-cell
+            .td-content
+              Message
+          .td-container.action-cell
+            .td-content
+              &nbsp;        
+        %div.scrollable
+          .table-row.table-body.group
+            .td-container.status-cell
+              .td-content
+                %span
+                  %input{ :type => 'checkbox' }
+            .td-container.general-cell
+              .td-content
+                %span
+                  \/test
+            .td-container.message-trigger-cell
+              .td-content
+                %span
+                  Test
 
-  .table-row.table-body.group
-    .td-container.status-cell
-      .td-content
-        %span.status.online
-    .td-container.visitor-cell
-      .td-content
-        visitor-4fdf321
-    .td-container.time-cell
-      .td-content
-        42 mins
-    .td-container.message-cell
-      .td-content
-        &nbsp;
-    .td-container.location-cell
-      .td-content
-        %i.icon.map-pin
-        Nueva Ecija, Philippines
-    .td-container.system-info-cell
-      .td-content
-        .xT{ :title => 'Mozilla Firefox 4.0' }
-          %i.icon.browser-mozilla
-        .xT{ :title => 'Windows 7' }
-          %i.icon.system-windows
+          .table-row.table-body.group
+            .td-container.status-cell
+              .td-content
+                %span
+                  %input{ :type => 'checkbox' }
+            .td-container.general-cell
+              .td-content
+                %span
+                  \/opening
+            .td-container.message-trigger-cell
+              .td-content
+                %span
+                  Hi, how  can we help you today?
 
-  .table-row.table-body.group
-    .td-container.status-cell
-      .td-content
-        %span.status.online
-    .td-container.visitor-cell
-      .td-content
-        visitor-4fdf321
-    .td-container.time-cell
-      .td-content
-        1 hr 32 mins
-    .td-container.message-cell
-      .td-content
-        &nbsp;
-    .td-container.location-cell
-      .td-content
-        %i.icon.map-pin
-        United Kingdom
-    .td-container.system-info-cell
-      .td-content
-        .xT{ :title => 'Google Chrome' }
-          %i.icon.browser-chrome
-        .xT{ :title => 'Apple' }
-          %i.icon.system-mac
-    
+          .table-row.table-body.group
+            .td-container.status-cell
+              .td-content
+                %span
+                  %input{ :type => 'checkbox' }
+            .td-container.general-cell
+              .td-content
+                %span
+                  \/closing
+            .td-container.message-trigger-cell
+              .td-content
+                %span
+                  Bye.
 
-  / %table.table.table-hover.chat-list.active-visitors-list
-  /   %thead.small
-  /     %tr
-  /       %th._uY
-  /         &nbsp;
-  /       %th
-  /         Visitor
-  /       %th
-  /         Message
-  /       %th
-  /         Location
-  /       %th
-  /         browser/system
-  /       %th
-  /         Time spent
-  /   %tbody
-  /     %tr
-  /       %td._uY
-  /         %span.status.online
-  /       %td
-  /         .xT
-  /           visitor-4fdf321
-  /       %td
-  /         .xT
-  /           %span.msg-count-tag 3
-  /           Lorem ipsum dolor sitt, consetur adiping elit...
-  /       %td
-  /         .xT
-  /           %i.icon.map-pin
-  /           Nueva Ecija, Philippines
-  /       %td
-  /         .xT
-  /           %i.icon.browser-mozilla
-  /         .xT
-  /           %i.icon.system-windows
-  /       %td
-  /         6 mins
-  /     %tr
-  /       %td._uY
-  /         %span.status.online
-  /       %td
-  /         visitor-4fdf321
-  /       %td
-  /         %span.msg-count-tag 1
-  /         How are you?
-  /       %td
-  /         %i.icon.map-pin
-  /         Ching wei, People's Republic of China
-  /       %td
-  /         .xT
-  /           %i.icon.browser-mozilla
-  /         .xT
-  /           %i.icon.system-windows
-  /       %td
-  /         6 mins
-  / %table.table.table-hover.chat-list.visitors-list
-  /   %thead.small
-  /     %tr
-  /       %th._uY
-  /         &nbsp;
-  /       %th
-  /         Visitor
-  /       %th
-  /         Message
-  /       %th
-  /         Location
-  /       %th
-  /         browser/system
-  /       %th
-  /         Time spent
-  /   %tbody
-  /     %tr
-  /       %td._uY
-  /         %span.status.online
-  /       %td
-  /         .xT
-  /           visitor-4fdf321
-  /       %td
-  /         .xT
-  /           %span.msg-count-tag 3
-  /           Lorem ipsum dolor sitt, consetur adiping elit...
-  /       %td
-  /         .xT
-  /           %i.icon.map-pin
-  /           Nueva Ecija, Philippines
-  /       %td
-  /         .xT
-  /           %i.icon.browser-mozilla
-  /         .xT
-  /           %i.icon.system-windows
-  /       %td
-  /         6 mins
-  /     %tr
-  /       %td._uY
-  /         %span.status.online
-  /       %td
-  /         visitor-4fdf321
-  /       %td
-  /         %span.msg-count-tag 1
-  /         How are you?
-  /       %td
-  /         %i.icon.map-pin
-  /         Ching wei, People's Republic of China
-  /       %td
-  /         .xT
-  /           %i.icon.browser-mozilla
-  /         .xT
-  /           %i.icon.system-windows
-  /       %td
-  /         6 mins
-
-    
-
-    
-
-
-          
-
+        .table-footer.bordered
+          %button.btn.small
+            Delete selected
+        
+            

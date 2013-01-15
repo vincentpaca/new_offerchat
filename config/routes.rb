@@ -4,6 +4,7 @@ NewOfferchat::Application.routes.draw do
   get :chats, :controller => :home, :action => :chats
   get :settings, :controller => :home, :action => :settings
   get :triggers, :controller => :home, :action => :triggers
+  get :responses, :controller => :home, :action => :responses
   get :widget_settings, :controller => :home, :action => :widget_settings
   get :widget_settings_post_chat, :controller => :home, :action => :widget_settings_post_chat
 
