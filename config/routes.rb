@@ -6,6 +6,7 @@ NewOfferchat::Application.routes.draw do
   get :triggers, :controller => :home, :action => :triggers
   get :widget_settings, :controller => :home, :action => :widget_settings
   get :widget_settings_post_chat, :controller => :home, :action => :widget_settings_post_chat
+  get :widget_settings_offline_form, :controller => :home, :action => :widget_settings_offline_form
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
