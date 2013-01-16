@@ -29,6 +29,10 @@ $("#addTriggerBtn").click(function(){
   $("#addTriggerModal").removeClass('hide');
   $(".modal-backdrop").removeClass('hide');
 });
+$("#sendDeveloperBtn").click(function(){
+  $("#sendDeveloperModal").removeClass('hide');
+  $(".modal-backdrop").removeClass('hide');
+});
 $(".close").click(function(){
   $(".modal,.modal-backdrop").addClass('hide');
 });
