@@ -1,0 +1,85 @@
+.page-header.group
+  %h3 Widget Settings
+  .module-header._c8
+    .ui-button-group
+      %button.btn Style and Color
+      %button.btn Post chat survey
+      %button.btn Offline form
+      %button.btn Pre chat form
+      %button.btn.active Install widget
+
+.scrollable
+  .page-body
+   
+    %div
+      .group._f0
+        %h3 Embed OfferChat Live Chat Widget
+        .block.tr.group.settings-section        
+          %p
+            Copy the following script and insert it into your website's HTML source code between the <head> tags.
+            This code must be inserted into every page on which you wish to display the Zopim chat widget.
+
+          %textarea.precoded#widgetCode{ :type => 'text', :style => 'width: 100%; height: 250px', :readonly => 'readonly' }
+            <!--Start of Zopim Live Chat Script-->
+            <script type="text/javascript">
+            window.$zopim||(function(d,s){var z=$zopim=function(c){z._.push(c)},$=z.s=
+            d.createElement(s),e=d.getElementsByTagName(s)[0];z.set=function(o){z.set.
+            _.push(o)};z._=[];z.set._=[];$.async=!0;$.setAttribute('charset','utf-8');
+            $.src='//cdn.zopim.com/?nIh2wDMn6IKJrpVHf1GNCrCIhVc8ZKpN';z.t=+new Date;$.
+            type='text/javascript';e.parentNode.insertBefore($,e)})(document,'script');
+            </script>
+            <!--End of Zopim Live Chat Script-->
+        .block.group.settings-section
+          %h3
+            Website information
+          .block.tr.group.settings-section       
+            .label
+              Website name
+            .input-container
+              %input{ :type => 'text', :value => 'BuyRealMarketing', :style => 'width: 200px' }   
+
+          .block.tr.group.settings-section
+            .label
+              Website URL
+            .input-container
+              %input{ :type => 'text', :value => 'http://www.buyrealmarketing.com', :style => 'width: 200px' }
+
+          .block.group.settings-section
+            .label
+            %button.btn.small.action
+              Verify Site
+
+
+      .page-sidebar       
+        .block.tr
+          %h3
+            Need Help? 
+          %p
+            Email the code to your webmaster
+          %button.btn.small
+            Send to developer
+        .block.tr
+          %h3 Where to insert the code?
+          %pre.small
+            &lt;html&gt;
+            %br
+            &nbsp;
+            &lt;head&gt;
+            %br
+            &nbsp;&nbsp;
+            \...your website's head content here
+            &nbsp;&nbsp;&nbsp;
+            paste your offerchat code here
+
+
+              
+        
+
+
+
+
+
+
+
+      
+    

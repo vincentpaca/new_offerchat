@@ -7,43 +7,43 @@
       %button.btn Offline form
       %button.btn Pre chat form
       %button.btn Embed widget
+.scrollable
+  .page-body._tL
+    Access advanced customization options with a live preview of the widget on your website.
 
-.page-body._tL
-  Access advanced customization options with a live preview of the widget on your website.
+    .block
 
-  .block
+      .block.tr.group.settings-section
+        .label
+          Display Post Chat survey
+        .ui-button-group.right
+          %button.btn.active Enabled
+          %button.btn Disabled
+      
 
-    .block.tr.group.settings-section
-      .label
-        Display Post Chat survey
-      .ui-button-group.right
-        %button.btn.active Enabled
-        %button.btn Disabled
-    
-
-    .block.tr.group.settings-section
- 
-      .widget-preview-wrapper.block          
-        .offerchat-widget-wrapper.offerchat-theme-goldenbell
-          .offerchat-widget-head.offerchat-block
-            .offerchat-minimize-control
-            Chat with me, I'm here to help
-          .offerchat-inner-wrap{ :style => 'display: block;' }
-            .offerchat-block
-              Please take a moment to rate this chat session
-              .offerchat-field-wrap.group
-                .offerchat-rating-container
-                  %a.offerchat-rate.offerchat-rate-up.active
-                    .offerchat-rate-up-icon 
-                    Good
-                  %a.offerchat-rate.offerchat-rate-down 
-                    .offerchat-rate-down-icon
-                    Bad
-              .offerchat-field-wrap{ :style => 'margin-top: 10px' }
-                Send your comments
-                %textarea.offerchat-input{ :placeholder => '' } 
-              .offerchat-field-wrap
-                %input.offerchat-submit-form{ :type => 'submit', :value => 'Send feedback' }
+      .block.tr.group.settings-section
+   
+        .widget-preview-wrapper.block          
+          .offerchat-widget-wrapper.offerchat-theme-goldenbell
+            .offerchat-widget-head.offerchat-block
+              .offerchat-minimize-control
+              Chat with me, I'm here to help
+            .offerchat-inner-wrap{ :style => 'display: block;' }
+              .offerchat-block
+                Please take a moment to rate this chat session
+                .offerchat-field-wrap.group
+                  .offerchat-rating-container
+                    %a.offerchat-rate.offerchat-rate-up.active
+                      .offerchat-rate-up-icon 
+                      Good
+                    %a.offerchat-rate.offerchat-rate-down 
+                      .offerchat-rate-down-icon
+                      Bad
+                .offerchat-field-wrap{ :style => 'margin-top: 10px' }
+                  Send your comments
+                  %textarea.offerchat-input{ :placeholder => '' } 
+                .offerchat-field-wrap
+                  %input.offerchat-submit-form{ :type => 'submit', :value => 'Send feedback' }
 
 
               
