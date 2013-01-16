@@ -1,0 +1,42 @@
+.page-header.group
+  .header-search.right
+    %span.search-input.group
+      %input{ :type => 'text', :placeholder => 'Search a Canned Response' }
+      %button{ :type => 'submit' }
+  %h3 Chat Settings
+  .module-header._c8
+    .ui-button-group
+      %button.btn Notifications
+      %button.btn Triggers
+      %button.btn Responses
+      %button.btn.active Timeout
+      %button.btn Chat limits
+
+.page-body._tL
+  Display message after a period of inactivity.
+  .block
+    %h3 Chat Timeout
+    .block.tr.group.settings-section
+      .ui-button-group
+        %button.btn.active Enabled
+        %button.btn Disabled
+
+    .block.tr.group.settings-section
+      .label
+        Inactivity Period
+      .input-container
+        %input{ :type => 'text', :value => '0', :style => 'width: 50px' }
+        seconds
+
+    .block.tr.group.settings-section
+      .label.vT
+        Offline message
+      .input-container
+        %textarea{ :type => 'text', :style => 'width: 350px; height: 60px' }
+          We apologize for keeping you waiting. Our operators are busy at the moment, please leave us a message with your email address and we'll get back to you shortly.
+        %div
+
+    .block.tr.group.settings-section
+      .label
+      %button.btn.small.action
+        Save changes
