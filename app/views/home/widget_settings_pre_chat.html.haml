@@ -1,0 +1,76 @@
+.page-header.group
+  %h3 Widget Settings
+  .module-header._c8
+    .ui-button-group
+      %button.btn Style and Color
+      %button.btn Post chat survey
+      %button.btn Offline form
+      %button.btn.active Pre chat form
+      %button.btn Embed widget
+
+.scrollable
+  .page-body
+    Access advanced customization options with a live preview of the widget on your website.
+    %div
+      .block.group{ :style => ' display: inline-block; width: 560px ' }
+     
+        .block.tr.group.settings-section
+          .label
+            Enable users to enter their email and name before starting the chat
+          .ui-button-group.right
+            %button.btn.active Enabled
+            %button.btn Disabled
+
+        .block.tr.group.settings-section
+          .label
+            Widget Label
+          .input-container
+            %input{ :type => 'text', :value => 'We\'re currently offline', :style => 'width: 200px' }
+            6 chars left
+        .block.tr.group.settings-section
+          .label.vT
+            Offline message
+          .input-container
+            %textarea{ :type => 'text', :style => 'width: 350px; height: 60px' }
+              We are currently offline, please leave a message and we'll get back to you within 24 hours
+            %div
+              6 chars left
+
+        .block.tr.group.settings-section
+          .label
+            Forward to email
+          .input-container
+            %input{ :type => 'text', :value => 'me@example.com', :style => 'width: 200px' }   
+
+        .block.group.settings-section
+          .label
+          %button.btn.small.action
+            Save changes
+
+
+      .widget-preview-wrapper{ :style => 'display: inline-block; vertical-align: top; position: relative; top: 70px; left: 20px' }          
+        .offerchat-widget-wrapper.offerchat-theme-goldenbell
+          .offerchat-widget-head.offerchat-block
+            .offerchat-minimize-control
+            We're currently offline
+          .offerchat-inner-wrap{ :style => 'display: block;' }
+            .offerchat-offlin-message.offerchat-block
+              We are currently offline, please leave a message and we'll get back to you within 24 hours
+            .offerchat-block
+              .offerchat-field-wrap
+                %input.offerchat-input{ :placeholder => 'Email', :readonly => 'readonly' } 
+              .offerchat-field-wrap                
+                %textarea.offerchat-input{ :placeholder => 'Message', :readonly => 'readonly' } 
+              .offerchat-field-wrap
+                %input.offerchat-submit-form{ :type => 'submit', :value => 'Send' }
+                
+        
+
+
+
+
+
+
+
+      
+    

@@ -69,7 +69,9 @@ $('.table-head-collapsible').click(function(){
     }
   });
   
-
+$("#widgetCode").click(function() {
+   $(this).select();
+});
 
   $(".chat-group").hover(function(){
     $(this).find('.chat-options').removeClass('hide');
