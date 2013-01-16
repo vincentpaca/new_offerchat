@@ -13,13 +13,21 @@
       %button.btn Chat limits
 
 .page-body._tL
-  Display message after a period of inactivity.
+  Access advanced customization options with a live preview of the widget on your website.
   .block
-    %h3 Chat Timeout
     .block.tr.group.settings-section
-      .ui-button-group
+      .label
+        Display message after a period of inactivity
+      .ui-button-group.right
         %button.btn.active Enabled
         %button.btn Disabled
+
+    .block.tr.group.settings-section
+      .label
+        Inactivity Period
+      .input-container
+        %input{ :type => 'text', :value => '0', :style => 'width: 50px' }
+        seconds
 
     .block.tr.group.settings-section
       .label
@@ -36,7 +44,7 @@
           We apologize for keeping you waiting. Our operators are busy at the moment, please leave us a message with your email address and we'll get back to you shortly.
         %div
 
-    .block.tr.group.settings-section
+    .block.group.settings-section
       .label
       %button.btn.small.action
         Save changes
