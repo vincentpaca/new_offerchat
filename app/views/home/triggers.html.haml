@@ -1,4 +1,8 @@
 .page-header.group
+  .header-search.right
+    %span.search-input.group
+      %input{ :type => 'text', :placeholder => 'Search a Chat Trigger' }
+      %button{ :type => 'submit' }
   %h3 Chat Settings
   .module-header._c8
     .ui-button-group
@@ -13,231 +17,230 @@
     Chat Triggers help you send chat invites / custom messages to pre-qualified leads
     %button.btn.small.action#addTriggerBtn
       + Create a trigger
-  .block
-    .table-wrapper
-      .table-row-wrapper.table-row-selectable
+%div
+  .table-wrapper
+    .table-row-wrapper.table-row-selectable
 
-        / No chat triggers are added yet
-        .table-row.table-head.group
+      / No chat triggers are added yet
+      .table-row.table-head.group
+        .td-container.status-cell
+          .td-content
+            %input{ :type => 'checkbox' }
+        .td-container.general-cell
+          .td-content
+            Trigger Condition
+        .td-container.general-cell
+          .td-content
+            Message
+        .td-container.action-cell
+          .td-content
+            &nbsp;        
+      %div.scrollable
+        .table-row.table-body.group
           .td-container.status-cell
             .td-content
-              %input{ :type => 'checkbox' }
+              %span
+                %input{ :type => 'checkbox' }
           .td-container.general-cell
             .td-content
-              Trigger Condition
-          .td-container.general-cell
+              %span
+                visits http://sociaty6.com/product1.html
+          .td-container.message-trigger-cell
             .td-content
-              Message
+              %span
+                We apologize for keeping you waiting. Our operators are busy at the moment, please leave us a message with your email address and we'll get back to you shortly.
           .td-container.action-cell
             .td-content
-              &nbsp;        
-        %div.scrollable
-          .table-row.table-body.group
-            .td-container.status-cell
-              .td-content
-                %span
-                  %input{ :type => 'checkbox' }
-            .td-container.general-cell
-              .td-content
-                %span
-                  visits http://sociaty6.com/product1.html
-            .td-container.message-trigger-cell
-              .td-content
-                %span
-                  We apologize for keeping you waiting. Our operators are busy at the moment, please leave us a message with your email address and we'll get back to you shortly.
-            .td-container.action-cell
-              .td-content
-                .ui-button-group
-                  %button.btn.active Enabled
-                  %button.btn Disabled
+              .ui-button-group
+                %button.btn.active Enabled
+                %button.btn Disabled
 
-          .table-row.table-body.group
-            .td-container.status-cell
-              .td-content
-                %span
-                  %input{ :type => 'checkbox' }
-            .td-container.general-cell
-              .td-content
-                %span
-                  visitor spends 90 sec on site
-            .td-container.message-trigger-cell
-              .td-content
-                %span
-                  We apologize for keeping you waiting. Our operators are busy at the moment, please leave us a message with your email address and we'll get back to you shortly.
-            .td-container.action-cell
-              .td-content
-                .ui-button-group
-                  %button.btn Enabled
-                  %button.btn.active Disabled
+        .table-row.table-body.group
+          .td-container.status-cell
+            .td-content
+              %span
+                %input{ :type => 'checkbox' }
+          .td-container.general-cell
+            .td-content
+              %span
+                visitor spends 90 sec on site
+          .td-container.message-trigger-cell
+            .td-content
+              %span
+                We apologize for keeping you waiting. Our operators are busy at the moment, please leave us a message with your email address and we'll get back to you shortly.
+          .td-container.action-cell
+            .td-content
+              .ui-button-group
+                %button.btn Enabled
+                %button.btn.active Disabled
 
-          .table-row.table-body.group
-            .td-container.status-cell
-              .td-content
-                %span
-                  %input{ :type => 'checkbox' }
-            .td-container.general-cell
-              .td-content
-                %span
-                  visitor spends 30 sec on http://society6.com/checkout
-            .td-container.message-trigger-cell
-              .td-content
-                %span
-                  We apologize for keeping you waiting. Our operators are busy at the moment, please leave us a message with your email address and we'll get back to you shortly.
-            .td-container.action-cell
-              .td-content
-                .ui-button-group
-                  %button.btn Enabled
-                  %button.btn.active Disabled
-          .table-row.table-body.group
-            .td-container.status-cell
-              .td-content
-                %span
-                  %input{ :type => 'checkbox' }
-            .td-container.general-cell
-              .td-content
-                %span
-                  visitor spends 30 sec on http://society6.com/checkout
-            .td-container.message-trigger-cell
-              .td-content
-                %span
-                  We apologize for keeping you waiting. Our operators are busy at the moment, please leave us a message with your email address and we'll get back to you shortly.
-            .td-container.action-cell
-              .td-content
-                .ui-button-group
-                  %button.btn Enabled
-                  %button.btn.active Disabled
-          .table-row.table-body.group
-            .td-container.status-cell
-              .td-content
-                %span
-                  %input{ :type => 'checkbox' }
-            .td-container.general-cell
-              .td-content
-                %span
-                  visitor spends 30 sec on http://society6.com/checkout
-            .td-container.message-trigger-cell
-              .td-content
-                %span
-                  We apologize for keeping you waiting. Our operators are busy at the moment, please leave us a message with your email address and we'll get back to you shortly.
-            .td-container.action-cell
-              .td-content
-                .ui-button-group
-                  %button.btn Enabled
-                  %button.btn.active Disabled
-          .table-row.table-body.group
-            .td-container.status-cell
-              .td-content
-                %span
-                  %input{ :type => 'checkbox' }
-            .td-container.general-cell
-              .td-content
-                %span
-                  visitor spends 30 sec on http://society6.com/checkout
-            .td-container.message-trigger-cell
-              .td-content
-                %span
-                  We apologize for keeping you waiting. Our operators are busy at the moment, please leave us a message with your email address and we'll get back to you shortly.
-            .td-container.action-cell
-              .td-content
-                .ui-button-group
-                  %button.btn Enabled
-                  %button.btn.active Disabled
-          .table-row.table-body.group
-            .td-container.status-cell
-              .td-content
-                %span
-                  %input{ :type => 'checkbox' }
-            .td-container.general-cell
-              .td-content
-                %span
-                  visitor spends 30 sec on http://society6.com/checkout
-            .td-container.message-trigger-cell
-              .td-content
-                %span
-                  We apologize for keeping you waiting. Our operators are busy at the moment, please leave us a message with your email address and we'll get back to you shortly.
-            .td-container.action-cell
-              .td-content
-                .ui-button-group
-                  %button.btn Enabled
-                  %button.btn.active Disabled
-          .table-row.table-body.group
-            .td-container.status-cell
-              .td-content
-                %span
-                  %input{ :type => 'checkbox' }
-            .td-container.general-cell
-              .td-content
-                %span
-                  visitor spends 30 sec on http://society6.com/checkout
-            .td-container.message-trigger-cell
-              .td-content
-                %span
-                  We apologize for keeping you waiting. Our operators are busy at the moment, please leave us a message with your email address and we'll get back to you shortly.
-            .td-container.action-cell
-              .td-content
-                .ui-button-group
-                  %button.btn Enabled
-                  %button.btn.active Disabled
-          .table-row.table-body.group
-            .td-container.status-cell
-              .td-content
-                %span
-                  %input{ :type => 'checkbox' }
-            .td-container.general-cell
-              .td-content
-                %span
-                  visitor spends 30 sec on http://society6.com/checkout
-            .td-container.message-trigger-cell
-              .td-content
-                %span
-                  We apologize for keeping you waiting. Our operators are busy at the moment, please leave us a message with your email address and we'll get back to you shortly.
-            .td-container.action-cell
-              .td-content
-                .ui-button-group
-                  %button.btn Enabled
-                  %button.btn.active Disabled
-          .table-row.table-body.group
-            .td-container.status-cell
-              .td-content
-                %span
-                  %input{ :type => 'checkbox' }
-            .td-container.general-cell
-              .td-content
-                %span
-                  visitor spends 30 sec on http://society6.com/checkout
-            .td-container.message-trigger-cell
-              .td-content
-                %span
-                  We apologize for keeping you waiting. Our operators are busy at the moment, please leave us a message with your email address and we'll get back to you shortly.
-            .td-container.action-cell
-              .td-content
-                .ui-button-group
-                  %button.btn Enabled
-                  %button.btn.active Disabled
-          .table-row.table-body.group
-            .td-container.status-cell
-              .td-content
-                %span
-                  %input{ :type => 'checkbox' }
-            .td-container.general-cell
-              .td-content
-                %span
-                  visitor spends 30 sec on http://society6.com/checkout
-            .td-container.message-trigger-cell
-              .td-content
-                %span
-                  We apologize for keeping you waiting. Our operators are busy at the moment, please leave us a message with your email address and we'll get back to you shortly.
-            .td-container.action-cell
-              .td-content
-                .ui-button-group
-                  %button.btn Enabled
-                  %button.btn.active Disabled
+        .table-row.table-body.group
+          .td-container.status-cell
+            .td-content
+              %span
+                %input{ :type => 'checkbox' }
+          .td-container.general-cell
+            .td-content
+              %span
+                visitor spends 30 sec on http://society6.com/checkout
+          .td-container.message-trigger-cell
+            .td-content
+              %span
+                We apologize for keeping you waiting. Our operators are busy at the moment, please leave us a message with your email address and we'll get back to you shortly.
+          .td-container.action-cell
+            .td-content
+              .ui-button-group
+                %button.btn Enabled
+                %button.btn.active Disabled
+        .table-row.table-body.group
+          .td-container.status-cell
+            .td-content
+              %span
+                %input{ :type => 'checkbox' }
+          .td-container.general-cell
+            .td-content
+              %span
+                visitor spends 30 sec on http://society6.com/checkout
+          .td-container.message-trigger-cell
+            .td-content
+              %span
+                We apologize for keeping you waiting. Our operators are busy at the moment, please leave us a message with your email address and we'll get back to you shortly.
+          .td-container.action-cell
+            .td-content
+              .ui-button-group
+                %button.btn Enabled
+                %button.btn.active Disabled
+        .table-row.table-body.group
+          .td-container.status-cell
+            .td-content
+              %span
+                %input{ :type => 'checkbox' }
+          .td-container.general-cell
+            .td-content
+              %span
+                visitor spends 30 sec on http://society6.com/checkout
+          .td-container.message-trigger-cell
+            .td-content
+              %span
+                We apologize for keeping you waiting. Our operators are busy at the moment, please leave us a message with your email address and we'll get back to you shortly.
+          .td-container.action-cell
+            .td-content
+              .ui-button-group
+                %button.btn Enabled
+                %button.btn.active Disabled
+        .table-row.table-body.group
+          .td-container.status-cell
+            .td-content
+              %span
+                %input{ :type => 'checkbox' }
+          .td-container.general-cell
+            .td-content
+              %span
+                visitor spends 30 sec on http://society6.com/checkout
+          .td-container.message-trigger-cell
+            .td-content
+              %span
+                We apologize for keeping you waiting. Our operators are busy at the moment, please leave us a message with your email address and we'll get back to you shortly.
+          .td-container.action-cell
+            .td-content
+              .ui-button-group
+                %button.btn Enabled
+                %button.btn.active Disabled
+        .table-row.table-body.group
+          .td-container.status-cell
+            .td-content
+              %span
+                %input{ :type => 'checkbox' }
+          .td-container.general-cell
+            .td-content
+              %span
+                visitor spends 30 sec on http://society6.com/checkout
+          .td-container.message-trigger-cell
+            .td-content
+              %span
+                We apologize for keeping you waiting. Our operators are busy at the moment, please leave us a message with your email address and we'll get back to you shortly.
+          .td-container.action-cell
+            .td-content
+              .ui-button-group
+                %button.btn Enabled
+                %button.btn.active Disabled
+        .table-row.table-body.group
+          .td-container.status-cell
+            .td-content
+              %span
+                %input{ :type => 'checkbox' }
+          .td-container.general-cell
+            .td-content
+              %span
+                visitor spends 30 sec on http://society6.com/checkout
+          .td-container.message-trigger-cell
+            .td-content
+              %span
+                We apologize for keeping you waiting. Our operators are busy at the moment, please leave us a message with your email address and we'll get back to you shortly.
+          .td-container.action-cell
+            .td-content
+              .ui-button-group
+                %button.btn Enabled
+                %button.btn.active Disabled
+        .table-row.table-body.group
+          .td-container.status-cell
+            .td-content
+              %span
+                %input{ :type => 'checkbox' }
+          .td-container.general-cell
+            .td-content
+              %span
+                visitor spends 30 sec on http://society6.com/checkout
+          .td-container.message-trigger-cell
+            .td-content
+              %span
+                We apologize for keeping you waiting. Our operators are busy at the moment, please leave us a message with your email address and we'll get back to you shortly.
+          .td-container.action-cell
+            .td-content
+              .ui-button-group
+                %button.btn Enabled
+                %button.btn.active Disabled
+        .table-row.table-body.group
+          .td-container.status-cell
+            .td-content
+              %span
+                %input{ :type => 'checkbox' }
+          .td-container.general-cell
+            .td-content
+              %span
+                visitor spends 30 sec on http://society6.com/checkout
+          .td-container.message-trigger-cell
+            .td-content
+              %span
+                We apologize for keeping you waiting. Our operators are busy at the moment, please leave us a message with your email address and we'll get back to you shortly.
+          .td-container.action-cell
+            .td-content
+              .ui-button-group
+                %button.btn Enabled
+                %button.btn.active Disabled
+        .table-row.table-body.group
+          .td-container.status-cell
+            .td-content
+              %span
+                %input{ :type => 'checkbox' }
+          .td-container.general-cell
+            .td-content
+              %span
+                visitor spends 30 sec on http://society6.com/checkout
+          .td-container.message-trigger-cell
+            .td-content
+              %span
+                We apologize for keeping you waiting. Our operators are busy at the moment, please leave us a message with your email address and we'll get back to you shortly.
+          .td-container.action-cell
+            .td-content
+              .ui-button-group
+                %button.btn Enabled
+                %button.btn.active Disabled
 
-        .table-footer.bordered
-          %button.btn.small
-            Delete selected
+      .table-footer
+        %button.btn.small
+          Delete selected
         
             
 
-      
-  .block.tr.group
+  
