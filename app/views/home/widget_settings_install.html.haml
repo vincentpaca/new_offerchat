@@ -12,7 +12,7 @@
   .page-body
    
     %div
-      .group{ :style => ' display: inline-block; width: 560px ' }
+      .group._f0
         %h3 Embed OfferChat Live Chat Widget
         .block.tr.group.settings-section        
           %p
@@ -50,21 +50,28 @@
               Verify Site
 
 
-      .widget-preview-wrapper{ :style => 'display: inline-block; vertical-align: top; position: relative; top: 70px; left: 20px' }          
-        .offerchat-widget-wrapper.offerchat-theme-goldenbell
-          .offerchat-widget-head.offerchat-block
-            .offerchat-minimize-control
-            We're currently offline
-          .offerchat-inner-wrap{ :style => 'display: block;' }
-            .offerchat-offlin-message.offerchat-block
-              We are currently offline, please leave a message and we'll get back to you within 24 hours
-            .offerchat-block
-              .offerchat-field-wrap
-                %input.offerchat-input{ :placeholder => 'Email', :readonly => 'readonly' } 
-              .offerchat-field-wrap                
-                %textarea.offerchat-input{ :placeholder => 'Message', :readonly => 'readonly' } 
-              .offerchat-field-wrap
-                %input.offerchat-submit-form{ :type => 'submit', :value => 'Send' }
+      .page-sidebar       
+        .block.tr
+          %h3
+            Need Help? 
+          %p
+            Email the code to your webmaster
+          %button.btn.small
+            Send to developer
+        .block.tr
+          %h3 Where to insert the code?
+          %pre.small
+            &lt;html&gt;
+            %br
+            &nbsp;
+            &lt;head&gt;
+            %br
+            &nbsp;&nbsp;
+            \...your website's head content here
+            &nbsp;&nbsp;&nbsp;
+            paste your offerchat code here
+
+
               
         
 
