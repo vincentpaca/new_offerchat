@@ -5,6 +5,7 @@ NewOfferchat::Application.routes.draw do
   get :settings, :controller => :home, :action => :settings
   get :triggers, :controller => :home, :action => :triggers
   get :responses, :controller => :home, :action => :responses
+  get :chat_timeout, :controller => :home, :action => :chat_timeout
   get :widget_settings, :controller => :home, :action => :widget_settings
   get :widget_settings_post_chat, :controller => :home, :action => :widget_settings_post_chat
   get :widget_settings_offline_form, :controller => :home, :action => :widget_settings_offline_form

@@ -14,7 +14,7 @@
 
 .page-body
   %p
-    Canned response allow you to respond quickly with standard phrases, such as greetings or answers to frequently asked questions.
+    Canned response allow you to respond quickly with standard phrases.
     %button.btn.small.action#addResponseBtn
       + Create a canned response
 
@@ -27,36 +27,33 @@
           .td-container.status-cell
             .td-content
               %input{ :type => 'checkbox' }
-          .td-container.general-cell
+          .td-container.visitor-cell
             .td-content
               Shortcut
           .td-container.general-cell
             .td-content
-              Message
-          .td-container.action-cell
-            .td-content
-              &nbsp;        
+              Message     
         %div.scrollable
           .table-row.table-body.group
             .td-container.status-cell
               .td-content
                 %span
                   %input{ :type => 'checkbox' }
-            .td-container.general-cell
+            .td-container.visitor-cell
               .td-content
                 %span
                   \/test
             .td-container.message-trigger-cell
               .td-content
                 %span
-                  Test
+                  Arcu quisque habitasse? Quam nullam nostra, hendrerit wisi ipsum vehicula hendrerit bibendum. Aliquip dolores a? Phasellus nisl inceptos aliquet harum? Aut vehicula eius elit, egestas.
 
           .table-row.table-body.group
             .td-container.status-cell
               .td-content
                 %span
                   %input{ :type => 'checkbox' }
-            .td-container.general-cell
+            .td-container.visitor-cell
               .td-content
                 %span
                   \/opening
@@ -70,7 +67,7 @@
               .td-content
                 %span
                   %input{ :type => 'checkbox' }
-            .td-container.general-cell
+            .td-container.visitor-cell
               .td-content
                 %span
                   \/closing
