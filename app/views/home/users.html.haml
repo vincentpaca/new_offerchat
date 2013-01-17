@@ -1,15 +1,16 @@
 .page-header.group
   .header-search.right
     %span.search-input.group
-      %input{ :type => 'text', :placeholder => 'Search a Chat Trigger' }
+      %input{ :type => 'text', :placeholder => 'Search user' }
       %button{ :type => 'submit' }
   %h3 Users
+
 
 .page-body
   %p
     Chat Triggers help you send chat invites / custom messages to pre-qualified leads
-    %button.btn.small.action#addTriggerBtn
-      + Create a trigger
+    %button.btn.small.action
+      + Add Users
 %div
   .table-wrapper
     .table-row-wrapper.table-row-selectable
@@ -19,6 +20,9 @@
         .td-container.status-cell
           .td-content
             %input{ :type => 'checkbox' }
+        .td-container.status-cell
+          .td-content
+            &nbsp;
         .td-container.visitor-cell
           .td-content
             Display Name
@@ -41,6 +45,9 @@
             .td-content
               %span
                 &nbsp;
+          .td-container.status-cell
+            .td-content
+              %span.status.online
           .td-container.visitor-cell
             .td-content
               %span
@@ -67,6 +74,9 @@
             .td-content
               %span
                 %input{ :type => 'checkbox' }
+          .td-container.status-cell
+            .td-content
+              %span.status.away
           .td-container.visitor-cell
             .td-content
               %span
@@ -93,6 +103,9 @@
             .td-content
               %span
                 %input{ :type => 'checkbox' }
+          .td-container.status-cell
+            .td-content
+              %span.status.offline
           .td-container.visitor-cell
             .td-content
               %span
@@ -119,6 +132,9 @@
             .td-content
               %span
                 %input{ :type => 'checkbox' }
+          .td-container.status-cell
+            .td-content
+              %span.status.online
           .td-container.visitor-cell
             .td-content
               %span
@@ -145,6 +161,9 @@
             .td-content
               %span
                 %input{ :type => 'checkbox' }
+          .td-container.status-cell
+            .td-content
+              %span.status.online
           .td-container.visitor-cell
             .td-content
               %span
@@ -166,11 +185,238 @@
               %span
                 Operator
 
+        .table-row.table-body.group
+          .td-container.status-cell
+            .td-content
+              %span
+                %input{ :type => 'checkbox' }
+          .td-container.status-cell
+            .td-content
+              %span.status.online
+          .td-container.visitor-cell
+            .td-content
+              %span
+                Ellaine
+          .td-container.action-cell
+            .td-content
+              %span
+                Ellaine
+          .td-container.action-cell
+            .td-content
+              %span
+                Figuracion
+          .td-container.large-cell
+            .td-content
+              %span
+                reinafiguracion@gmail.com
+          .td-container.action-cell
+            .td-content
+              %span
+                Administrator
+
+        .table-row.table-body.group
+          .td-container.status-cell
+            .td-content
+              %span
+                %input{ :type => 'checkbox' }
+          .td-container.status-cell
+            .td-content
+              %span.status.away
+          .td-container.visitor-cell
+            .td-content
+              %span
+                Ellaine
+          .td-container.action-cell
+            .td-content
+              %span
+                Ellaine
+          .td-container.action-cell
+            .td-content
+              %span
+                Figuracion
+          .td-container.large-cell
+            .td-content
+              %span
+                reinafiguracion@gmail.com
+          .td-container.action-cell
+            .td-content
+              %span
+                Operator
+
+        .table-row.table-body.group
+          .td-container.status-cell
+            .td-content
+              %span
+                %input{ :type => 'checkbox' }
+          .td-container.status-cell
+            .td-content
+              %span.status.online
+          .td-container.visitor-cell
+            .td-content
+              %span
+                Ellaine
+          .td-container.action-cell
+            .td-content
+              %span
+                Ellaine
+          .td-container.action-cell
+            .td-content
+              %span
+                Figuracion
+          .td-container.large-cell
+            .td-content
+              %span
+                reinafiguracion@gmail.com
+          .td-container.action-cell
+            .td-content
+              %span
+                Administrator
+
+        .table-row.table-body.group
+          .td-container.status-cell
+            .td-content
+              %span
+                %input{ :type => 'checkbox' }
+          .td-container.status-cell
+            .td-content
+              %span.status.offline
+          .td-container.visitor-cell
+            .td-content
+              %span
+                Ellaine
+          .td-container.action-cell
+            .td-content
+              %span
+                Ellaine
+          .td-container.action-cell
+            .td-content
+              %span
+                Figuracion
+          .td-container.large-cell
+            .td-content
+              %span
+                reinafiguracion@gmail.com
+          .td-container.action-cell
+            .td-content
+              %span
+                Operator
         
 
+        .table-row.table-body.group
+          .td-container.status-cell
+            .td-content
+              %span
+                %input{ :type => 'checkbox' }
+          .td-container.status-cell
+            .td-content
+              %span.status.online
+          .td-container.visitor-cell
+            .td-content
+              %span
+                Ellaine
+          .td-container.action-cell
+            .td-content
+              %span
+                Ellaine
+          .td-container.action-cell
+            .td-content
+              %span
+                Figuracion
+          .td-container.large-cell
+            .td-content
+              %span
+                reinafiguracion@gmail.com
+          .td-container.action-cell
+            .td-content
+              %span
+                Administrator
 
+        .table-row.table-body.group
+          .td-container.status-cell
+            .td-content
+              %span
+                %input{ :type => 'checkbox' }
+          .td-container.status-cell
+            .td-content
+              %span.status.away
+          .td-container.visitor-cell
+            .td-content
+              %span
+                Ellaine
+          .td-container.action-cell
+            .td-content
+              %span
+                Ellaine
+          .td-container.action-cell
+            .td-content
+              %span
+                Figuracion
+          .td-container.large-cell
+            .td-content
+              %span
+                reinafiguracion@gmail.com
+          .td-container.action-cell
+            .td-content
+              %span
+                Operator
 
+        .table-row.table-body.group
+          .td-container.status-cell
+            .td-content
+              %span
+                %input{ :type => 'checkbox' }
+          .td-container.status-cell
+            .td-content
+              %span.status.offline
+          .td-container.visitor-cell
+            .td-content
+              %span
+                Ellaine
+          .td-container.action-cell
+            .td-content
+              %span
+                Ellaine
+          .td-container.action-cell
+            .td-content
+              %span
+                Figuracion
+          .td-container.large-cell
+            .td-content
+              %span
+                reinafiguracion@gmail.com
+          .td-container.action-cell
+            .td-content
+              %span
+                Administrator
 
+        .table-row.table-body.group
+          .td-container.status-cell
+            .td-content
+              %span
+                %input{ :type => 'checkbox' }
+          .td-container.status-cell
+            .td-content
+              %span.status.online
+          .td-container.visitor-cell
+            .td-content
+              %span
+                Ellaine
+          .td-container.action-cell
+            .td-content
+              %span
+                Ellaine
+          .td-container.action-cell
+            .td-content
+              %span
+                Figuracion
+          .td-container.large-cell
+            .td-content
+              %span
+                reinafiguracion@gmail.com
+          .td-container.action-cell
+            .td-content
+              %span
+                Operator
 
       .table-footer
         %button.btn.small
