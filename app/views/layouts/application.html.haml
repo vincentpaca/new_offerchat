@@ -94,6 +94,62 @@
         %button.btn.action.small End chat
         %button.btn.small Cancel
 
+
+    .modal.hide#sendDeveloperModal
+      .modal-header
+        %button.close
+        %h2 Send widget code to your developer
+      .modal-body
+        .form-wrapper
+          .field-wrapper
+            %fieldset              
+              .label-container
+                %label To
+              .input-container
+                %input.full{ :type => 'text', :placeholder => 'webmaster@example.com' }
+          .field-wrapper
+            %fieldset              
+              .label-container
+                %label Subject
+              .input-container
+                %input.full{ :type => 'text', :value => 'Please install the Offerchat widget code' }
+          .field-wrapper
+            %fieldset
+              %textarea.precoded.full#widgetCode{ :type => 'text', :style => 'height: 250px', :readonly => 'readonly' }
+                <!--Start of Zopim Live Chat Script-->
+                <script type="text/javascript">
+                window.$zopim||(function(d,s){var z=$zopim=function(c){z._.push(c)},$=z.s=
+                d.createElement(s),e=d.getElementsByTagName(s)[0];z.set=function(o){z.set.
+                _.push(o)};z._=[];z.set._=[];$.async=!0;$.setAttribute('charset','utf-8');
+                $.src='//cdn.zopim.com/?nIh2wDMn6IKJrpVHf1GNCrCIhVc8ZKpN';z.t=+new Date;$.
+                type='text/javascript';e.parentNode.insertBefore($,e)})(document,'script');
+                </script>
+                <!--End of Zopim Live Chat Script-->
+      .modal-footer
+        %button.btn.small.action Send to developer
+
+    .modal.hide#addResponseModal
+      .modal-header
+        %button.close
+        %h2 Add a response
+      .modal-body
+        .form-wrapper
+          .field-wrapper
+            %fieldset
+              .label-container
+                %label Command
+              .input-container
+                %input{ :type => 'text' }
+            %fieldset
+              .label-container
+                %label Message
+              .input-container
+                %textarea.full
+      .modal-footer
+        %button.btn.action.small Create response
+        %button.btn.small Cancel
+
+
     .modal.hide#addTriggerModal
       .modal-header
         %button.close

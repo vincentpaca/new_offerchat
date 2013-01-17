@@ -18,66 +18,208 @@
     %button.btn.small.action#addResponseBtn
       + Create a canned response
 
-  .block
-    .table-wrapper
-      .table-row-wrapper.table-row-selectable
+%div
+  .table-wrapper
+    .table-row-wrapper.table-row-selectable
 
-        / No chat triggers are added yet
-        .table-row.table-head.group
+      / No chat triggers are added yet
+      .table-row.table-head.group
+        .td-container.status-cell
+          .td-content
+            %input{ :type => 'checkbox' }
+        .td-container.visitor-cell
+          .td-content
+            Shortcut
+        .td-container.general-cell
+          .td-content
+            Message     
+      %div.scrollable
+        .table-row.table-body.group
           .td-container.status-cell
             .td-content
-              %input{ :type => 'checkbox' }
+              %span
+                %input{ :type => 'checkbox' }
           .td-container.visitor-cell
             .td-content
-              Shortcut
-          .td-container.general-cell
+              %span
+                \/test
+          .td-container.message-trigger-cell
             .td-content
-              Message     
-        %div.scrollable
-          .table-row.table-body.group
-            .td-container.status-cell
-              .td-content
-                %span
-                  %input{ :type => 'checkbox' }
-            .td-container.visitor-cell
-              .td-content
-                %span
-                  \/test
-            .td-container.message-trigger-cell
-              .td-content
-                %span
-                  Arcu quisque habitasse? Quam nullam nostra, hendrerit wisi ipsum vehicula hendrerit bibendum. Aliquip dolores a? Phasellus nisl inceptos aliquet harum? Aut vehicula eius elit, egestas.
+              %span
+                Arcu quisque habitasse? Quam nullam nostra, hendrerit wisi ipsum vehicula hendrerit bibendum. Aliquip dolores a? Phasellus nisl inceptos aliquet harum? Aut vehicula eius elit, egestas.
 
-          .table-row.table-body.group
-            .td-container.status-cell
-              .td-content
-                %span
-                  %input{ :type => 'checkbox' }
-            .td-container.visitor-cell
-              .td-content
-                %span
-                  \/opening
-            .td-container.message-trigger-cell
-              .td-content
-                %span
-                  Hi, how  can we help you today?
+        .table-row.table-body.group
+          .td-container.status-cell
+            .td-content
+              %span
+                %input{ :type => 'checkbox' }
+          .td-container.visitor-cell
+            .td-content
+              %span
+                \/opening
+          .td-container.message-trigger-cell
+            .td-content
+              %span
+                Hi, how  can we help you today?
+        .table-row.table-body.group
+          .td-container.status-cell
+            .td-content
+              %span
+                %input{ :type => 'checkbox' }
+          .td-container.visitor-cell
+            .td-content
+              %span
+                \/opening
+          .td-container.message-trigger-cell
+            .td-content
+              %span
+                Hi, how  can we help you today?
+        .table-row.table-body.group
+          .td-container.status-cell
+            .td-content
+              %span
+                %input{ :type => 'checkbox' }
+          .td-container.visitor-cell
+            .td-content
+              %span
+                \/opening
+          .td-container.message-trigger-cell
+            .td-content
+              %span
+                Hi, how  can we help you today?
 
-          .table-row.table-body.group
-            .td-container.status-cell
-              .td-content
-                %span
-                  %input{ :type => 'checkbox' }
-            .td-container.visitor-cell
-              .td-content
-                %span
-                  \/closing
-            .td-container.message-trigger-cell
-              .td-content
-                %span
-                  Bye.
-
-        .table-footer.bordered
-          %button.btn.small
-            Delete selected
+        .table-row.table-body.group
+          .td-container.status-cell
+            .td-content
+              %span
+                %input{ :type => 'checkbox' }
+          .td-container.visitor-cell
+            .td-content
+              %span
+                \/closing
+          .td-container.message-trigger-cell
+            .td-content
+              %span
+                Bye.
+        .table-row.table-body.group
+          .td-container.status-cell
+            .td-content
+              %span
+                %input{ :type => 'checkbox' }
+          .td-container.visitor-cell
+            .td-content
+              %span
+                \/closing
+          .td-container.message-trigger-cell
+            .td-content
+              %span
+                Bye.
+        .table-row.table-body.group
+          .td-container.status-cell
+            .td-content
+              %span
+                %input{ :type => 'checkbox' }
+          .td-container.visitor-cell
+            .td-content
+              %span
+                \/closing
+          .td-container.message-trigger-cell
+            .td-content
+              %span
+                Bye.
+        .table-row.table-body.group
+          .td-container.status-cell
+            .td-content
+              %span
+                %input{ :type => 'checkbox' }
+          .td-container.visitor-cell
+            .td-content
+              %span
+                \/closing
+          .td-container.message-trigger-cell
+            .td-content
+              %span
+                Bye.
+        .table-row.table-body.group
+          .td-container.status-cell
+            .td-content
+              %span
+                %input{ :type => 'checkbox' }
+          .td-container.visitor-cell
+            .td-content
+              %span
+                \/closing
+          .td-container.message-trigger-cell
+            .td-content
+              %span
+                Bye.
+        .table-row.table-body.group
+          .td-container.status-cell
+            .td-content
+              %span
+                %input{ :type => 'checkbox' }
+          .td-container.visitor-cell
+            .td-content
+              %span
+                \/closing
+          .td-container.message-trigger-cell
+            .td-content
+              %span
+                Bye.
+        .table-row.table-body.group
+          .td-container.status-cell
+            .td-content
+              %span
+                %input{ :type => 'checkbox' }
+          .td-container.visitor-cell
+            .td-content
+              %span
+                \/closing
+          .td-container.message-trigger-cell
+            .td-content
+              %span
+                Bye.      
+        .table-row.table-body.group
+          .td-container.status-cell
+            .td-content
+              %span
+                %input{ :type => 'checkbox' }
+          .td-container.visitor-cell
+            .td-content
+              %span
+                \/closing
+          .td-container.message-trigger-cell
+            .td-content
+              %span
+                Bye.
+        .table-row.table-body.group
+          .td-container.status-cell
+            .td-content
+              %span
+                %input{ :type => 'checkbox' }
+          .td-container.visitor-cell
+            .td-content
+              %span
+                \/closing
+          .td-container.message-trigger-cell
+            .td-content
+              %span
+                Bye.
+        .table-row.table-body.group
+          .td-container.status-cell
+            .td-content
+              %span
+                %input{ :type => 'checkbox' }
+          .td-container.visitor-cell
+            .td-content
+              %span
+                \/closing
+          .td-container.message-trigger-cell
+            .td-content
+              %span
+                Bye.
+      .table-footer.bordered
+        %button.btn.small
+          Delete selected
         
             

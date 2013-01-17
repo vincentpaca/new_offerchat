@@ -118,10 +118,15 @@ textarea
   &.precoded
     font-family: 'Courier New','Courier'
     font-size: 12px
+    padding: 10px
     color: #535353
+    &:focus
+      border-color: #4eaade
 pre
   @extend textarea.precoded
+  color: #535353
   white-space: normal
+  padding: 10px 0
 textarea, input[type=text], input[type=password]
   border: 1px solid #b1b1b1
 
@@ -293,6 +298,11 @@ button
     background: #5A8DC2
     color: #fff
     text-shadow: 0 -1px 0 rgba(0,0,0,.2)
+
+.checkbox-wrapper
+  width: 30px
+  text-align:left
+  display: inline-block
 
 .caret
   display: inline-block
