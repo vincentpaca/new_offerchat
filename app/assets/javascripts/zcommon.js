@@ -13,6 +13,7 @@ $(document).ready(function(){
             updateOnContentResize: false
         }
   }); 
+
   $(".user-profile").click(function(){
     $(".user-settings").slideToggle('fast');
   });
