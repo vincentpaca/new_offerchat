@@ -9,7 +9,6 @@ NewOfferchat::Application.routes.draw do
   get :chat_limit, :controller => :home, :action => :chat_limit
   get :widget_settings, :controller => :home, :action => :widget_settings
   get :users, :controller => :home, :action => :users 
-
   get :widget_settings_post_chat, :controller => :home, :action => :widget_settings_post_chat
   get :widget_settings_offline_form, :controller => :home, :action => :widget_settings_offline_form
   get :widget_settings_pre_chat, :controller => :home, :action => :widget_settings_pre_chat
