@@ -1,15 +1,109 @@
 .page-header.group
   %h3 Welcome Jonathan
   %p
-    Engage your website visitors instantly with our live chat tool
+    Engage your website visitors instantly with our Live Chat tool!
+  
 
-.page-body._tL
-  Enabling notifications will let Groove notify you, either via pop-up, sound, or both, when a new chat
-  message comes in. This means that you’ll never miss a chat, even if your Groove tab is inactive. 
+.page-body.group
+  ._pB_1
+  
+    Installing your chat widget is quick and easy! 
+    =link_to "Click here ","#"
+    to get the JavaScript code to install on your website.    Don’t show this notification again.
+    .block.group{ :style => 'border-bottom: 1px solid #e1e1e1; height: 290px' }
+      .half
+        %button.close-dark{ :style => 'top: 5px' }
+        %p 
+          Configuration completeness: 
+          %strong 25%
+        .progress-bar
+          .progress{ :style => 'width: 25%' }
+        
+        .block.tr0.group
+          %ul.link-list
+            %li._hl
+              1. Install widget
+              %i.icon.icon-check
+            %li._hl
+              2. Customize your widget
+              %i.icon.icon-check
+            %li 
+              3.
+              =link_to 'Setup pre chat form','#'
+            %li 
+              4.
+              =link_to 'Set widget display name','#'
+            %li 
+              5.
+              =link_to 'Add profile picture','#'
+            %li 
+              6.
+              =link_to 'Create a saved response','#'
+            %li 
+              7.
+              =link_to 'Share offerchat to twitter or facebook','#'
+      .half._k4
+        %p 
+          %button.btn.small.right{ :style => 'margin-top: 3px' }
+            Add website
+          %h3.bordered Website Profiles
+        .block.tr0group
+          %ul.site-home-list
+            %li
+              Buy Real Marketing
+            %li
+              Cebu Jobs
+            %li
+              Orthofill
 
-  .block.tr.group
-    .label 
-      Play sound for messages
-    .ui-button-group.right
-      %button.btn.active Enabled
-      %button.btn Disabled
+    #graph
+    %pre#code.prettyprint.linenums
+      :preserve    
+        var day_data = [
+          {"period": "2012-10-01", "licensed": 3407, "sorned": 660},
+          {"period": "2012-09-30", "licensed": 3351, "sorned": 629},
+          {"period": "2012-09-29", "licensed": 3269, "sorned": 618},
+          {"period": "2012-09-20", "licensed": 3246, "sorned": 661},
+          {"period": "2012-09-19", "licensed": 3257, "sorned": 667},
+          {"period": "2012-09-18", "licensed": 3248, "sorned": 627},
+          {"period": "2012-09-17", "licensed": 3171, "sorned": 660},
+          {"period": "2012-09-16", "licensed": 3171, "sorned": 676},
+          {"period": "2012-09-15", "licensed": 3201, "sorned": 656},
+          {"period": "2012-09-10", "licensed": 3215, "sorned": 622}
+        ];
+        Morris.Line({
+          element: 'graph',
+          data: day_data,
+          lineWidth: 3,
+          lineColors: ['#3cb2e9', '#eeb445'],
+          xkey: 'period',
+          ykeys: ['licensed', 'sorned','etc'],
+          labels: ['Licensed', 'SORN','ETC'],
+        });
+
+  .page-sidebar._s0
+    .block.tr.group{ :style => 'padding-top: 0' }
+      %h3 Getting Started
+      %ul.link-list
+        %li
+          =link_to 'How to install your chad widget. Quick and Easy!','#'
+        %li
+          =link_to 'How to get the most out of our live chat service.','#'
+        %li
+          =link_to 'How to configure our live chat widget to match your website','#'
+    .block.tr.group
+      %h3 Latest Blog Posts
+      %ul.link-list
+        %li
+          =link_to 'Is Your E-Commerce Site Conducive For Impulse Buying?','#'
+        %li
+          =link_to 'Disdavantages of Live Chat: 3 Ways to Kill Customer Interest and Make Them Run for the Exit','#'
+        %li
+          =link_to 'Why is Offerchat Live Chat App Free?','#'
+        %li
+          =link_to 'Online Chat: How to Start Interacting With Your Visitors Using the Offerchat ','#'
+        %li
+          =link_to  'Why Online Retail Businesses Are Booming After Adding Live Chat','#'
+        %li
+          =link_to  'How a Fast Live Chat Tool Can Improve Website Experience and Sales','#'
+        
