@@ -26,6 +26,10 @@ $("#addResponseBtn").click(function(){
   $("#addResponseModal").removeClass('hide');
   $(".modal-backdrop").removeClass('hide');
 });
+$("#transferChatBtn").click(function(){
+  $("#transferChatModal").removeClass('hide');
+  $(".modal-backdrop").removeClass('hide');
+});
 $("#addTriggerBtn").click(function(){
   $("#addTriggerModal").removeClass('hide');
   $(".modal-backdrop").removeClass('hide');

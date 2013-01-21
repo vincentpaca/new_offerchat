@@ -1,6 +1,4 @@
 /* Harvey Enrile http://www.harveyenrile.com
-
-@import url(http://fonts.googleapis.com/css?family=Droid+Sans:400,700)
 @mixin container($margin)
   margin-left: $margin
   margin-right: $margin
@@ -140,12 +138,17 @@ em
   font-style: italic
 body
   font: 
-    family: Arial, sans-serif
+    family: 'Helvetica Neue', Arial, Helvetica, sans-serif
+    size-adjust: 0.488
+    weight: normal
+    style: normal
     size: 13px
   color: #636363
-
+strong
+  font-weight: bold
 .block
   margin: 20px 0 20px 0
+  position: relative
   &.tr
     border-bottom: 1px solid #e1e1e1
     padding: 10px 0
@@ -747,7 +750,9 @@ button.back
   li
     @extend .visitor-info-list
     margin-right: 10px
+    margin-top: 2px
     &._c3
+      margin-top: 0
       margin-right: 5px
       vertical-align: top
 .visitor-username
@@ -782,6 +787,7 @@ button.back
       margin-bottom: 5px
 
 .status
+  margin-right: 5px
   @include status(#ccc)
 .status.online
   @include status(#9ed711)
@@ -967,7 +973,8 @@ button.back
 
 .message
   background: #f7edcd
-  padding: 3px 7px
+  padding: 5px 7px
+  line-height: 1
   font-size: 12px
   border-radius: 3px
   text-shadow: 0 1px 0 #fff
