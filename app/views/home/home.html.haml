@@ -4,84 +4,100 @@
     Engage your website visitors instantly with our Live Chat tool!
   
 
-.page-body.group
-  ._pB_1
-  
-    Installing your chat widget is quick and easy! 
-    =link_to "Click here ","#"
-    to get the JavaScript code to install on your website.    Don’t show this notification again.
-    .block.group{ :style => 'border-bottom: 1px solid #e1e1e1; height: 290px' }
-      .half
-        %button.close-dark{ :style => 'top: 5px' }
-        %p 
-          Configuration completeness: 
-          %strong 25%
-        .progress-bar
-          .progress{ :style => 'width: 25%' }
-        
-        .block.tr0.group
-          %ul.link-list
-            %li._hl
-              1. Install widget
-              %i.icon.icon-check
-            %li._hl
-              2. Customize your widget
-              %i.icon.icon-check
-            %li 
-              3.
-              =link_to 'Setup pre chat form','#'
-            %li 
-              4.
-              =link_to 'Set widget display name','#'
-            %li 
-              5.
-              =link_to 'Add profile picture','#'
-            %li 
-              6.
-              =link_to 'Create a saved response','#'
-            %li 
-              7.
-              =link_to 'Share offerchat to twitter or facebook','#'
-      .half._k4
-        %p 
-          %button.btn.small.right{ :style => 'margin-top: 3px' }
-            Add website
-          %h3.bordered Website Profiles
-        .block.tr0group
-          %ul.site-home-list
-            %li
-              Buy Real Marketing
-            %li
-              Cebu Jobs
-            %li
-              Orthofill
+.page-body.group{ :style => 'padding: 0' } 
+  ._pB_1.scrollable
+    .pB_1a
 
-    #graph
-    %pre#code.prettyprint.linenums
-      :preserve    
-        var day_data = [
-          {"period": "2012-10-01", "licensed": 3407, "sorned": 660},
-          {"period": "2012-09-30", "licensed": 3351, "sorned": 629},
-          {"period": "2012-09-29", "licensed": 3269, "sorned": 618},
-          {"period": "2012-09-20", "licensed": 3246, "sorned": 661},
-          {"period": "2012-09-19", "licensed": 3257, "sorned": 667},
-          {"period": "2012-09-18", "licensed": 3248, "sorned": 627},
-          {"period": "2012-09-17", "licensed": 3171, "sorned": 660},
-          {"period": "2012-09-16", "licensed": 3171, "sorned": 676},
-          {"period": "2012-09-15", "licensed": 3201, "sorned": 656},
-          {"period": "2012-09-10", "licensed": 3215, "sorned": 622}
-        ];
-        Morris.Line({
-          element: 'graph',
-          data: day_data,
-          lineWidth: 3,
-          lineColors: ['#3cb2e9', '#eeb445'],
-          xkey: 'period',
-          ykeys: ['licensed', 'sorned','etc'],
-          labels: ['Licensed', 'SORN','ETC'],
-        });
+      .message.success.inline
+        This is a notification success inline
+      .message
+        %button.close-dark._x1
+        This is a regular notification message
+      .message.error
+        %button.close._x1
+        This is a notification error
+      .message.success
+        %button.close-dark._x1
+        This is a notification success
 
-  .page-sidebar._s0
+      
+      
+
+      Installing your chat widget is quick and easy! 
+      =link_to "Click here ","#"
+      to get the JavaScript code to install on your website.    Don’t show this notification again.
+      .block.group{ :style => 'border-bottom: 1px solid #e1e1e1; height: 290px' }
+        .half
+          %button.close-dark{ :style => 'top: 5px' }
+          %p 
+            Configuration completeness: 
+            %strong 25%
+          .progress-bar
+            .progress{ :style => 'width: 25%' }
+          
+          .block.tr0.group
+            %ul.link-list
+              %li._hl
+                1. Install widget
+                %i.icon.icon-check
+              %li._hl
+                2. Customize your widget
+                %i.icon.icon-check
+              %li 
+                3.
+                =link_to 'Setup pre chat form','#'
+              %li 
+                4.
+                =link_to 'Set widget display name','#'
+              %li 
+                5.
+                =link_to 'Add profile picture','#'
+              %li 
+                6.
+                =link_to 'Create a saved response','#'
+              %li 
+                7.
+                =link_to 'Share offerchat to twitter or facebook','#'
+        .half._k4
+          %p 
+            %button.btn.small.right{ :style => 'margin-top: 3px' }
+              Add website
+            %h3.bordered Website Profiles
+          .block.tr0group
+            %ul.site-home-list
+              %li
+                Buy Real Marketing
+              %li
+                Cebu Jobs
+              %li
+                Orthofill
+
+      #graph
+      %pre#code.prettyprint.linenums
+        :preserve    
+          var day_data = [
+            {"period": "2012-10-01", "licensed": 3407, "sorned": 660},
+            {"period": "2012-09-30", "licensed": 3351, "sorned": 629},
+            {"period": "2012-09-29", "licensed": 3269, "sorned": 618},
+            {"period": "2012-09-20", "licensed": 3246, "sorned": 661},
+            {"period": "2012-09-19", "licensed": 3257, "sorned": 667},
+            {"period": "2012-09-18", "licensed": 3248, "sorned": 627},
+            {"period": "2012-09-17", "licensed": 3171, "sorned": 660},
+            {"period": "2012-09-16", "licensed": 3171, "sorned": 676},
+            {"period": "2012-09-15", "licensed": 3201, "sorned": 656},
+            {"period": "2012-09-10", "licensed": 3215, "sorned": 622}
+          ];
+          Morris.Line({
+            element: 'graph',
+            data: day_data,
+            lineWidth: 3,
+            lineColors: ['#3cb2e9', '#eeb445'],
+            xkey: 'period',
+            ykeys: ['licensed', 'sorned','etc'],
+            labels: ['Licensed', 'SORN','ETC'],
+          });
+
+  .page-sidebar._s0.scrollable
     .block.tr.group{ :style => 'padding-top: 0' }
       %h3 Getting Started
       %ul.link-list

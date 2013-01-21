@@ -199,6 +199,10 @@ button
   &.close-dark
     @extend .close
     background-position: -29px -70px
+  &._x1
+    opacity: .8
+    &:hover
+      opacity: 1
 
 
 
@@ -460,6 +464,8 @@ a.nav, .nav
   ._pB_1
     width: 70%
     float: left
+  .pB_1a
+    @extend .page-body
 
 .page-sidebar
   display: inline-block 
@@ -958,7 +964,24 @@ button.back
     box-shadow: 0 1px 0 rgba(255,255,255,.1) inset
     border: 1px solid #41972b
     border-radius: 12px
-    
+
+.message
+  background: #f7edcd
+  padding: 3px 7px
+  font-size: 12px
+  border-radius: 3px
+  text-shadow: 0 1px 0 #fff
+  margin: 5px 0
+  &.inline
+    display: inline-block
+  &.error
+    background: #f44848
+    color: #fff
+    text-shadow: 0 -1px 0 rgba(0,0,0,.15)
+  &.success
+    text-shadow: 0 1px 0 rgba(255,255,255,.25)
+    background: #70d688
+    color: #304134
 
 
 
