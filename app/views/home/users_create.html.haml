@@ -36,6 +36,11 @@
             %input{ :type => 'text', :style => 'width: 250px' }
             %br
             Login information and password willt be sent to this address.
+        .block.group.settings-section
+          .label
+            &nbsp;
+          .input-container
+            %input.btn.small.action{ :type => 'submit', :value => 'Create User'}
         
         .block
           %h3 Site Access
@@ -234,11 +239,7 @@
                         %button.btn.active Administrator
                         %button.btn Operator
 
-                .table-footer.bordered
-                  %button.btn.small.action
-                    Save Changes
-                  %button.btn.small
-                    Cancel
+                
 
                    
 
