@@ -6,8 +6,6 @@
     = javascript_include_tag "application"
     = csrf_meta_tags
 
-
-
   %body
     .dashboard.group
       .dashboard-header.group
@@ -206,8 +204,7 @@
       .modal-body
         %p Use canned responses to respond quickly with standard phrases.
         .form-wrapper
-          .field-wrapper
-           
+          .field-wrapper           
             %fieldset
               .label-container
                 %label Shortcut
@@ -223,6 +220,7 @@
         %button.btn.action.small Create canned response
         %button.btn.small Cancel
 
+<<<<<<< HEAD
     .modal.hide#resetPasswordModal
       .modal-header
         %button.close
@@ -251,6 +249,38 @@
 
       .modal-footer
         %button.btn.action.small Reset Password
+=======
+    .modal.hide#transferChatModal
+      .modal-header
+        %button.close
+        %h2 Transfer chat to another agent
+      .modal-body
+        .form-wrapper
+          .field-wrapper
+            .message{ :style => 'display: none' }
+              This chat will be transferred once Jonathan Kennedy accepts the invite
+            Select the agent you wanted to transfer the current chat to
+            
+            .dropdown-group{ :style => 'margin-left: 10px' }
+              %button.btn.small
+                Select an agent 
+                %span.caret
+              %ul.dropdown-menu{ :style => 'display: none'}
+                %li
+                  %a{ :href => '#' }
+                    %span.status.online 
+                    Harvey Enrile (admin)
+                %li
+                  %a{ :href => '#' }
+                    %span.status.online 
+                    Reina Figuracion
+                %li
+                  %a{ :href => '#' }
+                    %span.status.online 
+                    Jonathan Kennedy
+      .modal-footer
+        %button.btn.action.small Transfer
+>>>>>>> b67493b2d488b711f80280f562152fec38591503
         %button.btn.small Cancel
 
     .modal-backdrop.hide
@@ -265,3 +295,7 @@
         #frotateG_06.f_circleG
         #frotateG_07.f_circleG
         #frotateG_08.f_circleG
+
+
+
+  %script{ :type => "text/javascript", :src => "https://www.google.com/jsapi" }

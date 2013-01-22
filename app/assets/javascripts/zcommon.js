@@ -26,8 +26,13 @@ $("#addResponseBtn").click(function(){
   $("#addResponseModal").removeClass('hide');
   $(".modal-backdrop").removeClass('hide');
 });
+<<<<<<< HEAD
 $("#resetPasswordBtn").click(function(){
   $("#resetPasswordModal").removeClass('hide');
+=======
+$("#transferChatBtn").click(function(){
+  $("#transferChatModal").removeClass('hide');
+>>>>>>> b67493b2d488b711f80280f562152fec38591503
   $(".modal-backdrop").removeClass('hide');
 });
 $("#addTriggerBtn").click(function(){
