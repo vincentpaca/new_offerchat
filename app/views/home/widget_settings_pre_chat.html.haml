@@ -15,21 +15,24 @@
      
         .block.tr.group.settings-section
           .label
-            Require user to enter their 
-            %strong email 
-            and 
+            Require user to enter their  
             %strong name 
-            before starting the chat
+            and 
+            %strong email 
+            before starting a chat
+            %br with an operator.
           .ui-button-group.right
             %button.btn.active Enabled
             %button.btn Disabled
 
+        
         .block.tr.group.settings-section
-          .checkbox-wrapper
-            %input{ :type => 'checkbox' } 
-          Require users to enter a message / question before starting the chat
+          .label
+            &nbsp;
+          .input-container
+            %input{:id => "prechat", :type => "checkbox", :name => "prechat"}
+            %label{:for => "prechat"} Require users to enter a message or question before starting a chat
 
-       
 
       / .widget-preview-wrapper{ :style => 'display: inline-block; vertical-align: top; position: relative; top: 70px; left: 20px' }          
       /   .offerchat-widget-wrapper.offerchat-theme-goldenbell
