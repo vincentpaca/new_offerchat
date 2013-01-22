@@ -207,7 +207,10 @@ button
     &:hover
       opacity: 1
 
-
+.small
+  font-size: 12px
+  &.right
+    float: right
 
 .btn
   display: inline-block
@@ -276,6 +279,18 @@ button
     @extend .minimize
     background-position: -30px -95px
 
+.btn-selector
+  .btn
+    margin: 2px 0
+
+  &.green
+    .btn.active
+      background: #6abc51
+      box-shadow: 0 1px 3px rgba(0,0,0,.2) inset
+      color: #fff
+      text-shadow: 0 -1px 0 rgba(0,0,0,.2)
+      border-color: #59aa41
+      border-top-color: #4a9633
 
 .no-message-yet
   font-size: 11px
@@ -876,7 +891,7 @@ button.back
   
 .table-row
   display: block
-  padding: 5px 15px
+  padding: 5px 20px
   overflow: hidden
   -webkit-transition: all .1s ease-in-out
   -moz-transition: all .1s ease-in-out
@@ -910,6 +925,7 @@ button.back
   margin-right: 10px
   overflow: hidden
   white-space: nowrap
+  position: relative
   &.status-cell
     width: 20px
   &.visitor-cell
@@ -930,12 +946,21 @@ button.back
     width: 150px
   &.large-cell
     width: 250px
+  &.xs-cell
+    width: 70px
+  &.website-cell
+    width: 180px
 
   .td-content
     vertical-align: top
     line-height: 20px
     span
       vertical-align: middle
+    &.small
+      font-size: 11px
+    &.disabled
+      color: #c0c0c0
+
 .xT
   display: inline-block
 

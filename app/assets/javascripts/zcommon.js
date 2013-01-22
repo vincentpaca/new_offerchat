@@ -18,6 +18,16 @@ $(document).ready(function(){
     $(".user-settings").slideToggle('fast');
   });
   
+  $(".btn-selector .btn").click(function(){
+    $(this).toggleClass('active')
+  });
+
+$("#selectAllAgents").click(function(){
+  $('.btn-selector .btn').addClass('active');
+});
+$("#clearAllAgents").click(function(){
+  $('.btn-selector .btn').removeClass('active');
+});
 
     $(".chat-area input[type=text]").focus();
     $(".chat-area").addClass('active');
