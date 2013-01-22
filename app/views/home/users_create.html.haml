@@ -15,27 +15,35 @@
         %h3 User Profile
         
         .block.tr.group.settings-section
-          .label
+          .label.vT
             First Name
           .input-container
             %input{ :type => 'text', :style => 'width: 250px' }
+            .message-text.error
+              This field is required
         .block.tr.group.settings-section
-          .label
+          .label.vT
             Last Name
           .input-container
             %input{ :type => 'text', :style => 'width: 250px' }
+            .message-text.error
+              This field is required
         .block.tr.group.settings-section
-          .label
+          .label.vT
             Display Name
           .input-container
             %input{ :type => 'text', :style => 'width: 250px' }
+            .message-text.error
+              This field is required
         .block.tr.group.settings-section
-          .label
-            Email Addres
+          .label.vT
+            Email Address
           .input-container
             %input{ :type => 'text', :style => 'width: 250px' }
             %p
               Login information and password willt be sent to this address.
+            .message-text.error
+              Please enter a valid email
         .block.group.settings-section
           .label
             &nbsp;
