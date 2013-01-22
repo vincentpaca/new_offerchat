@@ -104,12 +104,16 @@
                 %label To
               .input-container
                 %input.full{ :type => 'text', :placeholder => 'webmaster@example.com' }
+                .message-text.error
+                  Please enter a valid email
           .field-wrapper
             %fieldset              
               .label-container
                 %label Subject
               .input-container
                 %input.full{ :type => 'text', :value => 'Please install the Offerchat widget code' }
+                .message-text.error
+                  Please enter a subject
           .field-wrapper
             %fieldset
               %textarea.precoded.full#widgetCode{ :type => 'text', :style => 'height: 250px', :readonly => 'readonly' }
@@ -170,6 +174,8 @@
                       = link_to 'Visitor time on site','#'
                     %li
                       = link_to 'Visitor time on url','#'
+                .message-text.error
+                  Please select a condition
             %fieldset
               .label-container
                 %label Value
@@ -177,6 +183,8 @@
                 / %input.full{ :type => 'text', :placeholder => 'http://' }
                 %input.full{ :type => 'text', :placeholder => '10', :style => 'width: 40px' }
                 secs
+                .message-text.error
+                  Invalid number
 
             %fieldset
               .label-container
@@ -184,6 +192,8 @@
               .input-container
                 / %input.full{ :type => 'text', :placeholder => 'http://' }
                 %input.full{ :type => 'text', :placeholder => 'http://', :value => 'http://' }
+                .message-text.error
+                  This field is required
               
 
 
@@ -192,6 +202,8 @@
                 %label Message to visitor
               .input-container
                 %textarea.full
+                .message-text.error
+                  Please enter a message
       .modal-footer
         %button.btn.action.small Create trigger
         %button.btn.small Cancel

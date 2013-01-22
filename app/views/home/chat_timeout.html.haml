@@ -24,6 +24,8 @@
       .input-container
         %input{ :type => 'text', :value => '0', :style => 'width: 50px' }
         seconds
+        .message-text.error
+          This field is required
 
     .block.tr.group.settings-section
       .label.vT
@@ -31,7 +33,8 @@
       .input-container
         %textarea{ :type => 'text', :style => 'width: 350px; height: 60px' }
           Apologies for keeping you waiting. Our chat operators are busy at the moment. Please leave us a message with your email address and we'll get back to you shortly. 
-        %div
+        .message-text.error
+          This field is required
 
     .block.group.settings-section
       .label
