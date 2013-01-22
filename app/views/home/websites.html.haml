@@ -1,0 +1,131 @@
+.page-header.group
+  .header-search.right
+    %span.search-input.group
+      %input{ :type => 'text', :placeholder => 'Search user' }
+      %button{ :type => 'submit' }
+  %h3 Websites
+
+
+.page-body
+  Chat Triggers help you send chat invites / custom messages to pre-qualified leads
+  %button.btn.small.action
+    + Add Website
+%div
+  .table-wrapper
+    .table-row-wrapper.table-row-selectable
+
+      / No chat triggers are added yet
+      .table-row.table-head.group
+        .td-container.status-cell
+          .td-content
+            %input{ :type => 'checkbox' }
+        .td-container.website-cell
+          .td-content
+            Website Name
+        .td-container.general-cell
+          .td-content
+            URL
+        .td-container.general-cell
+          .td-content
+            Users
+        .td-container.xs-cell
+          .td-content
+            Status
+              
+      %div.scrollable
+        .table-row.table-body.group
+          .td-container.status-cell
+            .td-content
+              %span
+                %input{ :type => 'checkbox' }
+          .td-container.website-cell
+            .td-content
+              %span
+                BuyRealMarketing
+          .td-container.general-cell
+            .td-content
+              %span
+                http://www.buyrealmarketing.com
+          .td-container.general-cell
+            .td-content
+              %span.msg-count-tag
+                8
+              %span
+                Figuracion,
+              %span
+                Jonathan,
+              %span
+                Harvey,
+              %span
+                and 5 others
+          .td-container.xs-cell
+            .td-content
+              %i.icon.icon-check
+
+        .table-row.table-body.group
+          .td-container.status-cell
+            .td-content
+              %span
+                %input{ :type => 'checkbox' }
+          .td-container.website-cell
+            .td-content
+              %span
+                BuyRealMarketing
+          .td-container.general-cell
+            .td-content
+              %span
+                http://www.buyrealmarketing.com
+          .td-container.general-cell
+            .td-content
+              %span.msg-count-tag
+                8
+              %span
+                Figuracion,
+              %span
+                Jonathan,
+              %span
+                Harvey,
+              %span
+                and 3 others
+          .td-container.xs-cell
+            .td-content
+              %i.icon.icon-check
+        
+        .table-row.table-body.group
+          .td-container.status-cell
+            .td-content
+              %span
+                %input{ :type => 'checkbox' }
+          .td-container.website-cell
+            .td-content
+              %span
+                BuyRealMarketing
+          .td-container.general-cell
+            .td-content
+              %span
+                http://www.buyrealmarketing.com
+          .td-container.general-cell
+            .td-content
+              %span.msg-count-tag
+                4
+              %span
+                Figuracion,
+              %span
+                Jonathan,
+              %span
+                Harvey,
+              %span
+                and 1 other
+          .td-container.xs-cell
+            .td-content.disabled             
+              not verified
+     
+
+
+      .table-footer
+        %button.btn.small
+          Delete selected
+        
+            
+
+  
