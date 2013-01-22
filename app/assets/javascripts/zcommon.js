@@ -1,4 +1,7 @@
 $(document).ready(function(){	
+
+
+  
 	$(".scrollable").mCustomScrollbar({
 		autoDraggerLength: true,
 		advanced: {
