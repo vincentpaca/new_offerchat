@@ -268,7 +268,7 @@ button
     height: 26px
 
   span.minimize
-    @include iconSize(11px,11px)
+    @include iconSize(11px,12px)
     background-image: image-url('icon-sprite.png')
     background-position: -15px -95px
     display: inline-block
@@ -367,9 +367,27 @@ button
   &.sL
     height: 515px
 
+.overlay-wrapper
+  position: absolute
+  top: 0
+  right: 0
+  z-index: 1010
+  width: 300px
+  height: 150px
+  background: #fff
+  border-radius: 5px
+  box-shadow: 0 1px 5px rgba(0,0,0,.2)
+  &.custom-date-selector
+    padding: 10px
+    border: 1px solid #cfcfcf
+    top: 25px
+    right: -230px
+
 .dashboard-sidebar
   width: 210px
-  border-right: 1px solid #ccc
+  border-right: 3px solid #cecece
+  box-sizing: border-box
+  z-index: 999
   background: #fafafa
   position: absolute
   top: 0
@@ -541,6 +559,7 @@ label.chat-count
   border-right: 1px solid #e1e1e1
   position: relative
   min-height: 600px
+  background: #fff
 .chat-sidebar-wrapper
   @include blockPosition(left,30%,inline-block)
  
@@ -630,6 +649,7 @@ label.chat-count
   margin: 15px 0 15px 15px
 
 .module-header
+  position: relative
   &._y9
     padding-top: 15px
   padding: 10px
@@ -671,6 +691,11 @@ label.chat-count
       size: 11px
       weight: bold
 .module-body
+
+input.ui-button-input
+  border: none
+
+
 .ui-button-group
   -webkit-transition: all .1s ease-in-out
   -moz-transition: all .1s ease-in-out
@@ -838,6 +863,10 @@ button.back
   margin-left: -280px
   border-radius: 5px
   outline: none
+  &.modal-chat-view
+    width: 860px
+    margin-left: -425px
+
   .modal-header, .modal-body, .modal-footer
     padding: 10px
   .modal-body
@@ -968,7 +997,7 @@ button.back
 
 .table-head-label
   font-size: 14px
-  padding: 10px
+  padding: 10px 15px
 .table-head-collapsible
   cursor: pointer
 .table-footer

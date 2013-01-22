@@ -293,6 +293,93 @@
         %button.btn.action.small Transfer
         %button.btn.small Cancel
 
+    .modal.modal-chat-view.hide
+      .chat-view-inner{ :style => 'min-height: 450px' }
+        .chat-header      
+          %button.close-dark{ :style => 'top: 5px' }
+          .visitor-info-wrapper
+            %ul.visitor-info-list
+              
+              %li
+                %span.visitor-username{ :style => 'position: relative; top: 1px' } y43fddp
+              %li 
+                %span.visitor-location 
+                  %i.icon.map-pin
+                  Cebu, Philippines
+              %li
+                %span.visitor-browser{ :title => 'Mozilla Firefox 4.0' }
+                  %i.icon.browser-mozilla              
+              %li
+                %span.visitor-system{ :title => 'Linux' }
+                  %i.icon.system-linux             
+              %li
+                %a#more-info{ :style => 'display: inline-block; width: 70px;  text-align: center;' }
+                  more info 
+              %li            
+                %button.btn.small
+                  Export transcript
+            
+          .visitor-more-info        
+            %ul._y5
+              %li
+                .info-label From 
+                .info-value http://www.offerchat.com
+              %li
+                .info-label Time spent 
+                .info-value 15:30
+              %li
+                .info-label IP Address
+                .info-value 192.168.14.34
+              %li
+                .info-label System/Browser
+                .info-value Windows 8/Mozilla Firefox 17.1                
+
+        .chat-body
+          .chat-content-area.scrollable
+            %ul.chat-list
+              %li.chat-group.ls
+                .chat-status-inner
+                  %p Visitor-y43fddp has entered the chat
+              %li.chat-group.group
+                %div
+                  %strong 
+                    %span._uB Visitor-y43fddp
+                .chat-message-1
+                  %p Hello?
+                  %p fdsfsdfds
+                  %p How will this work?
+              %li.chat-group.group
+                
+                %div
+                  %strong 
+                    %span._uB Jonathan (You)
+                .chat-message-1
+                  %p The second, older syntax is known as the indented syntax (or just “.sass”). Inspired by Haml’s terseness, it’s intended for people who prefer conciseness over similarity to CSS. Instead of brackets and semicolons
+              %li.chat-group.ls.group
+                .chat-status-inner.o_4
+                  %em 
+                    visitor-y43fddp is currently viewing
+                    =link_to 'https://mail.google.com/mail/u/0/#inbox','#'                    
+              %li.chat-group.group
+                %div
+                  %strong 
+                    %span._uB Visitor-y43fddp
+                .chat-message-1
+                  %p Hello?
+                  %p fdsfsdfds
+                  %p How will this work?
+              %li.chat-group.group
+                
+                %div
+                  %strong 
+                    %span._uB Jonathan (You)
+                .chat-message-1
+                  %p The second, older syntax is known as the indented syntax (or just “.sass”). Inspired by Haml’s terseness, it’s intended for people who prefer conciseness over similarity to CSS. Instead of brackets and semicolons
+                  %p The second, older syntax is known as the indented syntax (or just “.sass”). Inspired by Haml’s terseness, it’s intended for people who prefer conciseness over similarity to CSS. Instead of brackets and semicolons
+              %li.chat-group.ls
+                .chat-status-inner.red
+                  %p Visitor-y43fddp has left the conversation
+        
     .modal-backdrop.hide
 
     .modal-loader-wrapper.hide
