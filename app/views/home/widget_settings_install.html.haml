@@ -16,11 +16,14 @@
         %h3 Embed OfferChat Live Chat Widget
         .block.tr.group.settings-section        
           %p
-            Copy the following script and insert it into your website's HTML source code between the 
+            Copy the script in the box and insert it into your website's HTML source code just before the 
             %strong
-              &lt;head&gt; 
-            tags. This code must be inserted into every page on which you wish to display the Zopim chat widget.
-
+              &lt;/head&gt; 
+            tag. This code must be inserted to every page on which you wish to display the Offerchat live chat. 
+            %br 
+            %br
+            For a step-by-step guide, visit 
+            %a{:href => "http://blog.offerchat.com/category/install-guides/", :target => "_blank"} Offerchat Install Guides . 
           %textarea.precoded.full#widgetCode{ :type => 'text', :style => 'height: 250px', :readonly => 'readonly' }
             <!--Start of Zopim Live Chat Script-->
             <script type="text/javascript">
@@ -31,12 +34,15 @@
             type='text/javascript';e.parentNode.insertBefore($,e)})(document,'script');
             </script>
             <!--End of Zopim Live Chat Script-->
+          %br
+          %br
+          Click Verify Site 
+          %strong
+            after 
+          you have successfully inserted and saved the code above in your website's HTML source.
         .block.group.tr.settings-section
-       
-        
           .label
             Website URL
-
           http://www.buyrealmarketing.com 
           %button.btn.right.small.action{ :style => 'margin-top: 1px' }
             Verify Site          

@@ -36,6 +36,12 @@ $("#addResponseBtn").click(function(){
   $("#addResponseModal").removeClass('hide');
   $(".modal-backdrop").removeClass('hide');
 });
+
+$("#resetPasswordBtn").click(function(){
+  $("#resetPasswordModal").removeClass('hide');
+  $(".modal-backdrop").removeClass('hide');
+});
+
 $("#transferChatBtn").click(function(){
   $("#transferChatModal").removeClass('hide');
   $(".modal-backdrop").removeClass('hide');

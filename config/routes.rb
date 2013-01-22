@@ -7,8 +7,11 @@ NewOfferchat::Application.routes.draw do
   get :responses, :controller => :home, :action => :responses
   get :chat_timeout, :controller => :home, :action => :chat_timeout
   get :chat_limit, :controller => :home, :action => :chat_limit
+  get :personal_settings, :controller => :home, :action => :personal_settings
   get :widget_settings, :controller => :home, :action => :widget_settings
   get :users, :controller => :home, :action => :users 
+  get :im_settings, :controller => :home, :action => :im_settings 
+  get :account_settings, :controller => :home, :action => :account_settings
   get :users_create, :controller => :home, :action => :users_create 
   get :widget_settings_post_chat, :controller => :home, :action => :widget_settings_post_chat
   get :widget_settings_offline_form, :controller => :home, :action => :widget_settings_offline_form

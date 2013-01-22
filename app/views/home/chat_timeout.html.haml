@@ -9,25 +9,18 @@
       %button.btn Chat limit
 
 .page-body._tL
-  Access advanced customization options with a live preview of the widget on your website.
+  Customize an offline message for inactive periods and set time triggers for system to recognize inactivity.
   .block
     .block.tr.group.settings-section
       .label
-        Display message after a period of inactivity
+        Display a message after a period of inactivity  
       .ui-button-group.right
         %button.btn.active Enabled
         %button.btn Disabled
 
     .block.tr.group.settings-section
       .label
-        Inactivity Period
-      .input-container
-        %input{ :type => 'text', :value => '0', :style => 'width: 50px' }
-        seconds
-
-    .block.tr.group.settings-section
-      .label
-        Inactivity Period
+        Inactivity period 
       .input-container
         %input{ :type => 'text', :value => '0', :style => 'width: 50px' }
         seconds
@@ -37,7 +30,7 @@
         Offline message
       .input-container
         %textarea{ :type => 'text', :style => 'width: 350px; height: 60px' }
-          We apologize for keeping you waiting. Our operators are busy at the moment, please leave us a message with your email address and we'll get back to you shortly.
+          Apologies for keeping you waiting. Our chat operators are busy at the moment. Please leave us a message with your email address and we'll get back to you shortly. 
         %div
 
     .block.group.settings-section

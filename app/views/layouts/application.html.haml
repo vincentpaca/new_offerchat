@@ -1,4 +1,3 @@
-!!!
 %html
   %head
     %title Offerchat Prototype
@@ -219,6 +218,36 @@
       .modal-footer
         %button.btn.action.small Create canned response
         %button.btn.small Cancel
+
+
+    .modal.hide#resetPasswordModal
+      .modal-header
+        %button.close
+        %h2 Reset Password
+      .modal-body
+        .form-wrapper
+          .field-wrapper
+           
+            %fieldset
+              .label-container
+                %label Old Password
+              .input-container
+                %input.full{ :type => 'password'}
+
+            %fieldset
+              .label-container
+                %label Confirm New Password
+              .input-container
+                %input.full{ :type => 'password'}
+
+            %fieldset
+              .label-container
+                %label New Password
+              .input-container
+                %input.full{ :type => 'password'}
+
+      .modal-footer
+        %button.btn.action.small Reset Password
 
     .modal.hide#transferChatModal
       .modal-header

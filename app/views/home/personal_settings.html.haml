@@ -1,0 +1,64 @@
+.page-header.group
+  %h3 Personal Preferences
+  .module-header._c8
+    .ui-button-group
+      %button.btn.active Profile
+      %button.btn Account
+      %button.btn IM Settings
+
+.scrollable
+  .page-body
+   
+    %div
+      .group._f0
+        %h3 Profile
+        .block.tr.group.settings-section
+          .label
+            Profile Photo
+          .input-container
+            %input{ :type => 'file', :style => 'width: 250px; padding: 0' }
+        .block.tr.group.settings-section
+          .label
+            First Name
+          .input-container
+            %input{ :type => 'text', :style => 'width: 250px' }
+        .block.tr.group.settings-section
+          .label
+            Last Name
+          .input-container
+            %input{ :type => 'text', :style => 'width: 250px' }
+        .block.tr.group.settings-section
+          .label
+            Display Name
+          .input-container
+            %input{ :type => 'text', :style => 'width: 250px' }
+        .block.group.settings-section
+          .label
+            &nbsp;
+          .input-container
+            %input.btn.small.action{ :type => 'submit', :value => 'Save Changes'}
+            
+        .block
+          .block.tr.group.settings-section
+            %h3 Sound Notifications
+            %p Enable notifications if you want Offerchat to alert you through pop-up, sound, or both, when a new chat message comes in. By enabling notifications, you'll never miss a chat, even when your Offerchat tab is inactive.
+            .label Play sound for messages
+            .ui-button-group.right
+              %button.btn.active Enabled
+              %button.btn Disabled
+
+        
+
+                
+
+                   
+
+
+
+
+
+
+
+
+      
+    
