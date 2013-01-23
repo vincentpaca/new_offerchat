@@ -23,25 +23,32 @@
             %button.btn Disabled
 
         .block.tr.group.settings-section
-          .label
+          .label.vT
             Widget Label
           .input-container
             %input{ :type => 'text', :value => 'We\'re currently offline', :style => 'width: 200px' }
             6 chars left
+            .message-text.error
+              Please enter a label for your widget
+            
         .block.tr.group.settings-section
           .label.vT
             Offline message
           .input-container
             %textarea{ :type => 'text', :style => 'width: 350px; height: 60px' }
               We are currently offline, please leave a message and we'll get back to you within 24 hours
-            %div
+            %p
               6 chars left
+            .message-text.error
+              Please enter an offline messsage
 
         .block.tr.group.settings-section
-          .label
+          .label.vT
             Forward to email
           .input-container
-            %input{ :type => 'text', :value => 'me@example.com', :style => 'width: 200px' }   
+            %input{ :type => 'text', :value => 'me@example.com', :style => 'width: 200px' }  
+            .message-text.error
+              You've entered an invalid email
 
         .block.group.settings-section
           .label
@@ -64,15 +71,7 @@
                 %textarea.offerchat-input{ :placeholder => 'Message', :readonly => 'readonly' } 
               .offerchat-field-wrap
                 %input.offerchat-submit-form{ :type => 'submit', :value => 'Send' }
-<<<<<<< HEAD
-=======
 
-              
-        
-
-
-
->>>>>>> b67493b2d488b711f80280f562152fec38591503
 
 
 

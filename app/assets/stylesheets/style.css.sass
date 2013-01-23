@@ -139,11 +139,13 @@ em
 body
   font: 
     family: 'Helvetica Neue', Arial, Helvetica, sans-serif
-    size-adjust: 0.488
+    /* family: "FS Albert Web Regular", Arial, 'Helvetica Neue', Helvetica, sans-serif
+    size-adjust: 0.48
     weight: normal
     style: normal
-    size: 13px
+    size: 12px
   color: #636363
+  letter-spacing: 0
 strong
   font-weight: bold
 .block
@@ -188,6 +190,7 @@ strong
 button.button, a.button
   +button(#5f91cb)
 
+
 button
   &.close
     float: right
@@ -214,6 +217,7 @@ button
 
 .btn
   display: inline-block
+  /*font-family: "FS Albert Web Regular", Arial, sans-serif
   color: #565656
   cursor: pointer
   margin: 0 0 0 0
@@ -230,6 +234,7 @@ button
   &.small
     font-size: 11px
     font-weight: bold
+    /* font-family: "FS Albert Web ExtraBold", Arial, sans-serif
   &.action
     background: #22a0e2
     color: #fff
@@ -268,7 +273,7 @@ button
     height: 26px
 
   span.minimize
-    @include iconSize(11px,11px)
+    @include iconSize(11px,12px)
     background-image: image-url('icon-sprite.png')
     background-position: -15px -95px
     display: inline-block
@@ -367,9 +372,27 @@ button
   &.sL
     height: 515px
 
+.overlay-wrapper
+  position: absolute
+  top: 0
+  right: 0
+  z-index: 1010
+  width: 300px
+  height: 150px
+  background: #fff
+  border-radius: 5px
+  box-shadow: 0 1px 5px rgba(0,0,0,.2)
+  &.custom-date-selector
+    padding: 10px
+    border: 1px solid #cfcfcf
+    top: 25px
+    right: -230px
+
 .dashboard-sidebar
   width: 210px
-  border-right: 1px solid #ccc
+  border-right: 3px solid #cecece
+  box-sizing: border-box
+  z-index: 999
   background: #fafafa
   position: absolute
   top: 0
@@ -430,6 +453,7 @@ a.nav-parent
   cursor: pointer
   text-shadow: 0 1px 0 #fff
   border-top: 1px solid #e1e1e1
+  font-size: 13px
   padding: 15px
   display: block
   color: #454545
@@ -507,18 +531,22 @@ a.nav, .nav
   &.right
     float: right
 label.chat-count
+  font-family: Arial, sans-serif
+  box-shadow: 0 1px 0 #fff
   cursor: pointer
   position: relative
+  min-width: 10px
+  text-align: center
   top: -2px
   float: right
   text-shadow: 0 1px 0 #000
   display: inline-block
-  padding: 3px
+  padding: 3px 5px
   background: #222
   color: #eee
-  font-size: 12px
+  font-size: 11px
   font-weight: bold
-  border-radius: 3px
+  border-radius: 20px
   &.nu
     font-size: 11px
     top: -3px
@@ -529,9 +557,12 @@ label.chat-count
   color: #fff
   font-size: 11px
   font-weight: bold
-  padding: 2px 5px
+  padding: 3px 5px
+  min-width: 10px
+  text-align: center
   line-height: 1
-  border-radius: 3px
+  border-radius: 15px
+  font-family: Arial, sans-serif
 
 .chat-view
   @include blockPosition(left,70%,inline-block)
@@ -541,6 +572,7 @@ label.chat-count
   border-right: 1px solid #e1e1e1
   position: relative
   min-height: 600px
+  background: #fff
 .chat-sidebar-wrapper
   @include blockPosition(left,30%,inline-block)
  
@@ -568,6 +600,7 @@ label.chat-count
 .chat-message-1
   width: 80%
   line-height: 1.4
+  font-size: 14px
 .chat-group
   padding: 10px
   border-bottom: 1px dashed #e1e1e1
@@ -623,13 +656,14 @@ label.chat-count
   color: #e56e6e
 
 ._uB
-  color: #000
+  color: #333
 
 .chat-options
   float: right
   margin: 15px 0 15px 15px
 
 .module-header
+  position: relative
   &._y9
     padding-top: 15px
   padding: 10px
@@ -671,6 +705,11 @@ label.chat-count
       size: 11px
       weight: bold
 .module-body
+
+input.ui-button-input
+  border: none
+
+
 .ui-button-group
   -webkit-transition: all .1s ease-in-out
   -moz-transition: all .1s ease-in-out
@@ -728,6 +767,7 @@ a.response-trigger
   
   strong
     margin-right: 5px
+    font-weight: 800
   span
     color: #676767
   &:hover
@@ -771,9 +811,9 @@ button.back
       margin-right: 5px
       vertical-align: top
 .visitor-username
-  
+  font-weight: 800
   margin-right: 10px
-  font-size: 18px
+  font-size: 19px
   color: #333
 .visitor-current-status
   margin-top: 10px
@@ -838,6 +878,10 @@ button.back
   margin-left: -280px
   border-radius: 5px
   outline: none
+  &.modal-chat-view
+    width: 860px
+    margin-left: -425px
+
   .modal-header, .modal-body, .modal-footer
     padding: 10px
   .modal-body
@@ -903,7 +947,7 @@ button.back
   &.table-head
     font-size: 11px
     color: #999
-    font-weight: bold
+    font-weight: 800
     border-bottom: 1px solid #e1e1e1
     position: relative
     
@@ -915,7 +959,7 @@ button.back
   &.trow-unread
     .visitor-cell, .message-cell
       color: #222
-      font-weight: bold
+      font-weight: 800
     .msg-count-tag
       background: #5A8DC2
 
@@ -928,6 +972,9 @@ button.back
   position: relative
   &.status-cell
     width: 20px
+    margin-top: 3px
+    .status
+      margin-top: 5px
   &.visitor-cell
     width: 115px
   &.location-cell
@@ -937,7 +984,7 @@ button.back
   &.time-cell
     width: 80px
   &.message-cell
-    width: 30.22%
+    width: 29.5%
   &.message-trigger-cell
     width: 43.33%
   &.general-cell
@@ -953,7 +1000,7 @@ button.back
 
   .td-content
     vertical-align: top
-    line-height: 20px
+    line-height: 2
     span
       vertical-align: middle
     &.small
@@ -965,8 +1012,9 @@ button.back
   display: inline-block
 
 .table-head-label
-  font-size: 14px
-  padding: 10px
+  font-size: 16px
+  padding: 12px 15px
+  color: #000
 .table-head-collapsible
   cursor: pointer
 .table-footer
@@ -1015,7 +1063,10 @@ button.back
     background: #70d688
     color: #304134
 
-
+.message-text
+  margin: 3px 0
+  &.error
+    color: #f44848
 
 /* WIDGET PREVIEW
 .widget-option-box

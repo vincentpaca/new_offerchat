@@ -1,4 +1,7 @@
 $(document).ready(function(){	
+
+
+  
 	$(".scrollable").mCustomScrollbar({
 		autoDraggerLength: true,
 		advanced: {
@@ -13,6 +16,11 @@ $(document).ready(function(){
             updateOnContentResize: false
         }
   }); 
+
+  $("#chatHistoryCell").click(function(){
+    $('.modal-chat-view').removeClass('hide');
+    $(".modal-backdrop").removeClass('hide');
+  });
 
   $(".user-profile").click(function(){
     $(".user-settings").slideToggle('fast');
@@ -57,6 +65,9 @@ $("#sendDeveloperBtn").click(function(){
 $(".close").click(function(){
   $(".modal,.modal-backdrop").addClass('hide');
 });
+$("button.close-dark").click(function(){
+  $(".modal,.modal-backdrop").addClass('hide');
+})
 $("#closeChat").click(function(){
   $(".dialog-box,.modal-backdrop").removeClass('hide');
 });
@@ -110,3 +121,4 @@ $("#widgetCode").click(function() {
   });
 	
 });
+
