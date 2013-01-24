@@ -13,7 +13,7 @@
     %div
       .group._f0
         %h3 User Profile
-        %p Create a new user by supplying the information needed.
+        
         .block.tr.group.settings-section
           .label.vT
             First Name
@@ -37,11 +37,11 @@
               This field is required
         .block.tr.group.settings-section
           .label.vT
-            Email Address   
+            Email Address
           .input-container
             %input{ :type => 'text', :style => 'width: 250px' }
             %p
-              Input email address of new user to send user login information.
+              Login information and password willt be sent to this address.
             .message-text.error
               Please enter a valid email
         .block.group.settings-section
@@ -49,10 +49,11 @@
             &nbsp;
           .input-container
             %input.btn.small.action{ :type => 'submit', :value => 'Create User'}
+            .message-text.success._iL
+              Your changes have been saved
         
         .block
           %h3 Site Access
-          %p Select which site/s the new user will be assigned to. Select user role.
           %div.block
             .table-wrapper
               .table-row-wrapper.table-row-selectable
@@ -250,8 +251,22 @@
 
                 
 
+                   
+
+
+      .page-sidebar       
+        .block
+          %h3
+            Need Help? 
+          %p
+            Congue eleifend praesent exercitationem sociosqu metus. Cumque omnis senectus, iaculis habitasse delectus sem praesentium laboris.
+          
+        
+
+
+              
+        
 
 
 
-      
-    
+
