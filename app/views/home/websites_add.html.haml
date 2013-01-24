@@ -6,14 +6,13 @@
     %li._c3
       %h3{:style => 'line-height:26px'} 
         Add a Website
-          
 .scrollable
   .page-body
    
     %div
       .group._f0
         %h3 Website Information
-        
+        %p{ :style => 'padding:5px 0;'} Supply the information needed to add another website you want to have live chat on.
         .block.tr.group.settings-section
           .label
             Name
@@ -39,7 +38,7 @@
                 Clear all
               
 
-          %p Select operators to add to this website
+          %p{:style => "padding:5px 0;"} Select agents for this website. 
           %div
             .btn-selector.green
               %button.btn
@@ -65,7 +64,7 @@
         
 
         .block.group.settings-section
-          %input.btn.small.action{ :type => 'submit', :value => 'Create User'}
+          %input.btn.small.action{ :type => 'submit', :value => 'Add Website'}
                 
 
                    
@@ -73,10 +72,11 @@
 
       .page-sidebar       
         .block
-          %h3
-            Assign Agents to Specific Websites
-          %p
-            You can assign your agents to departments (eg. sales, technical support). Once configured, visitors will be able to direct chat requests towards the appropriate department
+          %h3{:style => 'line-height: 1.5em'}
+            Adding Live Chat to the New Website 
+          %p{:style => 'line-height: 1.8em'}
+            The same process should be followed when adding a live chat widget to this additional website. Copy the javascript code generated and paste in within the head tags of your website’s HTML or send it to your developer. 
+            %a{:href => ""}Learn more
           
         
 
