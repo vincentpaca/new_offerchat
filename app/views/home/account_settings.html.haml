@@ -9,12 +9,11 @@
   .page-body._tL
    
     %div
-      
       .block.tr.group.settings-section
         .label
           Email
         .input-container
-          %input{ :type => 'text', :style => 'width: 250px' }
+          %input{ :type => 'text', :style => 'width: 250px', :value => "admin@offerchat.com"}
       .block.tr.group.settings-section
         .label
           Password Reset
@@ -62,7 +61,7 @@
           Email Preferences
         .input-container
           %input{:id => "email_pref", :type => "checkbox", :name => "email_pref"}
-          %label{:for => "email_pref"} Send weekly report digest to all of the users subscribed to the newsletter.
+          %label{:for => "email_pref"} Send me weekly report updates.
 
       .block.group.settings-section
         .label

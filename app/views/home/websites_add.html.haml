@@ -1,3 +1,4 @@
+
 .page-header.group
   %ul.visitor-info-list
     %li._c3
@@ -95,4 +96,98 @@
 
 
       
+=======
+.page-header.group
+  %ul.visitor-info-list
+    %li._c3
+      %button.btn.rounded._nY5
+        %span.back    
+    %li._c3
+      %h3{:style => 'line-height:26px'} 
+        Add a Website
+.scrollable
+  .page-body
+   
+    %div
+      .group._f0
+        %h3 Website Information
+        %p{ :style => 'padding:5px 0;'} Supply the information needed to add another website you want to have live chat on.
+        .block.tr.group.settings-section
+          .label
+            Name
+          .input-container
+            %input{ :type => 'text', :style => 'width: 250px' }
+        .block.tr.group.settings-section
+          .label
+            URL
+          .input-container
+            %input{ :type => 'text', :style => 'width: 250px' }
+        
+        
+        
+        .block.tr.settings-section
+          %h3.group
+            Assign Agents 
+            .small{ :style => 'margin-left: 20px; display: inline-block' }
+              %a#selectAllAgents
+                Select all
+              %strong
+                &middot;
+              %a#clearAllAgents
+                Clear all
+              
+
+          %p{:style => "padding:5px 0;"} Select agents for this website. 
+          %div
+            .btn-selector.green
+              %button.btn
+                Jonathan
+              %button.btn
+                Harvey
+              %button.btn
+                Vince
+              %button.btn
+                Rein
+              %button.btn
+                Eralph
+              %button.btn
+                Jonathan
+              %button.btn
+                Harvey
+              %button.btn
+                Vince
+              %button.btn
+                Reina
+              %button.btn
+                Eralph
+        
+
+        .block.group.settings-section
+          %input.btn.small.action{ :type => 'submit', :value => 'Add Website'}
+                
+
+                   
+
+
+      .page-sidebar       
+        .block
+          %h3{:style => 'line-height: 1.5em'}
+            Adding Live Chat to the New Website 
+          %p{:style => 'line-height: 1.8em'}
+            The same process should be followed when adding a live chat widget to this additional website. Copy the javascript code generated and paste in within the head tags of your website’s HTML or send it to your developer. 
+            %a{:href => ""}Learn more
+          
+        
+
+
+              
+        
+
+
+
+
+
+
+
+
     
