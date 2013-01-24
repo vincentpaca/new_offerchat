@@ -256,7 +256,7 @@ button
   &.right
     float: right
 
-.btn
+.btn,a.btn
   display: inline-block
   font-family: Arial, sans-serif
   color: #565656
@@ -308,9 +308,13 @@ button
     width: 20px
     height: 20px
     padding: 0
-  &._nY5 
+
+  &._nY5
     width: 26px
     height: 26px
+
+
+
 
   span.minimize
     @include iconSize(11px,12px)
@@ -323,6 +327,9 @@ button
   span.back
     @extend .minimize
     background-position: -30px -95px
+    &._o9
+      position: relative
+      top: 7px
 
 .btn-selector
   .btn
@@ -461,8 +468,8 @@ button
 .profile-container
   background: #fff
   position: relative
-  padding: 15px
-  border-bottom: 1px solid #ccc
+  padding: 0
+  
   box-shadow: 0 1px 2px rgba(0,0,0,.2)
   z-index: 110
 .visitors-list
@@ -488,8 +495,9 @@ button
   
 .user-profile
   float: left
-  bottom: 0
+  margin-top: 3px
   margin-left: 10px
+  cursor: pointer
 .profile-agent-name
   font-size: 17px
   font-weight: 700
@@ -499,9 +507,9 @@ button
   position: absolute
   z-index: 110
   min-width: 100px
-  top: 5px
   border-radius: 5px
-  top: 60px
+  top: 45px
+  left: 53px
   background: rgba(0,0,0,.9)
   overflow: hidden
   a.option-status
@@ -1401,7 +1409,7 @@ a.offerchat-rate
 .graph-static-container
   background:
     size: cover-image
-    image: url('graph-blur.png')
+    image: image-url('graph-blur.png')
     repeat: no-repeat
   width: 100%
   height: 345px
