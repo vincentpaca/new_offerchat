@@ -83,6 +83,12 @@ i.icon
   &.icon-arrow-down
     @include iconSize(11px, 9px)
     background-position: -42px -96px
+  &.icon-chat
+    @include iconSize(13px, 12px)
+    background-position: 0 -128px
+  &.icon-chat-history
+    @include iconSize(13px, 12px)
+    background-position: -15px -128px
   
 
 h1,h2,h3
@@ -470,7 +476,8 @@ button
   border-radius: 5px
   top: 60px
   background: rgba(0,0,0,.9)
-  .option-status
+  overflow: hidden
+  a.option-status
     padding: 3px 7px
     color: #fff
     display: block
@@ -479,7 +486,7 @@ button
     -o-transition: all .1s ease-in-out
     transition: all .1s ease-in-out
     &:hover
-      background: rgba(255,255,255,.20)
+      background: rgba(255,255,255,.10)
 
 
 a.nav-parent
@@ -1385,8 +1392,8 @@ a.offerchat-rate
   height: 345px
   text-align: center
 .graph-static-headline
-  font-size: 50px
+  font-size: 54px
   padding-top: 13%
-  text-shadow: 0 0 10px rgba(0,0,0,.4)
+  letter-spacing: -2px
 
 
