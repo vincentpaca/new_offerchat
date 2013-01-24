@@ -1,4 +1,5 @@
 /* Harvey Enrile http://www.harveyenrile.com
+@import url(http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic)
 @mixin container($margin)
   margin-left: $margin
   margin-right: $margin
@@ -8,7 +9,7 @@
   height: $height
 
 @mixin header
-  padding: 10px
+  padding: 10px 20px
   background: #fafafa
   border-bottom: 1px solid #e1e1e1
 
@@ -20,7 +21,7 @@
 @mixin button($background)
   border-radius: 3px
   font-size: 12px
-  font-weight: bold
+  font-weight: 700
   background: $background
   border: none
   outline: none
@@ -79,14 +80,16 @@ i.icon
   &.icon-check
     @include iconSize(16px,11px)
     background-position: -60px -72px
-
+  &.icon-arrow-down
+    @include iconSize(11px, 9px)
+    background-position: -42px -96px
   
 
 h1,h2,h3
   color: #333
 h3
   font:
-    size: 16px
+    size: 17px
   &.bordered
     border-bottom: 1px solid #e1e1e1
     padding: 0 0 10px 0
@@ -138,16 +141,17 @@ em
   font-style: italic
 body
   font: 
-    family: 'Helvetica Neue', Arial, Helvetica, sans-serif
+    family: 'PT Sans', sans-serif
     /* family: "FS Albert Web Regular", Arial, 'Helvetica Neue', Helvetica, sans-serif
     size-adjust: 0.48
     weight: normal
     style: normal
-    size: 12px
+    size: 13px
   color: #636363
+  line-height: 1.4
   letter-spacing: 0
 strong
-  font-weight: bold
+  font-weight: 700
 .block
   margin: 20px 0 20px 0
   position: relative
@@ -171,7 +175,7 @@ strong
 
 
 .container
-  @include container(10px)
+  @include container(15px)
 
 .dashboard-header
   padding: 5px 0
@@ -217,7 +221,7 @@ button
 
 .btn
   display: inline-block
-  /*font-family: "FS Albert Web Regular", Arial, sans-serif
+  font-family: Arial, sans-serif
   color: #565656
   cursor: pointer
   margin: 0 0 0 0
@@ -234,7 +238,6 @@ button
   &.small
     font-size: 11px
     font-weight: bold
-    /* font-family: "FS Albert Web ExtraBold", Arial, sans-serif
   &.action
     background: #22a0e2
     color: #fff
@@ -310,6 +313,19 @@ button
       text-decoration: line-through
       color: #999
 
+.menu-list
+  float: right
+  > li
+    display: inline-block
+    margin-left: 15px
+    > a
+      display: block
+      padding: 3px 10px
+
+      text-shadow: 0 -1px 0 rgba(0,0,0,.4)
+      color: #fff
+      font-weight: bold
+  
 
 .dropdown-group
   display: inline-block
@@ -342,7 +358,7 @@ button
   display: block
   padding: 5px
   clear: both
-  font-size: 12px
+  font-size: 13px
   white-space: nowrap
   color: #333
   &:hover
@@ -357,13 +373,20 @@ button
 
 .caret
   display: inline-block
+  position: relative
   width: 0
   height: 0
   vertical-align: middle
-  border-top: 4px solid rgba(0,0,0,.7)
+  border-top: 4px solid #212121
   border-right: 4px solid transparent
   border-left: 4px solid transparent
   content: ""
+  &.top
+    border-top: 4px solid transparent
+    border-right: 4px solid transparent
+    border-left: 4px solid transparent
+    border-bottom: 4px solid #212121
+    top: -10px
 
 .scrollable
   position: relative
@@ -410,37 +433,47 @@ button
   background: #ffffff
 
 .profile-container
-  height: 200px
-  background: #2e2e2e
+  background: #fff
   position: relative
+  padding: 15px
+  border-bottom: 1px solid #ccc
+  box-shadow: 0 1px 2px rgba(0,0,0,.2)
+  z-index: 110
 .visitors-list
   display: none
 .user-current-status
-  margin-top: 5px
   .status-connection
     font-style: italic
+  a
+    color: #636363
 .user-thumbnail
-  height: 200px
-  width: 100%
+  height: 50px
+  width: 50px
   background-repeat: no-repeat
+  background-size: 100%
+  float: left
 
 .user-profile
-  position: absolute
-  cursor: pointer
+  float: left
   bottom: 0
-  width: 190px
-  padding: 10px
-  color: #fff
-  background: rgba(0,0,0,.5)
+  margin-left: 10px
+.profile-agent-name
+  font-size: 17px
+  font-weight: 700
+  color: #333
 
 .user-settings
-  margin-top: 5px
-  padding: 3px 0
-  border-top: 1px solid rgba(255,255,255,.2)
+  position: absolute
+  z-index: 110
+  min-width: 100px
+  top: 5px
+  border-radius: 5px
+  top: 60px
+  background: rgba(0,0,0,.9)
   .option-status
-    padding: 5px
-    display: block
+    padding: 3px 7px
     color: #fff
+    display: block
     -webkit-transition: all .1s ease-in-out
     -moz-transition: all .1s ease-in-out
     -o-transition: all .1s ease-in-out
@@ -452,8 +485,8 @@ button
 a.nav-parent
   cursor: pointer
   text-shadow: 0 1px 0 #fff
-  border-top: 1px solid #e1e1e1
-  font-size: 13px
+  border-bottom: 1px solid #e1e1e1
+  font-size: 17px
   padding: 15px
   display: block
   color: #454545
@@ -492,7 +525,7 @@ a.nav, .nav
 
 .nav-bg
   background: #fff
-
+  border-bottom: 1px solid #e1e1e1
 .page-header
   @include header
   text-shadow: 0 1px 0 #fff
@@ -537,7 +570,6 @@ label.chat-count
   position: relative
   min-width: 10px
   text-align: center
-  top: -2px
   float: right
   text-shadow: 0 1px 0 #000
   display: inline-block
@@ -579,6 +611,7 @@ label.chat-count
   
 .chat-header
   @include header
+  padding: 10px
   position: absolute
   box-sizing: border-box
   -moz-box-sizing: border-box
@@ -600,7 +633,7 @@ label.chat-count
 .chat-message-1
   width: 80%
   line-height: 1.4
-  font-size: 14px
+  font-size: 15px
 .chat-group
   padding: 10px
   border-bottom: 1px dashed #e1e1e1
@@ -647,7 +680,7 @@ label.chat-count
     color: #999
     font:
       style: italic
-      size: 12px
+      size: 13px
   &.o_4
     text-align: left
     padding: 5px  
@@ -657,6 +690,7 @@ label.chat-count
 
 ._uB
   color: #333
+  font-size: 15px
 
 .chat-options
   float: right
@@ -767,7 +801,7 @@ a.response-trigger
   
   strong
     margin-right: 5px
-    font-weight: 800
+    font-weight: 700
   span
     color: #676767
   &:hover
@@ -777,7 +811,7 @@ a.response-trigger
   float: right
 .chat-timer
   font-size: 18px
-  font-weight: bold
+  font-weight: 700
   margin-right: 10px
   display: inline-block
 
@@ -807,11 +841,11 @@ button.back
     margin-right: 10px
     margin-top: 2px
     &._c3
-      margin-top: 0
+      margin-top: 4px
       margin-right: 5px
       vertical-align: top
 .visitor-username
-  font-weight: 800
+  font-weight: 700
   margin-right: 10px
   font-size: 19px
   color: #333
@@ -836,7 +870,7 @@ button.back
     &:last-child
       margin-right: 0
     .info-label
-      font-weight: bold
+      font-weight: 700
       color: #999
       font-size: 11px
       margin-bottom: 5px
@@ -947,7 +981,7 @@ button.back
   &.table-head
     font-size: 11px
     color: #999
-    font-weight: 800
+    font-weight: 700
     border-bottom: 1px solid #e1e1e1
     position: relative
     
@@ -959,7 +993,7 @@ button.back
   &.trow-unread
     .visitor-cell, .message-cell
       color: #222
-      font-weight: 800
+      font-weight: 700
     .msg-count-tag
       background: #5A8DC2
 
@@ -1048,7 +1082,7 @@ button.back
   background: #f7edcd
   padding: 5px 7px
   line-height: 1
-  font-size: 12px
+  font-size: 13px
   border-radius: 3px
   text-shadow: 0 1px 0 #fff
   margin: 5px 0
@@ -1121,7 +1155,7 @@ button.back
 .offerchat-widget-head, .offerchat-widget-head-main
   background: #2bb2ea
   color: #fff
-  font-weight: bold
+  font-weight: 700
   cursor: pointer
   position: relative
 
@@ -1179,7 +1213,7 @@ button.back
   color: #787878
 
 .offerchat-agent-name
-  font-weight: bold
+  font-weight: 700
   display: inline
   color: #2ab2ea
 
@@ -1244,7 +1278,7 @@ input[type=submit].offerchat-submit-form
   margin: 0
   padding: 4px 12px
   cursor: pointer
-  font-weight: bold
+  font-weight: 700
   background: #2bb2ea
   border: none
   color: #fff
@@ -1260,7 +1294,7 @@ input[type=submit].offerchat-submit-form
     text-decoration: none
 
 a.offerchat-logo-link
-  font-weight: bold
+  font-weight: 700
 
 .offerchat-chat-wrapper
   max-height: 250px
@@ -1286,7 +1320,7 @@ a.offerchat-logo-link
   color: #2bb2ea
 
 .offerchat-user
-  font-weight: bold
+  font-weight: 700
 
 .offerchat-user-timestamp
   color: #c1c1c1
@@ -1342,3 +1376,17 @@ a.offerchat-rate
   100%
 #code
   display: none
+.graph-static-container
+  background:
+    size: 100%
+    image: url('graph-blur.png')
+    repeat: no-repeat
+  width: 100%
+  height: 345px
+  text-align: center
+.graph-static-headline
+  font-size: 50px
+  padding-top: 13%
+  text-shadow: 0 0 10px rgba(0,0,0,.4)
+
+

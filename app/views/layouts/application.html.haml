@@ -11,24 +11,32 @@
     .dashboard.group
       .dashboard-header.group
         .container
-          %a.logo    
+          %a.logo
+          %ul.menu-list
+            %li
+              %a Websites
+            %li 
+              %a Users
       %div.group{ :style => 'position:relative; min-width:1055px; max-width:100%' }
         .dashboard-sidebar
-          .profile-container
+          .profile-container.group
             .user-thumbnail{ :style => "background-image: url(#{ image_path('person1.jpg') })" }
             .user-profile
-              %strong Jonathan
+              .profile-agent-name Jonathan
               .user-current-status 
-                / %span.status.online  
-                / Online
-                .status-connection
-                  Connecting...
+                %a
+                  %span.status.online  
+                  Online
+                
+                  %i.icon.icon-arrow-down
+              /   .status-connection
+              /     Connecting...
               .user-settings{ :style => 'display: none' }
                 .user-select-status
-                  .option-status
+                  %a.option-status
                     %span.status.away
                     Away
-                  .option-status
+                  %a.option-status
                     %span.status.offline 
                     Offline
 
