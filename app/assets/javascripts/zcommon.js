@@ -1,6 +1,10 @@
 $(document).ready(function(){	
-
-
+  $(function(){
+    $.FancyNotifications();
+});
+// $.FancyNotifications.error("This is an error message.");
+// $.FancyNotifications.alert("This is an alert message.");
+$.FancyNotifications.notice("This is a notice message.");
   
 	$(".scrollable").mCustomScrollbar({
 		autoDraggerLength: true,
