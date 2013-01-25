@@ -5,7 +5,24 @@ $(document).ready(function(){
 // $.FancyNotifications.error("This is an error message.");
 // $.FancyNotifications.alert("This is an alert message.");
 $.FancyNotifications.notice("This is a notice message.");
-  
+
+  $(".ui-checkbox-container").click(function(){
+    // console.log(this)
+    // console.log($(this).find('input[type="checkbox"]').is(":checked"))
+
+    if($(this).find('input[type="checkbox"]').is(':checked')){
+      $(this).find('.ui-checked').remove();
+      $(this).find('input[type="checkbox"]').prop('checked', false);
+      $(this).removeClass('active');
+    } else{
+        $(this).addClass('active');
+        $(this).append('<div class="ui-checked"></div>');
+        $(this).find('input[type="checkbox"]').prop('checked', true);
+    }
+
+  });
+
+
 	$(".scrollable").mCustomScrollbar({
 		autoDraggerLength: true,
 		advanced: {
