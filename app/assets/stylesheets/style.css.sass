@@ -192,10 +192,10 @@ strong
 .dashboard-header
   height: 38px
   overflow: hidden
-  background: #5386bb
-  background: -webkit-gradient(linear, left top, left bottom, from(#5386bb), to(#4578ad))
-  background: -moz-linear-gradient(top,  #5386bb,  #4578ad)
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#5386bb', endColorstr='#4578ad')
+  background: #1a5da4
+  background: -webkit-gradient(linear, left top, left bottom, from(#2266af), to(#1b5ea5))
+  background: -moz-linear-gradient(top,  #2266af,  #1b5ea5)
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#2266af', endColorstr='#1b5ea5')
   border-top: 1px solid #2e5e8f
   box-shadow: 0 1px 0 rgba(255,255,255,.1) inset
 
@@ -382,9 +382,20 @@ button
   &.wS
     min-width: 120px
 
+li.upload-photo
+  color: #333
+  padding: 5px
+  &:hover
+    cursor: pointer
+    background: #5A8DC2
+    color: #fff
+    text-shadow: 0 -1px 0 rgba(0,0,0,.2)
+
 .dropdown-menu > li
   margin: 0 0 0 0 !important
   display: block !important
+  cursor: pointer
+  position: relative
   &:last-child
     border-bottom: none
 .dropdown-menu > li > a
@@ -528,15 +539,15 @@ a.nav-parent
   cursor: pointer
   text-shadow: 0 1px 0 #fff
   border-bottom: 1px solid #d1d1d1
-  font-size: 17px
-  padding: 10px 15px
+  font-size: 15px
+  padding: 8px 15px
   display: block
   color: #454545
   box-shadow: 0 1px 0 #fff
   &:hover 
     background: #e9e9e9
   &.selected
-    background: #5a8dc2
+    background: #38c6f4
     color: #fff
     text-shadow: 0 -1px 0 rgba(0,0,0,.2)
     border-bottom: 1px solid #3f76b0
@@ -1053,7 +1064,8 @@ button.back
     .status
       margin-top: 5px
   &.visitor-cell
-    width: 115px
+    /* width: 115px
+    width: 10%
   &.location-cell
     width: 23%
   &.system-info-cell
@@ -1067,9 +1079,11 @@ button.back
   &.general-cell
     width: 30%
   &.action-cell
-    width: 150px
+    /* width: 150px
+    width: 17%
   &.large-cell
-    width: 250px
+    /* width: 250px
+    width: 25%
   &.xs-cell
     width: 70px
   &.website-cell
@@ -1421,3 +1435,22 @@ a.offerchat-rate
   text-shadow: 0 1px 0 rgba(255,255,255,.5)
 
 
+.image-selector
+  position: absolute
+  top: 0
+  left: 0
+  z-index: 10
+  height: 100%
+  width: 100%
+  overflow: hidden
+  cursor: pointer
+  .file-input
+    position: absolute
+    top: 0
+    right: 0
+    width: 100%
+    height: 100%
+    font-size: 50px
+    cursor: pointer
+    opacity: 0
+    filter: alpha(opacity=0)

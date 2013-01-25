@@ -14,10 +14,19 @@
           .label
             Profile Photo
           .input-container
-            %button.close{:style => 'background-position: -42px -70px;height: 17px;width: 17px;border-radius: 100%;top: -5px;background-color: #b94a48; right: -5px;', :title => 'Remove profile photo'}
-            .profile-photo{:style => 'background-image: url(/assets/person1.jpg);'}
-            %input.btn.small{ :type => 'submit', :value => 'Change Profile Photo' ,:style => 'text-transform: uppercase; font-size: 9px; font-weight:bold;'}
-            //%input{ :type => 'file', :style => 'width: 250px; padding: 0' }
+            .profile-photo{:style => 'background-image: url(/assets/person1.jpg);'}            
+            .dropdown-group
+              %button.btn.small
+                Change photo 
+                %span.caret
+              %ul.dropdown-menu.wS{ :style => 'display: block' } 
+                %li.upload-photo
+                  Upload photo
+                  .image-selector
+                    %input.file-input{ :type => 'file', :tabindex => '-1' }
+                %li
+                  %a{ :href => '#' }
+                    Remove photo
 
         .block.tr.group.settings-section
           .label
