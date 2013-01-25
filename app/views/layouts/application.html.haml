@@ -317,10 +317,12 @@
         %button.btn.action.small Transfer
         %button.btn.small Cancel
 
-    .modal.modal-chat-view.hide
+    .modal.modal-chat-view
+      .modal-header
+        %button.close
+        %h2 Viewing conversation history
       .chat-view-inner{ :style => 'min-height: 450px' }
         .chat-header      
-          %button.close-dark{ :style => 'top: 5px' }
           .visitor-info-wrapper
             %ul.visitor-info-list
               
@@ -339,10 +341,7 @@
               %li
                 %a#more-info{ :style => 'display: inline-block; width: 70px;  text-align: center;' }
                   more info 
-              %li            
-                %button.btn.small
-                  Export transcript
-            
+              
           .visitor-more-info        
             %ul._y5
               %li
@@ -403,7 +402,9 @@
               %li.chat-group.ls
                 .chat-status-inner.red
                   %p Visitor-y43fddp has left the conversation
-        
+      .modal-footer
+        %button.btn.small
+          Export Transcript  
     .modal-backdrop.hide
 
     .modal-loader-wrapper.hide
