@@ -54,6 +54,7 @@
         
         .block
           %h3 Site Access
+          %p Assign a role for your user
           %div.block
             .table-wrapper
               .table-row-wrapper.table-row-selectable
@@ -67,19 +68,22 @@
                   .td-container.action-cell
                     .td-content
                       Role
+                - (1..10).each do |i| 
+                  .table-row.table-body.group
+                    .td-container.status-cell
+                      .td-content
+                        %input{ :type => 'checkbox' }
+                    .td-container.large-cell
+                      .td-content
+                        ="Website #{i}"
+                    .td-container.trigger-cell
+                      .td-content
+                        .ui-button-group
+                          %button.btn.active Administrator
+                          %button.btn Operator
+                  
                 
-                .table-row.table-body.group
-                  .td-container.status-cell
-                    .td-content
-                      %input{ :type => 'checkbox' }
-                  .td-container.large-cell
-                    .td-content
-                      BuyRealMarketing
-                  .td-container.trigger-cell
-                    .td-content
-                      .ui-button-group
-                        %button.btn.active Administrator
-                        %button.btn Operator
+                
                 .table-row.table-body.group
                   .td-container.status-cell
                     .td-content
