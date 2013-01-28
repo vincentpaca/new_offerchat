@@ -98,6 +98,10 @@ i.icon
   &.icon-home
     @include iconSize(13px, 12px)
     background-position: -63px -128px
+  &.icon-thumbs-up
+    @include iconSize(16px, 14px)
+    background-position: 0 -111px
+    vertical-align: middle
   
 
 h1,h2,h3
@@ -1057,10 +1061,11 @@ button.back
 .table-wrapper
   width: 100%
   
-.table-row
+.table-row,a.table-row
   display: block
   padding: 5px 20px
   overflow: hidden
+  color: #636363
   -webkit-transition: all .1s ease-in-out
   -moz-transition: all .1s ease-in-out
   -o-transition: all .1s ease-in-out
