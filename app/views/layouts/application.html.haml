@@ -8,6 +8,8 @@
     
 
   %body
+    %a#feedBackBtn
+      Send feedback
     .dashboard.group
       .dashboard-header.group
         .container
@@ -409,6 +411,34 @@
         %div{ :style => 'float: right' }
           visitor y43fddp has rated this chat as good 
           %i.icon.icon-thumbs-up
+    .modal#feedbackModal.hide
+      .modal-header
+        %button.close
+        %h2 We'd love to hear your feedback
+      .modal-body
+        %p Use canned responses to respond quickly with standard phrases.
+        .form-wrapper
+          .field-wrapper           
+            %fieldset
+              .label-container
+                %label Shortcut
+              .input-container
+                %select
+                  %option
+                    Bug Report
+                  %option
+                    Feature Request
+                  %option
+                    General Inquiry
+               
+            %fieldset
+              .label-container
+                %label Message
+              .input-container
+                %textarea.full
+      .modal-footer
+        %button.btn.small.action
+          Send Feedback
     .modal-backdrop.hide
 
     .modal-loader-wrapper.hide

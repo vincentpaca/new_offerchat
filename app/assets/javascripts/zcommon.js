@@ -22,6 +22,11 @@ $.FancyNotifications.notice("This is a notice message.");
 
   });
 
+  $("#feedBackBtn").click(function(){
+    $("#feedbackModal").removeClass('hide');
+    $(".modal-backdrop").removeClass('hide');
+  });
+
 
 	$(".scrollable").mCustomScrollbar({
 		autoDraggerLength: true,
