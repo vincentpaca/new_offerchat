@@ -5,6 +5,8 @@ $(document).ready(function(){
 // $.FancyNotifications.error("This is an error message.");
 // $.FancyNotifications.alert("This is an alert message.");
 $.FancyNotifications.notice("This is a notice message.");
+  
+  $(".chat-count").effect("bounce", { times: 3 }, 100);
 
   $(".ui-checkbox-container").click(function(){
     // console.log(this)
