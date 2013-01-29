@@ -29,12 +29,13 @@
             .message-text.error
               This field is required
         .block.tr.group.settings-section
-          .label.vT
-            Display Name
+          .label
+            Role
           .input-container
-            %input{ :type => 'text', :style => 'width: 250px' }
-            .message-text.error
-              This field is required
+            .ui-button-group
+              %button.btn.active Agent
+              %button.btn Administrator
+              
         .block.tr.group.settings-section
           .label.vT
             Email Address
@@ -44,218 +45,45 @@
               Login information and password willt be sent to this address.
             .message-text.error
               Please enter a valid email
-        .block.group.settings-section
-          .label
-            &nbsp;
-          .input-container
-            %input.btn.small.action{ :type => 'submit', :value => 'Create User'}
-            .message-text.success._iL
-              Your changes have been saved
         
-        .block
-          %h3 Site Access
-          %p Assign a role for your user
-          %div.block
-            .table-wrapper
-              .table-row-wrapper.table-row-selectable
-                .table-row.table-head.group
-                  .td-container.status-cell
-                    .td-content
-                      %input{ :type => 'checkbox' }
-                  .td-container.large-cell
-                    .td-content
-                      Website Name
-                  .td-container.action-cell
-                    .td-content
-                      Role
-                - (1..10).each do |i| 
-                  .table-row.table-body.group
-                    .td-container.status-cell
-                      .td-content
-                        %input{ :type => 'checkbox' }
-                    .td-container.large-cell
-                      .td-content
-                        ="Website #{i}"
-                    .td-container.trigger-cell
-                      .td-content
-                        .ui-button-group
-                          %button.btn.active Administrator
-                          %button.btn Operator
-                  
-                
-                
-                .table-row.table-body.group
-                  .td-container.status-cell
-                    .td-content
-                      %input{ :type => 'checkbox' }
-                  .td-container.large-cell
-                    .td-content
-                      BuyRealMarketing
-                  .td-container.trigger-cell
-                    .td-content
-                      .ui-button-group
-                        %button.btn.active Administrator
-                        %button.btn Operator
-                .table-row.table-body.group
-                  .td-container.status-cell
-                    .td-content
-                      %input{ :type => 'checkbox' }
-                  .td-container.large-cell
-                    .td-content
-                      BuyRealMarketing
-                  .td-container.trigger-cell
-                    .td-content
-                      .ui-button-group
-                        %button.btn.active Administrator
-                        %button.btn Operator
-                .table-row.table-body.group
-                  .td-container.status-cell
-                    .td-content
-                      %input{ :type => 'checkbox' }
-                  .td-container.large-cell
-                    .td-content
-                      BuyRealMarketing
-                  .td-container.trigger-cell
-                    .td-content
-                      .ui-button-group
-                        %button.btn.active Administrator
-                        %button.btn Operator
-                .table-row.table-body.group
-                  .td-container.status-cell
-                    .td-content
-                      %input{ :type => 'checkbox' }
-                  .td-container.large-cell
-                    .td-content
-                      BuyRealMarketing
-                  .td-container.trigger-cell
-                    .td-content
-                      .ui-button-group
-                        %button.btn.active Administrator
-                        %button.btn Operator
-                .table-row.table-body.group
-                  .td-container.status-cell
-                    .td-content
-                      %input{ :type => 'checkbox' }
-                  .td-container.large-cell
-                    .td-content
-                      BuyRealMarketing
-                  .td-container.trigger-cell
-                    .td-content
-                      .ui-button-group
-                        %button.btn.active Administrator
-                        %button.btn Operator
-                .table-row.table-body.group
-                  .td-container.status-cell
-                    .td-content
-                      %input{ :type => 'checkbox' }
-                  .td-container.large-cell
-                    .td-content
-                      BuyRealMarketing
-                  .td-container.trigger-cell
-                    .td-content
-                      .ui-button-group
-                        %button.btn.active Administrator
-                        %button.btn Operator
-                .table-row.table-body.group
-                  .td-container.status-cell
-                    .td-content
-                      %input{ :type => 'checkbox' }
-                  .td-container.large-cell
-                    .td-content
-                      BuyRealMarketing
-                  .td-container.trigger-cell
-                    .td-content
-                      .ui-button-group
-                        %button.btn.active Administrator
-                        %button.btn Operator
-                .table-row.table-body.group
-                  .td-container.status-cell
-                    .td-content
-                      %input{ :type => 'checkbox' }
-                  .td-container.large-cell
-                    .td-content
-                      BuyRealMarketing
-                  .td-container.trigger-cell
-                    .td-content
-                      .ui-button-group
-                        %button.btn.active Administrator
-                        %button.btn Operator
-                .table-row.table-body.group
-                  .td-container.status-cell
-                    .td-content
-                      %input{ :type => 'checkbox' }
-                  .td-container.large-cell
-                    .td-content
-                      BuyRealMarketing
-                  .td-container.trigger-cell
-                    .td-content
-                      .ui-button-group
-                        %button.btn.active Administrator
-                        %button.btn Operator
-                .table-row.table-body.group
-                  .td-container.status-cell
-                    .td-content
-                      %input{ :type => 'checkbox' }
-                  .td-container.large-cell
-                    .td-content
-                      BuyRealMarketing
-                  .td-container.trigger-cell
-                    .td-content
-                      .ui-button-group
-                        %button.btn.active Administrator
-                        %button.btn Operator
-                .table-row.table-body.group
-                  .td-container.status-cell
-                    .td-content
-                      %input{ :type => 'checkbox' }
-                  .td-container.large-cell
-                    .td-content
-                      BuyRealMarketing
-                  .td-container.trigger-cell
-                    .td-content
-                      .ui-button-group
-                        %button.btn.active Administrator
-                        %button.btn Operator
-                .table-row.table-body.group
-                  .td-container.status-cell
-                    .td-content
-                      %input{ :type => 'checkbox' }
-                  .td-container.large-cell
-                    .td-content
-                      BuyRealMarketing
-                  .td-container.trigger-cell
-                    .td-content
-                      .ui-button-group
-                        %button.btn.active Administrator
-                        %button.btn Operator
-                .table-row.table-body.group
-                  .td-container.status-cell
-                    .td-content
-                      %input{ :type => 'checkbox' }
-                  .td-container.large-cell
-                    .td-content
-                      BuyRealMarketing
-                  .td-container.trigger-cell
-                    .td-content
-                      .ui-button-group
-                        %button.btn.active Administrator
-                        %button.btn Operator
-                .table-row.table-body.group
-                  .td-container.status-cell
-                    .td-content
-                      %input{ :type => 'checkbox' }
-                  .td-container.large-cell
-                    .td-content
-                      BuyRealMarketing
-                  .td-container.trigger-cell
-                    .td-content
-                      .ui-button-group
-                        %button.btn.active Administrator
-                        %button.btn Operator
+        .block.tr.settings-section
+          %h3.group
+            Website Access
+            .small{ :style => 'margin-left: 20px; display: inline-block' }
+              %a#selectAllAgents
+                Select all
+              %strong
+                &middot;
+              %a#clearAllAgents
+                Clear all
+              
 
-                
+          %p Grant your users access to specific or all of your websites
+          %div
+            .btn-selector.green
+              %button.btn.active
+                BuzzedNow
+              %button.btn
+                BuyRealMarketing
+              %button.btn
+                Quick SEO Results
+              %button.btn
+                Cebu Pacific
+              %button.btn
+                Agoda
+              %button.btn
+                Facebook
+            
+            %p.small{ :style => 'color: #999' } A user must be at assigned to at least one (1) website
+        
 
-                   
+
+        .block.group.settings-section
+          %input.btn.small.action{ :type => 'submit', :value => 'Create User'}
+          .message-text.success._iL
+            Your changes have been saved
+        
+        
 
 
       .page-sidebar       
