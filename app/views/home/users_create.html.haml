@@ -28,14 +28,7 @@
             %input{ :type => 'text', :style => 'width: 250px' }
             .message-text.error
               This field is required
-        .block.tr.group.settings-section
-          .label
-            Role
-          .input-container
-            .ui-button-group
-              %button.btn.active Agent
-              %button.btn Administrator
-              
+        
         .block.tr.group.settings-section
           .label.vT
             Email Address
@@ -45,7 +38,14 @@
               Login information and password willt be sent to this address.
             .message-text.error
               Please enter a valid email
-        
+        .block.tr.group.settings-section
+          .label
+            Role
+          .input-container
+            .ui-button-group
+              %button.btn.active Agent
+              %button.btn Administrator
+                
         .block.tr.settings-section
           %h3.group
             Website Access
@@ -56,10 +56,13 @@
                 &middot;
               %a#clearAllAgents
                 Clear all
-              
+        
 
           %p Grant your users access to specific or all of your websites
+
           %div
+
+
             .btn-selector.green
               %button.btn.active
                 BuzzedNow
