@@ -610,8 +610,7 @@ a.nav, .nav
   color: #434343
   display: block
   cursor: pointer
-  font-size: 11px
-  font-weight: bold
+  font-size: 13px
   text-shadow: 0 1px 0 #fff
   border-left: 3px solid transparent
   -webkit-transition: all .1s ease-in-out
@@ -1056,6 +1055,11 @@ button.back
   z-index: 1040
   background-color: black
   opacity: .6
+  &.white
+    @extend .modal-backdrop
+    opacity: .5
+    background: white
+
 
 .modal-loader-wrapper
   position: fixed
@@ -1116,7 +1120,8 @@ button.back
     overflow: visible
     margin-top: 3px
     .status
-      margin-top: 5px
+      margin-top: 7px
+      display: block
   &.visitor-cell
     /* width: 115px
     width: 10%
@@ -1557,3 +1562,64 @@ a.offerchat-rate
     letter-spacing: -1px
     line-height: 1.4
     color: #463f31
+
+.caret-tour
+  position: absolute
+  bottom: -20px
+  left: 20px
+  width: 0
+  height: 0
+  border-color: #333 transparent  transparent transparent 
+  border-width: 7px
+  border-style: solid
+  &.left
+    left: -12px
+    top: 20px
+    border-color: transparent #333  transparent transparent 
+
+.tooltip-tour
+  h3
+    color: #fff
+    font-weight: 700
+    font-size: 13px
+    line-height: 1
+  position: absolute
+  top: 0
+  background: #333
+  box-shadow: 0 1px 7px rgba(0,0,0,.5)
+  font-size: 12px
+  width: 250px
+  color: #fff
+  padding: 10px
+  z-index: 1050
+  &.hide
+    display: none
+
+  .btn
+    margin-right: 5px
+  #skipTour
+    float: right
+    margin-top: 5px
+    color: #fff
+    text-decoration: underline
+    opacity: 0.7
+  &.tour-intro
+    width: 300px
+  &.tour-status
+    top: 38px
+    left: 145px
+  &.tour-websites
+    top: 116px
+    left: 145px
+  &.tour-chats
+    top: 157px
+    left: 145px
+  &.tour-history
+    top: 193px
+    left: 145px
+  &.tour-chat-settings
+    top: 233px
+    left: 145px
+  &.tour-widget-settings
+    top: 270px
+    left: 145px

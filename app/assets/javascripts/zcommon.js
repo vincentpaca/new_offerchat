@@ -147,6 +147,36 @@ $("#widgetCode").click(function() {
     $(".swatch-selector a").removeClass('selected');
     $(this).addClass('selected');
   });
+
+  // TOUR ANIMATION
+
+
+  setTimeout(function(){
+    $(".modal-backdrop.white").fadeIn();
+    setTimeout(function(){
+      $(".tour-intro").fadeIn(300);
+      $(".tour-intro .action").click(function(){
+        $(".tour-intro").fadeOut(300);
+        $(".tour-status").fadeIn(300);
+      });
+      $(".tour-status .action").click(function(){
+        $(".tour-status").fadeOut(300);
+        $(".tour-websites").fadeIn(300);
+      });
+      $(".tour-websites .action").click(function(){
+        $(".tour-websites").fadeOut(300);
+        $(".tour-chats").fadeIn(300);
+      });
+      $(".tour-chats .action").click(function(){
+        $(".tour-chats").fadeOut(300);
+        $(".tour-history").fadeIn(300);
+      });
+    },1000)
+  }, 300)
+
+  $("#skipTour").click(function(){
+    $(".tooltip-tour, .modal-backdrop.white").remove();
+  });
 	
 });
 
