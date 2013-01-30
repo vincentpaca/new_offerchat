@@ -50,13 +50,13 @@
 
           .sidebar-inner.scrollable
             .section-nav
-              %a.nav-parent
+              %a.nav-parent#dashboardNav.selected
                 %i.icon-icon-home
                 Dashboard
             .section-nav
-              %a.nav-parent.selected
+              %a.nav-parent#firstNav
                 BuyRealMarketing
-              .nav-bg
+              .nav-bg{ :style => 'display: none' }
                 
                 %a.nav.active
                   %i.icon.icon-chat
@@ -445,7 +445,7 @@
       %p
         Since this is your first time using our dashboard, we'd like to give you a tour before you start enjoying the tool
       %button.btn.small.action
-        Next
+        Start tour
       %a#skipTour
         Skip
 

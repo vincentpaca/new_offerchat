@@ -155,11 +155,15 @@ $("#widgetCode").click(function() {
     $(".modal-backdrop.white").fadeIn();
     setTimeout(function(){
       $(".tour-intro").fadeIn(300);
+
       $(".tour-intro .action").click(function(){
         $(".tour-intro").fadeOut(300);
         $(".tour-status").fadeIn(300);
       });
       $(".tour-status .action").click(function(){
+        $("#firstNav").addClass('selected');
+        $("#firstNav").next().slideDown('fast');
+        $("#dashboardNav").removeClass('selected');
         $(".tour-status").fadeOut(300);
         $(".tour-websites").fadeIn(300);
       });
@@ -170,6 +174,14 @@ $("#widgetCode").click(function() {
       $(".tour-chats .action").click(function(){
         $(".tour-chats").fadeOut(300);
         $(".tour-history").fadeIn(300);
+      });
+      $(".tour-history .action").click(function(){
+        $(".tour-history").fadeOut(300);
+        $(".tour-chat-settings").fadeIn(300);
+      });
+      $(".tour-chat-settings .action").click(function(){
+        $(".tour-chat-settings").fadeOut(300);
+        $(".tour-widget-settings").fadeIn(300);
       });
     },1000)
   }, 300)

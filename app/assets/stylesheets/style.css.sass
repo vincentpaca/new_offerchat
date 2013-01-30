@@ -58,7 +58,7 @@ i.icon
     background-position: 0 -50px
     @include iconSize(12px,16px)
     top: 2px
-  &.browser-mozilla
+  &.browser-mozilla, &.browser-firefox
     @include iconSize(19px,16px)
     background-position: -46px 2px
     top: 2px
@@ -1057,7 +1057,7 @@ button.back
   opacity: .6
   &.white
     @extend .modal-backdrop
-    opacity: .5
+    opacity: 0
     background: white
 
 
@@ -1586,7 +1586,7 @@ a.offerchat-rate
   position: absolute
   top: 0
   background: #333
-  box-shadow: 0 1px 7px rgba(0,0,0,.5)
+  box-shadow: 0 1px 10px rgba(0,0,0,.7)
   font-size: 12px
   width: 250px
   color: #fff
