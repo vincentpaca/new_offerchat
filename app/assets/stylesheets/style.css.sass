@@ -102,6 +102,15 @@ i.icon
     @include iconSize(16px, 14px)
     background-position: 0 -111px
     vertical-align: middle
+  &.icon-facebook
+    @include iconSize(14px, 16px)
+    background-position: 0 -143px
+    vertical-align: middle
+  &.icon-twitter
+    @include iconSize(17px, 16px)
+    background-position: -15px -143px
+    vertical-align: middle
+
 
   
 
@@ -1110,7 +1119,10 @@ button.back
       font-weight: 700
     .msg-count-tag
       background: #5A8DC2
-
+.message-notice
+  background: #fbf3e3
+  border: 1px solid #f0e3c7
+  padding: 5px
 .td-container
   display: inline-block
   float: left
@@ -1567,8 +1579,15 @@ a.offerchat-rate
     color: #463f31
 
 a.social-btn
-  
-
+  display: inline-block
+  background: #333
+  color: #eee
+  padding: 5px 10px
+  border-radius: 3px
+  &.facebook
+    background: #5f78d5
+  &.twitter
+    background: #21b1f4
 .caret-tour
   position: absolute
   bottom: -20px
