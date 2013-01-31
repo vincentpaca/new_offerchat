@@ -110,7 +110,10 @@ i.icon
     @include iconSize(17px, 16px)
     background-position: -15px -143px
     vertical-align: middle
-
+  &.icon-warning
+    @include iconSize(18px, 16px)
+    background-position: -21px --36px
+    vertical-align: top
 
   
 
@@ -1119,10 +1122,8 @@ button.back
       font-weight: 700
     .msg-count-tag
       background: #5A8DC2
-.message-notice
-  background: #fbf3e3
-  border: 1px solid #f0e3c7
-  padding: 5px
+
+
 .td-container
   display: inline-block
   float: left
@@ -1236,6 +1237,12 @@ button.back
     border-bottom-left-radius: 3px
     border-bottom-right-radius: 3px
     display: inline-block
+
+.message-notice
+  background: #fbf3e3
+  border: 1px solid #f0e3c7
+  padding: 5px
+  color: #292722
 
 /* WIDGET PREVIEW
 .widget-option-box
