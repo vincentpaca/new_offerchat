@@ -184,7 +184,7 @@ $("#widgetCode").click(function() {
         $(".tour-widget-settings").fadeIn(300);
       });
     },1000)
-  }, 300)
+  }, 1000)
 
   $("#skipTour").click(function(){
     $(".tooltip-tour, .modal-backdrop.white").remove();
