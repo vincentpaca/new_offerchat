@@ -1666,3 +1666,30 @@ a.social-btn
   &.tour-widget-settings
     top: 270px
     left: 145px
+
+.blink
+  color: #fff !important
+  text-shadow: 0 -1px 0 #444 !important
+  -webkit-animation-name: activeChat
+  -moz-animation-name: activeChat
+  -webkit-animation-duration: 1.5s
+  -moz-animation-duration: 1.5s
+  -webkit-animation-iteration-count: infinite
+  -moz-animation-iteration-count: infinite
+  -webkit-transition: none
+ 
+@-webkit-keyframes activeChat
+  0%
+    background: #29b7e9
+  50%
+    background: #0e8adc
+  100%
+    background: #29b7e9
+ 
+@-moz-keyframes activeChat
+  0%
+    background: #29b7e9
+  50%
+    background: #0e8adc
+  100%
+    background: #29b7e9
