@@ -114,6 +114,12 @@ i.icon
     @include iconSize(18px, 16px)
     background-position: -21px -36px
     vertical-align: top
+  &.icon-globe
+    @include iconSize(16px, 16px)
+    background-position: 0 -166px
+    vertical-align: middle
+    margin-right: 2px
+
 
 
 small
@@ -327,6 +333,12 @@ button
     &:active
       background: #e63c3c
       box-shadow: 0 1px 1px rgba(0,0,0,.1) inset
+  &.websites
+    font-size: 14px
+    padding: 7px
+    width: 350px
+    font-weight: bold
+    text-align: left
 
   &:active
     background: #f1f1f1
@@ -347,6 +359,19 @@ button
   &._nY5
     width: 26px
     height: 26px
+
+  &.check-submit
+    background: image-url('icon-sprite.png') -91px -71px    
+    width: 15px
+    height: 15px
+    border: none
+    padding: 0
+    opacity: .5
+  &.delete-submit
+    @extend .check-submit
+    background-position: -108px -71px
+
+
 
 
 
@@ -441,13 +466,45 @@ button
   z-index: 1000
   float: left
   min-width: 160px  
-  
   margin: 2px 0 0 2px
   list-style: none
   background-color: #fff
   border: 1px solid #d1d1d1
+  font-family: Arial, sans-serif
   &.wS
     min-width: 120px
+  &.websites
+    width: 100%
+  > li
+    margin: 0 0 0 0 !important
+    display: block !important
+    cursor: pointer
+    position: relative
+    &:last-child
+      border-bottom: none
+    > a
+      display: block
+      padding: 5px
+      clear: both
+      font-size: 13px
+      white-space: nowrap
+      color: #333
+      &:hover
+        background: #5A8DC2
+        color: #fff
+        text-shadow: 0 -1px 0 rgba(0,0,0,.2)
+  &.websites > li > a
+    font-size: 14px
+    font-weight: bold
+    display: block
+    .small
+      color: #999
+      font-weight: normal
+      display: block
+    :hover
+      background: #5A8DC2
+      color: #fff
+      text-shadow: 0 -1px 0 rgba(0,0,0,.2)
 
 li.upload-photo
   color: #333
@@ -458,24 +515,7 @@ li.upload-photo
     color: #fff
     text-shadow: 0 -1px 0 rgba(0,0,0,.2)
 
-.dropdown-menu > li
-  margin: 0 0 0 0 !important
-  display: block !important
-  cursor: pointer
-  position: relative
-  &:last-child
-    border-bottom: none
-.dropdown-menu > li > a
-  display: block
-  padding: 5px
-  clear: both
-  font-size: 13px
-  white-space: nowrap
-  color: #333
-  &:hover
-    background: #5A8DC2
-    color: #fff
-    text-shadow: 0 -1px 0 rgba(0,0,0,.2)
+
 
 .checkbox-wrapper
   width: 30px
@@ -1229,6 +1269,14 @@ button.back
     border: 1px solid #41972b
     border-radius: 12px
 
+.visitor-input
+  border: 1px solid #d1d1d1
+  input
+    &[type='text']
+      border: none
+      width: 140px
+      font-size: 16px
+      font-weight: bold
 
 .message-text
   margin: 3px 0
@@ -1571,6 +1619,42 @@ a.offerchat-rate
 .notification
   padding: 5px 20px
 
+.reports-list
+  li
+    display: inline-block
+    text-align: center
+    width: 25%
+    float: left
+  .report-label
+    vertical-align: middle
+    margin-right: 5px
+    display: inline-block
+    height: 4px
+    width: 10px
+    background: #676767
+    &.page-views
+      background: #3cb2e9
+    &.active-chats
+      background: #eeb445
+    &.missed-chats
+      background: #e56666
+    &.proactive-chats
+      background: #8acb70
+  h3
+    font-weight: bold
+    font-size: 15px
+    color: #9f9f9f
+
+.report-metric-value
+  font-size: 41px
+  font-weight: 700
+  letter-spacing: -2px
+
+.widget-container
+  text-align: center
+  h3
+    font-weight: bold
+    margin-bottom: 15px
 #feedBackBtn
   position: fixed
   bottom: -3px
@@ -1672,6 +1756,7 @@ a.social-btn
     top: 270px
     left: 145px
 
+
 .blink
   color: #fff !important
   text-shadow: 0 -1px 0 #444 !important
@@ -1698,3 +1783,5 @@ a.social-btn
     background: #0e8adc
   100%
     background: #29b7e9
+
+

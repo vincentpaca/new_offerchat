@@ -1,0 +1,111 @@
+.page-header.group
+  %h3 
+    Reports
+    .module-header._c8
+      .ui-button-group
+        %button.btn.active Websites
+        %button.btn Agents
+  
+.page-body.group{ :style => 'padding: 0' }
+  .pB_1a{ :style => 'padding: 10px 20px' }
+
+    .dropdown-group
+      %button.btn.websites
+        %i.icon.icon-globe 
+        All websites 
+        %span.caret{ :style => 'float: right; margin-top: 7px;' }
+      %ul.dropdown-menu.websites{ :style => 'display: none' }
+        %li
+          %a
+            Buzzednow.com
+            %span.small http://www.buzzednow.com
+        %li
+          %a
+            Buyrealmarketing
+            %span.small http://www.buyrealmarketing.com
+        %li
+          %a
+            Cebu Pacific Air Promos
+            %span.small http://www.cebupacificair-promos.com
+  .scrollable
+    %div{ :style => 'width: 70%; float: left' } 
+      .pB_1a     
+        #graph
+        %pre#code.prettyprint.linenums
+          :preserve    
+            var day_data = [
+              {"period": "2012-10-01", "views": 1407, "active": 660, "missed": 2, "proactive": 52},
+              {"period": "2012-09-30", "views": 1551, "active": 629, "missed": 51, "proactive": 32},
+              {"period": "2012-09-29", "views": 1894, "active": 849, "missed": 34, "proactive": 52},
+              {"period": "2012-09-28", "views": 1294, "active": 690, "missed": 10, "proactive": 12},
+              {"period": "2012-09-27", "views": 1464, "active": 600, "missed": 4, "proactive": 20},
+              {"period": "2012-09-26", "views": 1544, "active": 100, "missed": 10, "proactive": 34},
+              {"period": "2012-09-25", "views": 1574, "active": 530, "missed": 56, "proactive": 52},
+              {"period": "2012-09-24", "views": 1294, "active": 702, "missed": 23, "proactive": 23},
+              {"period": "2012-09-23", "views": 1694, "active": 690, "missed": 5, "proactive": 9},
+              {"period": "2012-09-22", "views": 1394, "active": 618, "missed": 1, "proactive": 43},
+              {"period": "2012-09-21", "views": 1294, "active": 700, "missed": 9, "proactive": 89},
+              {"period": "2012-09-20", "views": 2103, "active": 560, "missed": 22, "proactive": 53},
+              {"period": "2012-09-19", "views": 1502, "active": 634, "missed": 19, "proactive": 42},
+              {"period": "2012-09-18", "views": 2015, "active": 590, "missed": 12, "proactive": 85},
+              {"period": "2012-09-17", "views": 1724, "active": 660, "missed": 9, "proactive": 37},
+              {"period": "2012-09-16", "views": 1403, "active": 753, "missed": 30, "proactive": 28},
+              {"period": "2012-09-15", "views": 1615, "active": 300, "missed": 20, "proactive": 47},
+              {"period": "2012-09-14", "views": 1609, "active": 589, "missed": 12, "proactive": 26},
+              {"period": "2012-09-13", "views": 2099, "active": 600, "missed": 0, "proactive": 47},
+              {"period": "2012-09-12", "views": 1463, "active": 712, "missed": 5, "proactive": 27},
+              {"period": "2012-09-11", "views": 1560, "active": 656, "missed": 10, "proactive": 5},
+              {"period": "2012-09-10", "views": 100, "active": 70, "missed": 30, "proactive": 0 }
+            ];
+            Morris.Line({
+              element: 'graph',
+              data: day_data,
+              lineWidth: 3,
+              lineColors: ['#3cb2e9', '#eeb445', '#e56666', '#8acb70'],
+              xkey: 'period',
+              ykeys: ['views', 'active','missed','proactive'],
+              labels: ['Page Views', 'Active Chats','Missed Chats','Proactive Chats'],
+            });
+
+        .pB_1a 
+          .reports-container
+            %ul.reports-list.group
+              %li
+                %h3
+                  %span.report-label.page-views
+                  Total Page Views
+                .report-metric-value
+                  1,345
+              %li
+                %h3
+                  %span.report-label.active-chats
+                  Active Chats
+                .report-metric-value
+                  139
+              %li
+                %h3
+                  %span.report-label.missed-chats
+                  Missed Chats
+                .report-metric-value
+                  43
+              %li
+                %h3
+                  %span.report-label.proactive-chats
+                  Proactive Chats
+                .report-metric-value
+                  32
+
+
+    .page-sidebar
+      .widget-container
+        %h3
+          Chat widget score
+
+        %input{ :class => 'dial',   :value => "3.2" }
+
+        %small.help-label
+          %a What is this?
+
+     
+
+ 

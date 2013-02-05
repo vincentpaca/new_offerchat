@@ -189,6 +189,22 @@ $("#widgetCode").click(function() {
   $("#skipTour").click(function(){
     $(".tooltip-tour, .modal-backdrop.white").remove();
   });
+  
+
+  
+
+   $(".dial").knob({
+        'min':0,
+        'max':10,
+        'width': 170,
+        'fgColor': '#56b6f9',
+        'bgColor': '#c7dceb',
+        'thickness': .35,
+        'readOnly': true
+  });  
+
+              
+          
 	
 });
 
