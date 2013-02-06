@@ -220,8 +220,16 @@ $("#widgetCode").click(function() {
         'thickness': .35,
         'readOnly': true
   });  
+     
 
-              
+      $("#dateRange").dateRange({
+        days : false,
+        rangePicker : true,
+        
+      });        
+
+     
+
           
 	
 });
