@@ -1,17 +1,15 @@
 #calendar-container {
-	
-	float: left;
-	
-
-
+	border-top: 1px solid #e1e1e1;	
+	overflow: auto;
+	padding-top: 10px;
 }
 
 #calendar-container table {
 	position: relative;
-	margin: 0 15px 15px 0;
+	margin: 10px;
 	float: left;
 	padding-top : 20px;
-	margin-top : -20px;
+	margin-top : -25px;
 	
 
 	font-family : "Helvetica Neue" Arial, Sans-Serif;
@@ -38,7 +36,7 @@
 #calendar-container caption, #calendar-container td {
 	font-size : 12px;
 	font-weight : bold;
-	padding:3px;
+	padding:5px;
 }
 
 #calendar-container th, #calendar-container .prev, #calendar-container .next {
@@ -62,13 +60,11 @@
 	width: 20px;
 	text-align : center;
 	cursor: default;
-	border-bottom: 1px solid rgb(165,169,177);
+	border-bottom: 1px solid #e1e1e1
 }
 
 #calendar-container td {
-	border-top: 1px solid rgb(241,241,241);
-	border-right: 1px solid rgb(241,241,241);
-	border-left: 1px solid rgb(165,169,177);	
+	
 }
 
 #calendar-container th abbr 
@@ -80,7 +76,6 @@
 	background: #6db3f2;
 	
 	color: White;
-	border: 1px solid #364f72;	
 
 	cursor: pointer;
 }
@@ -114,4 +109,7 @@
 	font-weight: bold;
 	position : relative;
 	top : 20px;
+	border-top: 1px solid #e1e1e1;
+	border-left: 1px solid #e1e1e1;
+	border-right: 1px solid #e1e1e1;
 }

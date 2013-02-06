@@ -31,7 +31,7 @@
     .date-selector._lT
       %ul
         %li
-          %a.active
+          %a
             Today
         %li
           %a
@@ -40,11 +40,15 @@
           %a
             This month
         %li
-          %a
+          %a.active#customDateTrigger
             Custom date
           .custom-date-range-wrapper
-            %input#dateRange
-
+            .caret.cT1
+            .custom-date-input-wrapper
+              %button.btn.action.small
+                Go
+              %input#dateRange{ :placeholder => 'Select a date' }
+              
   .scrollable
     %div{ :style => 'width: 70%; float: left' } 
       .pB_1a     

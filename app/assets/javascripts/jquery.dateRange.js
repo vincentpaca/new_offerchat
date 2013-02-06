@@ -168,7 +168,7 @@
             }
         };
 
-       
+        $(this.element).focus(function () {
             var startDate,
                 endDate;
 
@@ -213,15 +213,15 @@
                 $(this).trigger('open');
                 open = true;
             }
- 
+        });
 
-        // $(this.element).blur(function () {
-        //     if (open && !over) {
-        //         container.remove();
-        //         $(this).trigger('close');
-        //         open = false;
-        //     }
-        // });
+        $(this.element).blur(function () {
+            if (open && !over) {
+                container.remove();
+                $(this).trigger('close');
+                open = false;
+            }
+        });
 
         this.init();
     }
