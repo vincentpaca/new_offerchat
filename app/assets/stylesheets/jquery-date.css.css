@@ -1,7 +1,9 @@
 #calendar-container {
-	border-top: 1px solid #e1e1e1;	
+	
 	overflow: auto;
-	padding-top: 10px;
+	padding-top: 20px;
+	background: #fff;
+	border-top: 1px solid #c1c1c1;
 }
 
 #calendar-container table {
@@ -47,7 +49,7 @@
 	background-color: #1980e5;
 	color: White;
 	font-weight: bold;
-	border: 1px solid #364f72;
+	
 
 }
 
