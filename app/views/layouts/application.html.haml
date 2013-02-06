@@ -19,12 +19,28 @@
             %li
               %a.active Websites
               .caret.menu-marker
+              .tooltip-tour.tour-admin-websites.group.hide
+                .caret-tour.top
+                %h3 Your Websites
+                %p
+                  Displays a list of all your websites with active live chat widget installed. You can add or delete websites from here.
+                %button.btn.small.action
+                  Next
             %li 
               %a Users
+              .tooltip-tour.tour-admin-users.group.hide
+                .caret-tour.top
+                %h3 Your Users
+                %p
+                  Displays a list of all users added to your account. You can add users, delete users or change user roles.
+                %button.btn.small.action
+                  Next
             %li 
               %a My Account
             %li.logout
               %a Logout
+      
+
       %div.group{ :style => 'position:relative; min-width:1055px; max-width:100%' }
         .dashboard-sidebar
           .profile-container.group
@@ -444,7 +460,7 @@
     .tooltip-tour.tour-intro.hide
       %h3 Welcome to the OfferChat dashboard
       %p
-        Since this is your first time using our dashboard, we'd like to give you a tour before you start enjoying the tool
+        Since this is your first time using our dashboard, let's begin a short tour of the new Offerchat dashboard.
       %button.btn.small.action
         Start tour
       %a#skipTour
@@ -453,9 +469,9 @@
 
     .tooltip-tour.tour-status.group.hide
       .caret-tour.left
-      %h3 Your Status
+      %h3 Your Online Status
       %p
-        Change your status from Online, Away and Offline
+        Shows your live chat status. You can toggle your status and appear as online, away or offline.
       %button.btn.small.action
         Next
     
@@ -463,7 +479,7 @@
       .caret-tour.left
       %h3 Your websites
       %p
-        This section is a list of your websites
+        A list of websites with a live chat widget installed you can monitor and work on. Select a website to see other options.
       %button.btn.small.action
         Next
      
@@ -472,7 +488,7 @@
       .caret-tour.left
       %h3 Chats
       %p
-        This section is a list of your active chats and visitors
+        Click to change the dashboard view to a display of your active chats, visitors on your website and other live chat agents currently online.
       %button.btn.small.action
         Next
     
@@ -481,26 +497,40 @@
       .caret-tour.left
       %h3 Chat History
       %p
-        This section is a list of previous chats from your agents
+        Click to show all chat history or archived chat messages.
       %button.btn.small.action
         Next
 
     .tooltip-tour.tour-chat-settings.group.hide
       .caret-tour.left
-      %h3 Chat Settings
+      %h3 Widget Settings
       %p
-        Enable Chat timeouts, Triggers, Canned Responses
+        Click to customize the appearance of your widget and activate additional features such as pre chat form and post chat survey. Needs administrator or account owner access to make changes.
       %button.btn.small.action
         Next
     
  
     .tooltip-tour.tour-widget-settings.group.hide
       .caret-tour.left
-      %h3 Widget Settings
+      %h3 Live Chat Settings
       %p
-        Style your widget, change widget labels, enable offline form. 
+        Shows other live chat features such as Saved Responses, Chat Triggers for proactive chats and Timeout Notifications. 
+      %p
+        Only administrator/account owner can activate chat triggers and timeout notifications.
       %button.btn.small.action
         Next
+
+
+    .modal.tour-end.group.hide
+      .modal-header
+        %h2
+          Congratulations!
+      .modal-body
+        %p
+          Now you can start using Offerchat
+      .modal-footer
+        %button.btn.small.action
+          Finish
     
     
     .modal.hide

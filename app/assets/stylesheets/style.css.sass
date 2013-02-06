@@ -223,7 +223,7 @@ strong
 
 .dashboard-header
   height: 38px
-  overflow: hidden
+  /* overflow: hidden
   background: #1a5da4
   background: -webkit-gradient(linear, left top, left bottom, from(#2266af), to(#1b5ea5))
   background: -moz-linear-gradient(top,  #2266af,  #1b5ea5)
@@ -339,7 +339,7 @@ button
     width: 350px
     font-weight: bold
     text-align: left
-
+    
   &:active
     background: #f1f1f1
     box-shadow: 0 1px 1px rgba(0,0,0,.1) inset
@@ -508,7 +508,7 @@ button
       color: #999
       font-weight: normal
       display: block
-    :hover
+    &:hover
       background: #5A8DC2
       color: #fff
       text-shadow: 0 -1px 0 rgba(0,0,0,.2)
@@ -1715,6 +1715,10 @@ a.social-btn
     left: -12px
     top: 20px
     border-color: transparent #333  transparent transparent 
+  &.top
+    border-color:  transparent transparent #333 transparent 
+    top: -13px
+    left: 210px
 
 .tooltip-tour
   h3
@@ -1723,6 +1727,7 @@ a.social-btn
     font-size: 13px
     line-height: 1
   position: absolute
+  text-align: left
   top: 0
   background: #333
   box-shadow: 0 1px 10px rgba(0,0,0,.7)
@@ -1762,7 +1767,32 @@ a.social-btn
   &.tour-widget-settings
     top: 270px
     left: 145px
+  &.tour-admin-websites
+    top: 44px
+    left: -167px
+  &.tour-admin-users
+    @extend .tour-admin-websites
+    top: 44px
+    left: -167px
 
+.date-selector
+  display: inline-block
+  &._lT
+    margin-left: 20px
+  ul
+    > li
+      display: inline-block
+      position: relative
+      > a
+        display: block
+        padding: 5px 20px
+        border-radius: 15px
+        font-size: 14px
+        
+        font-weight: bold
+        &.active
+          background: #2885d4
+          color: #fff
 
 .blink
   color: #fff !important

@@ -8,7 +8,8 @@
   
 .page-body.group{ :style => 'padding: 0' }
   .pB_1a{ :style => 'padding: 10px 20px' }
-
+    %p
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras dolor dolor, condimentum at vulputate vitae, eleifend nec dolor. Aenean vitae enim est. 
     .dropdown-group
       %button.btn.websites
         %i.icon.icon-globe 
@@ -27,6 +28,20 @@
           %a
             Cebu Pacific Air Promos
             %span.small http://www.cebupacificair-promos.com
+    .date-selector._lT
+      %ul
+        %li
+          %a.active
+            Today
+        %li
+          %a
+            This week
+        %li
+          %a
+            This month
+        %li
+          %a
+            Custom date
   .scrollable
     %div{ :style => 'width: 70%; float: left' } 
       .pB_1a     
@@ -103,8 +118,9 @@
 
         %input{ :class => 'dial',   :value => "3.2" }
 
-        %small.help-label
-          %a What is this?
+        %div{ :style => 'position: relative' }
+          %small.help-label
+            %a What is this?
 
      
 

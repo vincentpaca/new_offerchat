@@ -183,6 +183,24 @@ $("#widgetCode").click(function() {
         $(".tour-chat-settings").fadeOut(300);
         $(".tour-widget-settings").fadeIn(300);
       });
+      $(".tour-widget-settings .action").click(function(){
+        $(".tour-widget-settings").fadeOut(300);
+        $(".tour-admin-websites").fadeIn(300);
+      });
+      $(".tour-admin-websites .action").click(function(){
+        $(".tour-admin-websites").fadeOut(300);
+        $(".tour-admin-users").fadeIn(300);
+      });
+      $(".tour-admin-users .action").click(function(){
+        $(".tour-admin-users").fadeOut(300);
+        $(".tour-end").fadeIn(300);
+        $(".modal-backdrop").fadeIn(300);
+      });
+
+      $(".tour-end .action").click(function(){
+        $(".tour-end").fadeOut(300);
+        $(".modal-backdrop").fadeOut(300);
+      });
     },1000)
   }, 1000)
 
