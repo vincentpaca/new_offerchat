@@ -1,14 +1,20 @@
+@mixin gradientSwatch($top, $bottom)
+  background: $top
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#$top', endColorstr='$bottom')
+  background: -webkit-gradient(linear, left top, left bottom, from($top), to($bottom))
+  background: -moz-linear-gradient(top,  $top,  $bottom)  
+
 .swatch-selector
   a
     display: inline-block
     width: 23px
     height: 23px
     background: #f1f1f1
-    border: 2px solid transparent
     &.selected
       border-color: #000
   .intlorange
     background: #e74300
+
   .cadmiumorange
     background: #FF6103
   .rustorange
@@ -67,8 +73,6 @@
 
 
 .offerchat-theme-velvetpink
-  .offerchat-agent
-    border-left: 2px solid #f22a75
   .offerchat-widget-head, .offerchat-widget-head-main
     background: #f22a75
   .offerchat-agent .offerchat-user, .offerchat-agent-name
@@ -76,10 +80,11 @@
   .offerchat-widget-head, .offerchat-widget-head-main, input[type=submit].offerchat-submit-form
     background: #f22a75
     color: #fff
+  &.offerchat-theme-gradient
+    .offerchat-widget-head
+      @include gradientSwatch(#f22a75, #ef215c)
 
 .offerchat-theme-saddlebrown
-  .offerchat-agent
-    border-left: 2px solid #8b4513
   .offerchat-widget-head, .offerchat-widget-head-main
     background: #8b4513
   .offerchat-agent .offerchat-user, .offerchat-agent-name
@@ -87,10 +92,11 @@
   .offerchat-widget-head, .offerchat-widget-head-main, input[type=submit].offerchat-submit-form
     background: #8b4513
     color: #fff
+  &.offerchat-theme-gradient
+    .offerchat-widget-head
+      @include gradientSwatch(#8b4513, #632d0d)
 
 .offerchat-theme-darkslategrey
-  .offerchat-agent
-    border-left: 2px solid #2F4F4F
   .offerchat-widget-head, .offerchat-widget-head-main
     background: #2F4F4F
   .offerchat-agent .offerchat-user, .offerchat-agent-name
@@ -98,10 +104,11 @@
   .offerchat-widget-head, .offerchat-widget-head-main, input[type=submit].offerchat-submit-form
     background: #2F4F4F
     color: #fff
+  &.offerchat-theme-gradient
+    .offerchat-widget-head
+      @include gradientSwatch(#2F4F4F, #1f3535)
 
 .offerchat-theme-grey
-  .offerchat-agent
-    border-left: 2px solid #858585
   .offerchat-widget-head, .offerchat-widget-head-main
     background: #858585
   .offerchat-agent .offerchat-user, .offerchat-agent-name
@@ -109,10 +116,11 @@
   .offerchat-widget-head, .offerchat-widget-head-main, input[type=submit].offerchat-submit-form
     background: #858585
     color: #fff
+  &.offerchat-theme-gradient
+    .offerchat-widget-head
+      @include gradientSwatch(#858585, #3f3f3f)
 
 .offerchat-theme-gold
-  .offerchat-agent
-    border-left: 2px solid #FFD700
   .offerchat-widget-head, .offerchat-widget-head-main
     background: #FFD700
     color: #b39700
@@ -121,11 +129,12 @@
   .offerchat-widget-head, .offerchat-widget-head-main, input[type=submit].offerchat-submit-form
     background: #FFD700
     color: #b39700
+  &.offerchat-theme-gradient
+    .offerchat-widget-head
+      @include gradientSwatch(#FFD700, #ffb700)
 
 
 .offerchat-theme-black
-  .offerchat-agent
-    border-left: 2px solid #000
   .offerchat-widget-head, .offerchat-widget-head-main
     background: #000
   .offerchat-agent .offerchat-user, .offerchat-agent-name
@@ -133,10 +142,11 @@
   .offerchat-widget-head, .offerchat-widget-head-main, input[type=submit].offerchat-submit-form
     background: #000
     color: #fff
+  &.offerchat-theme-gradient
+    .offerchat-widget-head
+      @include gradientSwatch(#646464, #000)
 
 .offerchat-theme-keylime
-  .offerchat-agent
-    border-left: 2px solid #bdd631
   .offerchat-widget-head, .offerchat-widget-head-main
     background: #bdd631
   .offerchat-agent .offerchat-user, .offerchat-agent-name
@@ -144,10 +154,11 @@
   .offerchat-widget-head, .offerchat-widget-head-main, input[type=submit].offerchat-submit-form
     background: #bdd631
     color: #fff
+  &.offerchat-theme-gradient
+    .offerchat-widget-head
+      @include gradientSwatch(#bdd631, #89b60a)
 
 .offerchat-theme-salemgreen
-  .offerchat-agent
-    border-left: 2px solid #08935a
   .offerchat-widget-head, .offerchat-widget-head-main
     background: #08935a
   .offerchat-agent .offerchat-user, .offerchat-agent-name
@@ -155,11 +166,12 @@
   .offerchat-widget-head, .offerchat-widget-head-main, input[type=submit].offerchat-submit-form
     background: #08935a
     color: #fff
+  &.offerchat-theme-gradient
+    .offerchat-widget-head
+      @include gradientSwatch(#08935a, #056937)
 
 
 .offerchat-theme-hibiscus
-  .offerchat-agent
-    border-left: 2px solid #a52173
   .offerchat-widget-head, .offerchat-widget-head-main
     background: #a52173
   .offerchat-agent .offerchat-user, .offerchat-agent-name
@@ -167,11 +179,12 @@
   .offerchat-widget-head, .offerchat-widget-head-main, input[type=submit].offerchat-submit-form
     background: #a52173
     color: #fff
+  &.offerchat-theme-gradient
+    .offerchat-widget-head
+      @include gradientSwatch(#a52173, #8d1854)
 
 
 .offerchat-theme-astroblue
-  .offerchat-agent
-    border-left: 2px solid #00405D
   .offerchat-widget-head, .offerchat-widget-head-main
     background: #00405D
   .offerchat-agent .offerchat-user, .offerchat-agent-name
@@ -179,11 +192,12 @@
   .offerchat-widget-head, .offerchat-widget-head-main, input[type=submit].offerchat-submit-form
     background: #00405D
     color: #fff
+  &.offerchat-theme-gradient
+    .offerchat-widget-head
+      @include gradientSwatch(#00405D, #002e43)
 
 
 .offerchat-theme-goldenbell
-  .offerchat-agent
-    border-left: 2px solid #E47911
   .offerchat-widget-head, .offerchat-widget-head-main
     background: #E47911
   .offerchat-agent .offerchat-user, .offerchat-agent-name
@@ -191,11 +205,12 @@
   .offerchat-widget-head, .offerchat-widget-head-main, input[type=submit].offerchat-submit-form
     background: #E47911
     color: #fff
+  &.offerchat-theme-gradient
+    .offerchat-widget-head
+      @include gradientSwatch(#E47911, #dc560c)
 
 
 .offerchat-theme-endeavor
-  .offerchat-agent
-    border-left: 2px solid #0060A3
   .offerchat-widget-head, .offerchat-widget-head-main
     background: #0060A3
   .offerchat-agent .offerchat-user, .offerchat-agent-name
@@ -203,11 +218,12 @@
   .offerchat-widget-head, .offerchat-widget-head-main, input[type=submit].offerchat-submit-form
     background: #0060A3
     color: #fff
+  &.offerchat-theme-gradient
+    .offerchat-widget-head
+      @include gradientSwatch(#0060A3, #004488)
 
 
 .offerchat-theme-midblue
-  .offerchat-agent
-    border-left: 2px solid #003366
   .offerchat-widget-head, .offerchat-widget-head-main
     background: #003366
   .offerchat-agent .offerchat-user, .offerchat-agent-name
@@ -215,11 +231,12 @@
   .offerchat-widget-head, .offerchat-widget-head-main, input[type=submit].offerchat-submit-form
     background: #003366
     color: #fff
+  &.offerchat-theme-gradient
+    .offerchat-widget-head
+      @include gradientSwatch(#003366, #00254a)
 
 
 .offerchat-theme-blueribbon
-  .offerchat-agent
-    border-left: 2px solid #053eff
   .offerchat-widget-head, .offerchat-widget-head-main
     background: #053eff
   .offerchat-agent .offerchat-user, .offerchat-agent-name
@@ -227,11 +244,12 @@
   .offerchat-widget-head, .offerchat-widget-head-main, input[type=submit].offerchat-submit-form
     background: #053eff
     color: #fff
+  &.offerchat-theme-gradient
+    .offerchat-widget-head
+      @include gradientSwatch(#053eff, #001ee1)
 
 
 .offerchat-theme-sushi
-  .offerchat-agent
-    border-left: 2px solid #97B538
   .offerchat-widget-head, .offerchat-widget-head-main
     background: #97B538
   .offerchat-agent .offerchat-user, .offerchat-agent-name
@@ -239,23 +257,12 @@
   .offerchat-widget-head, .offerchat-widget-head-main, input[type=submit].offerchat-submit-form
     background: #97B538
     color: #fff
-
-
-.offerchat-theme-sushi
-  .offerchat-agent
-    border-left: 2px solid #97B538
-  .offerchat-widget-head, .offerchat-widget-head-main
-    background: #97B538
-  .offerchat-agent .offerchat-user, .offerchat-agent-name
-    color: #97B538
-  .offerchat-widget-head, .offerchat-widget-head-main, input[type=submit].offerchat-submit-form
-    background: #97B538
-    color: #fff
+  &.offerchat-theme-gradient
+    .offerchat-widget-head
+      @include gradientSwatch(#97B538, #789f28)
 
 
 .offerchat-theme-intlorange
-  .offerchat-agent
-    border-left: 2px solid #FC4F08
   .offerchat-widget-head, .offerchat-widget-head-main
     background: #FC4F08
   .offerchat-agent .offerchat-user, .offerchat-agent-name
@@ -263,48 +270,52 @@
   .offerchat-widget-head, .offerchat-widget-head-main, input[type=submit].offerchat-submit-form
     background: #FC4F08
     color: #fff
+  &.offerchat-theme-gradient
+    .offerchat-widget-head
+      @include gradientSwatch(#FC4F08, #b43400)
 
 
 .offerchat-theme-eggplant
   .offerchat-widget-head, .offerchat-widget-head-main
     background: #613854
-  .offerchat-agent
-    border-left: 2px solid #613854
   .offerchat-widget-head, .offerchat-widget-head-main, input[type=submit].offerchat-submit-form
     background: #613854
     color: #fff
   .offerchat-agent .offerchat-user, .offerchat-agent-name
     color: #613854
+  &.offerchat-theme-gradient
+    .offerchat-widget-head
+      @include gradientSwatch(#613854, #4b2b41)
 
 
 .offerchat-theme-mandy
   .offerchat-widget-head, .offerchat-widget-head-main
     background: #E54A4F
-  .offerchat-agent
-    border-left: 2px solid #E54A4F
   .offerchat-widget-head, .offerchat-widget-head-main, input[type=submit].offerchat-submit-form
     background: #E54A4F
     color: #fff
   .offerchat-agent .offerchat-user, .offerchat-agent-name
     color: #E54A4F
+  &.offerchat-theme-gradient
+    .offerchat-widget-head
+      @include gradientSwatch(#E54A4F, #d61f21)
 
 
 .offerchat-theme-nandor
   .offerchat-widget-head, .offerchat-widget-head-main
     background: #4E6252
-  .offerchat-agent
-    border-left: 2px solid #4E6252
   .offerchat-widget-head, .offerchat-widget-head-main, input[type=submit].offerchat-submit-form
     background: #4E6252
     color: #fff
   .offerchat-agent .offerchat-user, .offerchat-agent-name
     color: #4E6252
+  &.offerchat-theme-gradient
+    .offerchat-widget-head
+      @include gradientSwatch(#4E6252, #2e3a31)
 
 /*End Added theme
 
 .offerchat-theme-aqua-blue
-  .offerchat-agent
-    border-left: 2px solid #2ab2ea
   .offerchat-widget-head, .offerchat-widget-head-main
     background: #2ab2ea
   .offerchat-agent .offerchat-user, .offerchat-agent-name
@@ -312,11 +323,12 @@
   .offerchat-widget-head, .offerchat-widget-head-main, input[type=submit].offerchat-submit-form
     background: #2ab2ea
     color: #fff
+  &.offerchat-theme-gradient
+    .offerchat-widget-head
+      @include gradientSwatch(#2ab2ea, #1285de)
 
 
 .offerchat-theme-aqua
-  .offerchat-agent
-    border-left: 2px solid #65c7eb
   .offerchat-widget-head, .offerchat-widget-head-main
     background: #65c7eb
   .offerchat-agent .offerchat-user, .offerchat-agent-name, .offerchat-agent .offerchat-user, .offerchat-agent-name
@@ -324,10 +336,11 @@
   .offerchat-widget-head, .offerchat-widget-head-main, input[type=submit].offerchat-submit-form
     background: #65c7eb
     color: #fff
+  &.offerchat-theme-gradient
+    .offerchat-widget-head
+      @include gradientSwatch(#65c7eb, #2aa6df)
 
 .offerchat-theme-picassoblue
-  .offerchat-agent
-    border-left: 2px solid #64a0ea
   .offerchat-widget-head, .offerchat-widget-head-main
     background: #64a0ea
   .offerchat-agent .offerchat-user, .offerchat-agent-name
@@ -335,10 +348,11 @@
   .offerchat-widget-head, .offerchat-widget-head-main, input[type=submit].offerchat-submit-form
     background: #64a0ea
     color: #fff
+  &.offerchat-theme-gradient
+    .offerchat-widget-head
+      @include gradientSwatch(#64a0ea, #2b6ade)
 
 .offerchat-theme-greengrass
-  .offerchat-agent
-    border-left: 2px solid #31b017
   .offerchat-widget-head, .offerchat-widget-head-main
     background: #31b017
   .offerchat-agent .offerchat-user, .offerchat-agent-name
@@ -346,10 +360,11 @@
   .offerchat-widget-head, .offerchat-widget-head-main, input[type=submit].offerchat-submit-form
     background: #31b017
     color: #fff
+  &.offerchat-theme-gradient
+    .offerchat-widget-head
+      @include gradientSwatch(#31b017, #14820a)
 
 .offerchat-theme-cadmiumorange
-  .offerchat-agent
-    border-left: 2px solid #ff6103
   .offerchat-widget-head, .offerchat-widget-head-main
     background: #ff6103
   .offerchat-agent .offerchat-user, .offerchat-agent-name
@@ -357,10 +372,11 @@
   .offerchat-widget-head, .offerchat-widget-head-main, input[type=submit].offerchat-submit-form
     background: #ff6103
     color: #fff
+  &.offerchat-theme-gradient
+    .offerchat-widget-head
+      @include gradientSwatch(#ff6103, #ff2901)
 
 .offerchat-theme-aureolineyellow
-  .offerchat-agent
-    border-left: 2px solid #ffa824
   .offerchat-widget-head, .offerchat-widget-head-main
     background: #ffa824
   .offerchat-agent .offerchat-user, .offerchat-agent-name
@@ -368,10 +384,11 @@
   .offerchat-widget-head, .offerchat-widget-head-main, input[type=submit].offerchat-submit-form
     background: #ffa824
     color: #fff
+  &.offerchat-theme-gradient
+    .offerchat-widget-head
+      @include gradientSwatch(#ffa824, #ff760f)
 
 .offerchat-theme-cobaltviolet
-  .offerchat-agent
-    border-left: 2px solid #ca48d9
   .offerchat-widget-head, .offerchat-widget-head-main
     background: #ca48d9
   .offerchat-agent .offerchat-user, .offerchat-agent-name
@@ -379,10 +396,11 @@
   .offerchat-widget-head, .offerchat-widget-head-main, input[type=submit].offerchat-submit-form
     background: #CA48D9
     color: #fff
+  &.offerchat-theme-gradient
+    .offerchat-widget-head
+      @include gradientSwatch(#ca48d9, #ac1fc3)
 
 .offerchat-theme-cadmiumreddeep
-  .offerchat-agent
-    border-left: 2px solid #e3170d
   .offerchat-widget-head, .offerchat-widget-head-main
     background: #e3170d
     color: #fff
@@ -391,10 +409,11 @@
   .offerchat-widget-head, .offerchat-widget-head-main, input[type=submit].offerchat-submit-form
     background: #e3170d
     color: #fff
+  &.offerchat-theme-gradient
+    .offerchat-widget-head
+      @include gradientSwatch(#e3170d, #ca0302)
 
 .offerchat-theme-rustorange
-  .offerchat-agent
-    border-left: 2px solid #c84e3d
   .offerchat-widget-head, .offerchat-widget-head-main
     background: #c84e3d
     color: #fff
@@ -403,6 +422,9 @@
   .offerchat-widget-head, .offerchat-widget-head-main, input[type=submit].offerchat-submit-form
     background: #c84e3d
     color: #fff
+  &.offerchat-theme-gradient
+    .offerchat-widget-head
+      @include gradientSwatch(#c84e3d, #ad281f)
 
 .offerchat-theme-cadmiumreddeep .offerchat-agent-style-2 .offerchat-agent-name,  
 .offerchat-theme-grey .offerchat-agent-style-2 .offerchat-agent-name,

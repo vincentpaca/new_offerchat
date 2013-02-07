@@ -85,12 +85,26 @@
       .block.tr.group.settings-section
         %h3
           Widget Style
+
+        .widget-preview-wrapper.block
+          .ui-checkbox-container.active
+            .ui-checked    
+              %input{:type => "checkbox"}
+          %label{:style => "position: relative; top: 4px; left: 4px;"} Rounded corner
+
+        .widget-preview-wrapper.block
+          .ui-checkbox-container.active
+            .ui-checked    
+              %input{:type => "checkbox"}
+          %label{:style => "position: relative; top: 4px; left: 4px;"} Gradient
+
         .widget-preview-wrapper.block
           .widget-option-box
-            .widget-select-option.selected.widget-1
-              .offerchat-widget-wrapper.offerchat-theme-goldenbell.oF
+            .widget-select-option.widget-1
+              .offerchat-widget-wrapper.offerchat-theme-sushi.offerchat-theme-gradient.oF.offerchat-rounded-corner
                 .offerchat-widget-head.offerchat-block
                   .offerchat-minimize-control
+                  =image_tag "bubble-chat.png", :class => "offerchat-ico-chat-bubble" 
                   Chat with me, I'm here to help
                 .offerchat-inner-wrap{ :style => 'display: block;' }
                   .offerchat-agent-show.offerchat-block
@@ -121,9 +135,9 @@
                         Maybe you can help me out
 
           .widget-option-box.last
-            .widget-select-option.widget-2
-              .offerchat-widget-wrapper.offerchat-theme-goldenbell.oF
-                .offerchat-widget-head
+            .widget-select-option.selected.widget-2
+              .offerchat-widget-wrapper.offerchat-theme-sushi.offerchat-theme-gradient.oF.offerchat-rounded-corner
+                .offerchat-widget-head.offerchat-wstyle2
                   .offerchat-minimize-control-2
                   .offerchat-agent-style-2
                     .offerchat-agent-thumbnail-2
