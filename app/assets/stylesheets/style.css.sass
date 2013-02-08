@@ -470,7 +470,7 @@ button
   display: none
   top: 100%
   left: 0
-  z-index: 1000
+  z-index: 1200
   float: left
   min-width: 160px  
   margin: 2px 0 0 2px
@@ -500,18 +500,21 @@ button
         background: #5A8DC2
         color: #fff
         text-shadow: 0 -1px 0 rgba(0,0,0,.2)
-  &.websites > li > a
-    font-size: 14px
-    font-weight: bold
-    display: block
-    .small
-      color: #999
-      font-weight: normal
+  &.websites 
+    z-index: 1500
+    > li > a
+      font-size: 14px
+      font-weight: bold
       display: block
-    &:hover
-      background: #5A8DC2
-      color: #fff
-      text-shadow: 0 -1px 0 rgba(0,0,0,.2)
+
+      &:hover .small
+        color: #fff
+
+      .small
+        color: #999
+        font-weight: normal
+        display: block
+      
 
 li.upload-photo
   color: #333
@@ -551,7 +554,7 @@ li.upload-photo
     border-left: 7px solid transparent
     border-bottom: 7px solid #c1c1c1
     top: -14px
-    right: 163px
+    right: 166px
     position: absolute
 
 .scrollable
@@ -1092,7 +1095,7 @@ button.back
   box-shadow: 0 1px 10px rgba(0,0,0,.3)
   top: 10%
   left: 50%
-  z-index: 1050
+  z-index: 2050
   width: 560px
   margin-left: -280px
   border-radius: 5px
@@ -1136,7 +1139,7 @@ button.back
   right: 0
   bottom: 0
   left: 0
-  z-index: 1040
+  z-index: 2040
   background-color: black
   opacity: .6
   &.white
@@ -1234,6 +1237,10 @@ button.back
     width: 180px
   &.notification-cell
     width: 500px
+  &.h_43-cell
+    width: 100px
+  &.h_44-cell
+    width: 150px
 
   .td-content
     vertical-align: top
@@ -1475,7 +1482,7 @@ a.social-btn
   width: 250px
   color: #fff
   padding: 10px
-  z-index: 1050
+  z-index: 2050
   &.hide
     display: none
 
@@ -1540,7 +1547,7 @@ a.social-btn
   width: 467px
   top: 40px
   left: -237px
-  
+  box-shadow: 0 1px 3px rgba(0,0,0,.2)
   background-color: white
   
   button
@@ -1554,6 +1561,7 @@ a.social-btn
   width: 413px
   border: none !important
   padding: 10px
+  cursor: pointer
 
 .blink
   color: #fff !important
