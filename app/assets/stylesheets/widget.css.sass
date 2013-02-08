@@ -10,7 +10,7 @@
   cursor: pointer
   padding: 10px
   position: relative
-  width: 248px
+  width: 260px
   height: 180px
   overflow: hidden
   border: 3px solid transparent
@@ -27,14 +27,19 @@
     
 .offerchat-widget-wrapper
   .offerchat-widget-head
+    padding: 7px 5px
     min-height: 14px
+  .offerchat-widget-head.offerchat-widget-head
+    overflow: hidden
+  .offerchat-widget-head.offerchat-wstyle2
+    padding: 0
   font: 11px / 1.6 "lucida grande", tahoma, verdana, arial, sans-serif
   letter-spacing: 0
   padding: 0
   margin: 0
   color: #565656
   bottom: 0
-  width: 250px !important
+  width: 260px !important
   text-align: left
   &.offerchat-position-left
     left: 20px
@@ -205,10 +210,8 @@ a.offerchat-logo-link
 
 .offerchat-chat
   &.offerchat-agent
-    border-left: 2px solid #2bb2ea
     color: #000
   &.offerchat-visitor
-    border-left: 2px solid #ccc
     background: #f8f8f8
     text-shadow: 0 1px 0 #fff
 
@@ -265,5 +268,16 @@ a.offerchat-rate
     @extend .offerchat-rate-up-icon
     background-position: -18px 0
 
+.offerchat-rounded-corner
+  .offerchat-widget-head
+    border-top-left-radius: 4px
+    border-top-right-radius: 4px
+  .offerchat-inner-wrap .offerchat-block .offerchat-field-wrap
+    .offerchat-submit-form, input[type="text"].offerchat-input, textarea.offerchat-input
+      border-radius: 3px
+
+.offerchat-ico-chat-bubble
+  vertical-align: middle
+  padding-right: 2px
 
 /* END WIDGET PREVIEW
