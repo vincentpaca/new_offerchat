@@ -222,13 +222,12 @@ $("#widgetCode").click(function() {
   });  
      
 
-      $("#dateRange").dateRange({
-        
-        rangePicker : true,        
-      });        
-
      
-
+     
+$("#minimize").click(function(){
+  console.log('minimize');
+ $(".widget-1 .offerchat-widget-wrapper").css('top','400px');
+});
           
 	
 });
