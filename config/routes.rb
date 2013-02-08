@@ -23,6 +23,7 @@ NewOfferchat::Application.routes.draw do
   get :history, :controller => :home, :action => :history
   get :reports, :controller => :home, :action => :reports
   get :reports_agents, :controller => :home, :action => :reports_agents
+  get :reports_agent, :controller => :home, :action => :reports_agent
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

@@ -222,7 +222,11 @@ $("#widgetCode").click(function() {
   });  
      
 
-     
+      $("#dateRange").dateRange({
+        
+        rangePicker : true,        
+      });        
+
      
 $("#minimize").click(function(){
   console.log('minimize');
