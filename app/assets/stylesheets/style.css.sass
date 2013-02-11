@@ -99,9 +99,19 @@ i.icon
     @include iconSize(13px, 12px)
     background-position: -63px -128px
   &.icon-thumbs-up
-    @include iconSize(16px, 14px)
+    @include iconSize(12px, 12px)
     background-position: 0 -111px
     vertical-align: middle
+    &.vT
+      vertical-align: top
+      margin-top: 2px
+  &.icon-thumbs-down
+    @include iconSize(12px, 12px)
+    background-position: -14px -111px
+    vertical-align: middle
+    &.vT
+      vertical-align: top
+      margin-top: 2px
   &.icon-facebook
     @include iconSize(14px, 16px)
     background-position: 0 -143px
@@ -490,6 +500,9 @@ button
     min-width: 120px
   &.websites
     width: 100%
+    margin: 2px 0 0 0
+  &.agents
+    @extend .websites
   > li
     margin: 0 0 0 0 !important
     display: block !important
@@ -727,6 +740,9 @@ a.nav, .nav
     float: left
   .pB_1a
     @extend .page-body
+    &.pB-section-fixed
+      padding: 10px 20px
+      box-shadow: 0 1px 3px rgba(0,0,0,.2)
 
 .page-sidebar
   display: inline-block 
@@ -1211,6 +1227,7 @@ button.back
   overflow: hidden
   white-space: nowrap
   position: relative
+
   &.status-cell
     width: 20px
     overflow: visible
@@ -1253,6 +1270,8 @@ button.back
   .td-content
     vertical-align: top
     line-height: 2
+    text-overflow: ellipsis
+    white-space: nowrap
     span
       vertical-align: middle
     &.small
@@ -1415,18 +1434,47 @@ button.back
 .ui-agent-thumbnail,.ui-agent-details
   float: left
 .ui-agent-thumbnail
-  margin-right: 5px
+  margin-right: 15px
+  width: 60px
+  height: 60px
+  overflow: hidden
 .ui-agent-details
   h3
     font-weight: bold 
-    font-family: "PT Sans"
-    margin-bottom: 5px
+    font-family: "PT Sans", sans-serif
+    text-align: left
 .agent-rating-list
+  margin-top: 10px
+  font-family: "PT Sans", sans-serif
   > li
+    margin-right: 5px
     display: inline-block
+    &.rating-percentage
+      font-weight: bold
+      font-size: 16px
+      margin-right: 15px
+.rating-bar
+  background-color: #c9c9c9
+  box-shadow: 0 1px 1px rgba(0,0,0,.1) inset
+  border-radius: 15px
+  position: relative
+  overflow: hidden
+  & > .rating-progress  
+    height: 3px
+    display: block
+    position: relative
+    overflow: hidden
+    background: #5fb947
+    background: -webkit-gradient(linear, left top, left bottom, from(#5fb947), to(#53b03b))
+    background: -moz-linear-gradient(top,  #5fb947,  #53b03b)
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#5fb947', endColorstr='#53b03b')
+    box-shadow: 0 1px 0 rgba(255,255,255,.1) inset
+    border: 1px solid #41972b
+    border-radius: 12px
 
 .widget-container
   text-align: center
+  margin-top: 20px
   h3
     font-weight: bold
     margin-bottom: 15px
@@ -1547,6 +1595,9 @@ a.social-btn
   display: inline-block
   &._lT
     margin-left: 20px
+  &._yB
+    vertical-align: top
+    margin-top: 23px 
   ul
     > li
       display: inline-block
