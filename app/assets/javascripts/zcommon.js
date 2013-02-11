@@ -240,6 +240,7 @@ $("#minimize").click(function(){
 $(".notification-button").click(function(){
     $(this).toggleClass('active');
     $(".notification-list-container").toggleClass('hide');
+    
   });
 
 });
