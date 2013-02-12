@@ -3,32 +3,47 @@
     Reports
     .module-header._c8
       .ui-button-group
-        %button.btn.active Websites
-        %button.btn Agents
+        %button.btn Websites
+        %button.btn.active Agents
   
 .page-body.group{ :style => 'padding: 0' }
   .pB_1a.pB-section-fixed
     %p
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras dolor dolor, condimentum at vulputate vitae, eleifend nec dolor. Aenean vitae enim est. 
     .dropdown-group
-      %button.btn.websites
-        %i.icon.icon-globe 
-        All websites 
-        %span.caret{ :style => 'float: right; margin-top: 7px;' }
-      %ul.dropdown-menu.websites{ :style => 'display: none' }
+      %button.btn.agents
+        .caret
+        .ui-agent-dropdown-selected
+          .ui-agent-thumbnail
+            =image_tag 'thumb70.png'
+          .ui-agent-details
+            %h3
+              Vincent Paca
+
+            %ul.agent-rating-list
+              %li.rating-percentage
+                89%
+              %li
+                %i.icon.icon-thumbs-up.vT
+                142
+              %li
+                %i.icon.icon-thumbs-down.vT
+                10
+            .rating-bar
+              .rating-progress{ :style => 'width: 89%' }
+
+        %span
+      %ul.dropdown-menu.agents{ :style => 'display: none;'}
         %li
           %a{ :href => '#' }
-            Buzzednow.com
-            %span.small http://www.buzzednow.com
+            Jonathan Kennedy
         %li
           %a{ :href => '#' }
-            Buyrealmarketing
-            %span.small http://www.buyrealmarketing.com
+            Harvey Enrile
         %li
           %a{ :href => '#' }
-            Cebu Pacific Air Promos
-            %span.small http://www.cebupacificair-promos.com
-    .date-selector._lT
+            Reina Figuracion
+    .date-selector._lT._yB
       %ul
         %li
           %a
@@ -131,4 +146,3 @@
 
      
 
- 

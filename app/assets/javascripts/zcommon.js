@@ -2,9 +2,13 @@ $(document).ready(function(){
   $(function(){
     $.FancyNotifications();
 });
+
 // $.FancyNotifications.error("This is an error message.");
 // $.FancyNotifications.alert("This is an alert message.");
 $.FancyNotifications.notice("This is a notice message.");
+
+
+  
   
   $(".chat-count").effect("bounce", { times: 5 }, 100);
 
@@ -222,13 +226,22 @@ $("#widgetCode").click(function() {
   });  
      
 
-     
+      $("#dateRange").dateRange({
+        
+        rangePicker : true,        
+      });        
+
      
 $("#minimize").click(function(){
   console.log('minimize');
  $(".widget-1 .offerchat-widget-wrapper").css('top','400px');
 });
           
-	
+$(".notification-button").click(function(){
+    $(this).toggleClass('active');
+    $(".notification-list-container").toggleClass('hide');
+    
+  });
+
 });
 
