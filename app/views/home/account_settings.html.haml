@@ -6,9 +6,9 @@
       %button.btn.active Account
 
 .scrollable
-  .page-body._tL
+  .page-body
    
-    %div
+    .group._f0
       .block.tr.group.settings-section
         .label
           Email
@@ -68,7 +68,28 @@
           &nbsp;
         .input-container
           %input.btn.small.action{ :type => 'submit', :value => 'Save Changes'}
-            
+    .page-sidebar
+      .plan
+        %h3
+          Enterprise Plan
+        .block
+          
+          .agent-visual-count
+            %i.icon.icon-user
+            %i.icon.icon-user
+            %i.icon.icon-user
+            %i.icon.icon-user.disabled
+            %i.icon.icon-user.disabled
+          %strong 
+            3 of 5
+          agent seats available
+          .block
+          %p
+            View your 
+            =link_to 'Account Management','#' 
+            to add more agent seats
+          %a.btn.action.small.full
+            Add more agents
       
 
 

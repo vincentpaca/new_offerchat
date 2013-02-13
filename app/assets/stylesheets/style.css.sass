@@ -129,6 +129,16 @@ i.icon
     background-position: 0 -166px
     vertical-align: middle
     margin-right: 2px
+  &.icon-incoming
+    @include iconSize(12px, 12px)
+    background-position: -79px -129px
+  &.icon-user
+    @include iconSize(16px, 16px)
+    background-position: 0 -212px
+    &.disabled
+      opacity: .3
+
+
 
 
 
@@ -521,7 +531,11 @@ button
         background: #f1f1f1
       strong
         font-weight: 700
-        color: #333      
+        color: #333 
+      .icon-incoming
+        opacity: .6
+        float: right
+        margin-top: 3px
 
 .ui-checkbox-container
   display: inline-block
@@ -1725,6 +1739,26 @@ a.social-btn
   border: none !important
   padding: 10px
   cursor: pointer
+
+.user-billing-status
+  float: right
+  position: relative
+  top: 17px
+  color: #898989
+  .current-plan
+    color: #636363
+    background: #fff
+    padding: 3px 10px
+    border-radius: 3px
+    border: 1px solid #e9e9e9
+    box-shadow: 0 1px 0 #fff
+.plan
+  h3
+    font-size: 17px
+    border-bottom: 1px solid #e1e1e1
+.agent-visual-count
+  margin: 10px 0
+
 
 .blink
   color: #fff !important

@@ -7,8 +7,6 @@
 
 
 .page-body
-  .message-text.success
-    You have successfully created your user
   %p
     Below is a list of all existing users in your account. You can delete or add users here. 
     %button.btn.small.action
@@ -21,7 +19,8 @@
       .table-row.table-head.group
         .td-container.status-cell
           .td-content
-            %input{ :type => 'checkbox' }
+            .ui-checkbox-container
+              %input{ :type => 'checkbox' }
         .td-container.status-cell
           .td-content
             &nbsp;
@@ -142,104 +141,11 @@
             .td-content.disabled
               not verified
 
-        %a.table-row.table-body.group
-          .td-container.status-cell
-            .td-content
-              .ui-checkbox-container
-                %input{ :type => 'checkbox' }
-          .td-container.status-cell
-            .td-content
-              %span.status.online
-          .td-container.visitor-cell
-            .td-content
-              %span
-                Harvey
-          .td-container.action-cell
-            .td-content
-              %span
-                Harvey Enrile
-          .td-container.action-cell
-            .td-content
-              %span
-                
-          .td-container.large-cell
-            .td-content
-              %span
-                reinafiguracion@gmail.com 
-             
-          .td-container.action-cell
-            .td-content
-              %span
-                Operator
-          .td-container.xs-cell
-            .td-content
-              &nbsp;
+       
 
-        %a.table-row.table-body.group
-          .td-container.status-cell
-            .td-content
-              .ui-checkbox-container
-                %input{ :type => 'checkbox' }
-          .td-container.status-cell
-            .td-content
-              %span.status.online
-          .td-container.visitor-cell
-            .td-content
-              %span
-                Harvey
-          .td-container.action-cell
-            .td-content
-              %span
-                Harvey Enrile
-          .td-container.action-cell
-            .td-content
-              %span
-                
-          .td-container.large-cell
-            .td-content
-              %span
-                reinafiguracion@gmail.com 
-             
-          .td-container.action-cell
-            .td-content
-              %span
-                Agent
-          .td-container.xs-cell
-            .td-content
-              &nbsp;
+    
 
-        %a.table-row.table-body.group
-          .td-container.status-cell
-            .td-content
-              .ui-checkbox-container
-                %input{ :type => 'checkbox' }
-          .td-container.status-cell
-            .td-content
-              %span.status.online
-          .td-container.visitor-cell
-            .td-content
-              %span
-                Harvey
-          .td-container.action-cell
-            .td-content
-              %span
-                Harvey Enrile
-          .td-container.action-cell
-            .td-content
-              %span
-                
-          .td-container.large-cell
-            .td-content
-              %span
-                reinafiguracion@gmail.com 
-             
-          .td-container.action-cell
-            .td-content
-              %span
-                Agent
-          .td-container.xs-cell
-            .td-content
-              &nbsp;
+       
 
        
 
