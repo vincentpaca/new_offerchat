@@ -28,6 +28,13 @@ $.FancyNotifications.notice("This is a notice message.");
 
   });
 
+  $("#pidginLink").click(function(){
+    $("#pidginSection").slideToggle('fast');
+  });
+  $("#gtalkLink").click(function(){
+    $("#gtalkSection").slideToggle('fast');
+  });
+
   $("#feedBackBtn").click(function(){
     $("#feedbackModal").removeClass('hide');
     $(".modal-backdrop").removeClass('hide');

@@ -14,36 +14,53 @@
         Instant messaging
       %p
         Use our IM integration feature to serve incoming chats using the IM network if your choice.       
-      %a.group
+      %a.group#gtalkLink
         %h3.bordered-1
           GTalk 
           %i.icon.right.icon-arrow-down
-      .block.tr0.group.settings-section{ :style => 'display: block' }
+      .block.tr0.group.settings-section#gtalkSection{ :style => 'display: none' }
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tristique congue orci, vitae lobortis magna sodales sit amet. Donec suscipit ornare risus sed blandit
         .block.tr0
           %a.btn.small
             Login to your Google account
-      %a.group
+      %a.group#pidginLink
         %h3.bordered-1
-          Adium
+          Pidgin
           %i.icon.right.icon-arrow-down
-      .block.tr0.group.settings-section{ :style => 'display: none' }
-        %ul
+      .block.tr0.group.settings-section#pidginSection{ :style => 'display: none' }
+
+        %ul.in-list
           %li
             %p 
-              1. Log in to your IM account and add this chat bot to your buddy list.
+              1. Open Pidgin on your computer.
           %li
             %p
-              1. Log in to your IM account and add this chat bot to your buddy list.
+              2. Click Accounts or press Ctrl+A on your keyboard. A new dialog box will appear. 
+            %p
+              =image_tag('step1.png')
           %li
             %p
-              1. Log in to your IM account and add this chat bot to your buddy list.
+              3. Click the Add button to start integrating your Offerchat account.
+            %p
+              =image_tag('step2.jpg')
           %li
             %p
-              1. Log in to your IM account and add this chat bot to your buddy list.
-        
-
-    
+              4. Set the right Protocol by clicking the dropdown menu and selecting XMPP.
+            %p
+              =image_tag('step3.png')
+          %li
+            %p
+              5. Fill out your username, domain and password. The username should be the email address you’ve registered for Offerchat without the (@) and ( . ) characters, thus, just the letters. Tick Use this buddy icon for my account to set a profile picture to appear on the live chat widget on your site. A screen will appear to let you choose a picture from your image files. 
+            %p
+              =image_tag('step5.jpg')
+          %li
+            %p
+              6. Click the Advanced button and set Connection security to “Use encryption if available” from the list of dropdown options.
+            %p
+              =image_tag('step7.jpg')
+          %li
+            %p
+              7. Finally, click the Add button.    
       
 
     
