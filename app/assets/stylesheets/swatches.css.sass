@@ -3,6 +3,7 @@
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#$top', endColorstr='$bottom')
   background: -webkit-gradient(linear, left top, left bottom, from($top), to($bottom))
   background: -moz-linear-gradient(top,  $top,  $bottom)  
+  background-image: linear-gradient(to bottom, $top, $bottom)
 
 .swatch-selector
   a
@@ -319,6 +320,18 @@
 /*End Added theme
 
 .offerchat-theme-aqua-blue
+  .offerchat-widget-head, .offerchat-widget-head-main
+    background: #2ab2ea
+  .offerchat-agent .offerchat-user, .offerchat-agent-name
+    color: #2ab2ea
+  .offerchat-widget-head, .offerchat-widget-head-main, input[type=submit].offerchat-submit-form
+    background: #2ab2ea
+    color: #fff
+  &.offerchat-theme-gradient
+    .offerchat-widget-head
+      @include gradientSwatch(#2ab2ea, #1285de)
+
+.offerchat-theme-aquablue
   .offerchat-widget-head, .offerchat-widget-head-main
     background: #2ab2ea
   .offerchat-agent .offerchat-user, .offerchat-agent-name
