@@ -1,16 +1,26 @@
 .page-header.group
-  .header-search.right
-    %span.search-input.group
-      %input{ :type => 'text', :placeholder => 'Search user' }
-      %button{ :type => 'submit' }
+  .user-billing-status
+    Current plan: 
+    %span.current-plan.startup
+      %a
+        Enterprise
+        %small.agent-seat-count
+          2 of 3 used
+      
   %h3 Users
 
 
 .page-body
+  %div{ :float => 'right' }
+  / %p
+  /   Below is a list of all existing users in your account. You can delete or add users here. 
+  /   %button.btn.small.action
+  /     + Add a user
   %p
-    Below is a list of all existing users in your account. You can delete or add users here. 
+    Below is a list of all existing users in your account.
     %button.btn.small.action
-      + Add a user
+      Create user
+
 %div
   .table-wrapper
     .table-row-wrapper.table-row-selectable
@@ -27,7 +37,7 @@
         .td-container.visitor-cell
           .td-content
             Display Name
-        .td-container.large-cell
+        .td-container.name-cell
           .td-content
             Name
         
@@ -39,10 +49,10 @@
             Role
         .td-container.xs-cell
           .td-content
-            &nbsp;
+            Enabled
               
       %div.scrollable
-        %a.table-row.table-body.group
+        %a.table-row.table-body.group.is-admin-row
           .td-container.status-cell
             .td-content
               %span
@@ -54,7 +64,7 @@
             .td-content
               %span
                 Rein
-          .td-container.large-cell
+          .td-container.name-cell
             .td-content
               %span
                 Reina Figuracion
@@ -71,9 +81,9 @@
             .td-content
               %span
                 Account Owner
-          .td-container.xs-cell
+          .td-container.xs-cell.xL5
             .td-content
-              &nbsp;
+              %i.icon.icon-check
 
         %a.table-row.table-body.group
           .td-container.status-cell
@@ -87,7 +97,7 @@
             .td-content
               %span
                 Rein
-          .td-container.large-cell
+          .td-container.name-cell
             .td-content
               %span
                 Reina Figuracion
@@ -103,10 +113,11 @@
           .td-container.action-cell
             .td-content
               %span
-                Account Owner
-          .td-container.xs-cell
-            .td-content.disabled
-              not verified
+                Admin
+          .td-container.xs-cell.xL5
+            .td-content
+              %i.icon.icon-check
+              
 
         %a.table-row.table-body.group
           .td-container.status-cell
@@ -120,7 +131,7 @@
             .td-content
               %span
                 Harvey
-          .td-container.large-cell
+          .td-container.name-cell
             .td-content
               %span
                 Harvey Enrile
@@ -136,19 +147,82 @@
           .td-container.action-cell
             .td-content
               %span
-                Account Owner
+                Operator
+          .td-container.xs-cell.xL5
+            .td-content
+              %i.icon.icon-check
+              
+
+        .table-row.table-body.group.inactive
+          .td-container.status-cell
+            .td-content
+              .ui-checkbox-container
+                %input{ :type => 'checkbox' }
+          %a
+            .td-container.status-cell
+              .td-content
+                
+            .td-container.visitor-cell
+              .td-content
+                %span
+                  Harvey
+            .td-container.name-cell
+              .td-content
+                %span
+                  Harvey Enrile
+            .td-container.action-cell
+              .td-content
+                %span
+                  
+            .td-container.large-cell
+              .td-content
+                %span
+                  reinafiguracion@gmail.com 
+               
+            .td-container.action-cell
+              .td-content
+                %span
+                  Operator
           .td-container.xs-cell
-            .td-content.disabled
+            .td-content
+             
+              
+
+        .table-row.table-body.group.inactive
+          .td-container.status-cell
+            .td-content
+              .ui-checkbox-container
+                %input{ :type => 'checkbox' }
+          %a      
+            .td-container.status-cell
+              .td-content
+                
+            .td-container.visitor-cell
+              .td-content
+                %span
+                  Harvey
+            .td-container.name-cell
+              .td-content
+                %span
+                  Harvey Enrile
+            .td-container.action-cell
+              .td-content
+                %span
+                  
+            .td-container.large-cell
+              .td-content
+                %span
+                  reinafiguracion@gmail.com 
+               
+            .td-container.action-cell
+              .td-content
+                %span
+                  Operator
+          .td-container.xs-cell
+            .td-content
               not verified
-
+             
        
-
-    
-
-       
-
-       
-
       .table-footer
         %button.btn.small
           Delete selected

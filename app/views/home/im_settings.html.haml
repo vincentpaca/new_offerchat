@@ -10,45 +10,47 @@
   .page-body
    
     %div.group._f0
-      .block.tr.group.settings-section
-        .label
-          Choose IM Network
-        .input-container
-          %select#DropDownTimezone{:name => "DropDownProtocol", :style => "width: 250px; padding: 5px;"}
-            %option{:value => "None"} None
-            %option{:value => "Pidgin"} Pidgin
-            %option{:value => "Adium"} Adium
-            %option{:value => "Digsby"} Digsby
-      
-      .block.tr.group.settings-section
-        .label
-          1. Log in to your IM account and add this chat bot to your buddy list.
-        .input-container
-          %input{ :type => 'text', :style => 'width: 300px; margin-top:5px' ,:value => 'controlbot@jabber1.offerchat.com'}
-
-      .block.tr.group.settings-section
-        .label
-          2. Verify your identity by sending this chat message to the chat bot over IM:
-        .input-container
-          %input{ :type => 'text', :style => 'width: 300px; margin-top:5px' ,:value => '#setupGxzzCDJGud'}
-            
-      .block.tr.group.settings-section
-        .label
-          2. After the bot validates your account via IM, you will receive several buddy requests from our chat bots. Accept all the requests, then click the button below to check your IM status
+      %h3
+        Instant messaging
+      %p
+        Use our IM integration feature to serve incoming chats using the IM network if your choice.       
+      %a.group
+        %h3.bordered-1
+          GTalk 
+          %i.icon.right.icon-arrow-down
+      .block.tr0.group.settings-section{ :style => 'display: block' }
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tristique congue orci, vitae lobortis magna sodales sit amet. Donec suscipit ornare risus sed blandit
+        .block.tr0
+          %a.btn.small
+            Login to your Google account
+      %a.group
+        %h3.bordered-1
+          Adium
+          %i.icon.right.icon-arrow-down
+      .block.tr0.group.settings-section{ :style => 'display: none' }
+        %ul
+          %li
+            %p 
+              1. Log in to your IM account and add this chat bot to your buddy list.
+          %li
+            %p
+              1. Log in to your IM account and add this chat bot to your buddy list.
+          %li
+            %p
+              1. Log in to your IM account and add this chat bot to your buddy list.
+          %li
+            %p
+              1. Log in to your IM account and add this chat bot to your buddy list.
         
+
+    
       
 
-      .block.group.settings-section
-        
-        .input-container
-          %input.btn.small.action{ :type => 'submit', :value => 'Check IM Status'}
+    
     
     .page-sidebar       
       .block
-        %h3
-          Instant messaging
-        %p
-          Use our IM integration feature to serve incoming chats using the IM network if your choice.       
+        
       
 
 
