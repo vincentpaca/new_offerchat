@@ -13,6 +13,7 @@ NewOfferchat::Application.routes.draw do
   get :im_settings, :controller => :home, :action => :im_settings 
   get :account_settings, :controller => :home, :action => :account_settings
   get :users_create, :controller => :home, :action => :users_create 
+  get :widget_settings_banner, :controller => :home, :action => :widget_settings_banner
   get :widget_settings_post_chat, :controller => :home, :action => :widget_settings_post_chat
   get :widget_settings_offline_form, :controller => :home, :action => :widget_settings_offline_form
   get :widget_settings_pre_chat, :controller => :home, :action => :widget_settings_pre_chat
