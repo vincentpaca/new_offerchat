@@ -124,8 +124,35 @@
             lineColors: ['#3cb2e9', '#eeb445', '#e56666', '#8acb70'],
             xkey: 'period',
             ykeys: ['views', 'active','missed','proactive'],
-            labels: ['Page Views', 'Active Chats','Missed Chats','Proactive Chats'],
+            labels: ['Widget Views', 'Active Chats','Missed Chats','Proactive Chats'],
           });
+    .pB_1a 
+      .reports-container
+        %ul.reports-list.group
+          %li
+            %h3
+              %span.report-label.page-views
+              Widget views
+            .report-metric-value
+              1,345
+          %li
+            %h3
+              %span.report-label.active-chats
+              Active Chats
+            .report-metric-value
+              139
+          %li
+            %h3
+              %span.report-label.missed-chats
+              Missed Chats
+            .report-metric-value
+              43
+          %li
+            %h3
+              %span.report-label.proactive-chats
+              Proactive Chats
+            .report-metric-value
+              32
 
   .page-sidebar._s0.scrollable
     .block.tr.group
