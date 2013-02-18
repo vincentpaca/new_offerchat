@@ -1440,7 +1440,7 @@ button.back
   position: relative
   padding: 3px
   overflow: hidden
-  & > .progress  
+  & > .progress, 
     height: 7px
     display: block
     position: relative
@@ -1452,6 +1452,7 @@ button.back
     box-shadow: 0 1px 0 rgba(255,255,255,.1) inset
     border: 1px solid #41972b
     border-radius: 12px
+
 
 .visitor-input
   border: 1px solid #d1d1d1
@@ -1800,7 +1801,25 @@ a.social-btn
 .agent-visual-count
   margin: 10px 0
 
+.preview
+  border: 5px dashed #ccc
+  width: 260px
+  height: 40px
+  overflow: hidden
+  position: relative
+  &.loading
+    background: image-url('loading.gif')
+    background-repeat: no-repeat
+    background-position: center
 
+  span.preview-label
+    position: absolute
+    font-size: 11px
+    color: #999
+    display: inline-block
+    left: 50%
+    margin-left: -40px
+    top: 12px
 
 
 .blink

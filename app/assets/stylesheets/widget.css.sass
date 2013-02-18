@@ -21,6 +21,8 @@
   transition: all .1s ease-in-out
   &:hover
     opacity: 1
+  &.active
+    opacity: 1
   &.selected
     @extend :hover
     border-color: #3ea4e5
@@ -60,6 +62,9 @@
   &.oF
     height: 180px
     overflow: hidden
+    &._1F
+      height: auto
+      overflow: none
 
 .offerchat-block
   padding: 5px
@@ -200,8 +205,9 @@ input[type=submit].offerchat-submit-form
 .offerchat-footer
   color: #676767
   font-size: 11px
-  padding: 3px 5px
   text-align: right
+  overflow: hidden
+  height: 40px
   a
     color: #4097e1
     text-decoration: none
@@ -226,7 +232,7 @@ a.offerchat-logo-link
   &.offerchat-visitor
     background: #f8f8f8
     text-shadow: 0 1px 0 #fff
-
+    
 .offerchat-agent .offerchat-user
   color: #2bb2ea
 

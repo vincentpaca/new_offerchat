@@ -2,183 +2,73 @@
   %h3 Widget Settings
   .module-header._c8
     .ui-button-group
-      %button.btn.active Style and Color
-      %button.btn Upload Banner
+      %button.btn Style and Color
+      %button.btn.active Upload Banner
       %button.btn Post chat survey
       %button.btn Offline form
       %button.btn Pre chat form
       %button.btn Embed widget
 
-.message-notice
-  %i.icon.icon-warning
-  Installing your chat widget is quick and easy! 
-  =link_to "Click here ","#"
-  to get the JavaScript code to install on your website.
+
 .scrollable
-  .page-body._tL
-    Customize the color, style, labels and the widget position of the Offerchat live chat widget on your website.
+  .page-body
+    .group._f0
+      Customize the color, style, labels and the widget position of the Offerchat live chat widget on your website.
 
-    .block
-      %h3 Positioning and Labels
-      .block.tr.group.settings-section
-        .label
-          Widget Position
-        .dropdown-group
-          %button.btn.small
-            Bottom Right 
-            %span.caret
-          %ul.dropdown-menu.wS{ :style => 'display: none'}
-            %li
-              = link_to 'Bottom Left','#'
-            %li
-              = link_to 'Bottom Right','#'
-      .block.tr.group.settings-section
-        .label
-          Widget Label
-        .input-container
-          %input{ :type => 'text', :value => 'Chat with us! We\'re online now', :style => 'width: 200px' }
-          6 chars left
-          .message-text.error
-            This field is required
-      .block.tr.group.settings-section
-        .label
-          Agent Label
-        .input-container
-          %input{ :type => 'text', :value => 'Chat support', :style => 'width: 200px' }
-          6 chars left
-          .message-text.error
-            This field is required
+      .block
+        %h3 Upload your custom banner
+        .block.tr.group.settings-section
+          .preview.loading
+            %span.preview-label
+              260px x 40px
+          %form#bannerUploadForm
+          %input#bannerUpload{ :type => 'file', :style => 'margin: 5px 0 10px -5px' }
+          %p
+            %button.btn.small.action{ :type => 'submit' }
+              Save
 
-
-    .block
-      %h3 Widget Color
-      .block.tr.group.settings-section
-        .swatch-selector
-          %a.intlorange.selected
-          %a.cadmiumorange
-          %a.rustorange          
-          %a.aureolineyellow
-          %a.goldenbell
-          %a.cadmiumreddeep
-          %a.velvetpink
-          %a.mandy          
-          %a.cobaltviolet
-          %a.hibiscus
-          %a.eggplant
-          %a.aquablue
-          %a.picassoblue
-          %a.aqua
-          %a.blueribbon
-          %a.endeavor
-          %a.astroblue
-          %a.midblue
-          %a.gold
-          %a.keylime
-          %a.sushi
-          %a.greengrass
-          %a.salemgreen
-          %a.nandor
-          %a.darkslategrey
-          %a.saddlebrown
-          %a.grey
-          %a.black
-
-
-      .block.tr.group.settings-section
-        %h3
-          Widget Style
-
-        .widget-preview-wrapper.block
-          .ui-checkbox-container.active
-            .ui-checked    
-              %input{:type => "checkbox"}
-          %label{:style => "position: relative; top: 4px; left: 4px; padding-right: 15px;"} Rounded corner 
-          .ui-checkbox-container.active
-            .ui-checked    
-              %input{:type => "checkbox"}
-          %label{:style => "position: relative; top: 4px; left: 4px; padding-right: 15px;"} Gradient
-          .ui-checkbox-container#minimize.active
-            .ui-checked    
-              %input{:type => "checkbox"}
-          %label{:style => "position: relative; top: 4px; left: 4px;"} Minimize View
-
-        .widget-preview-wrapper.block
-          .widget-option-box
-            .widget-select-option.widget-1
-              .offerchat-widget-wrapper.hidden.offerchat-theme-sushi.offerchat-theme-gradient.oF.offerchat-rounded-corner
-                .offerchat-widget-head.offerchat-block
-                  .offerchat-minimize-control
-                  =image_tag "bubble-chat.png", :class => "offerchat-ico-chat-bubble" 
-                  Chat with me, I'm here to help
-                .offerchat-inner-wrap
-                  .offerchat-agent-show.offerchat-block
-                    .offerchat-agent-thumbnail
-                      =image_tag 'thumbnail40.png'
-                    .offerchat-agent-details
-                      Hi! I'm
-                      .offerchat-agent-name
-                        Jonathan
-                      .offerchat-agent-position
-                        Sales representative
-                  .offerchat-chat-wrapper
-                    .offerchat-chat.offerchat-agent
-                      .offerchat-user-timestamp
-                        8:10 pm
-                      .offerchat-user
-                        Jonathan
-                      .offerchat-user-message
-                        How can I help you today?
-                    .offerchat-chat.offerchat-visitor
-                      .offerchat-user-timestamp
-                        8: 10 pm
-                      .offerchat-user
-                        You
-                      .offerchat-user-message
-                        I need something but i don't know what
-                      .offerchat-user-message
-                        Maybe you can help me out
-
-          .widget-option-box.last
-            .widget-select-option.selected.widget-2
-              .offerchat-widget-wrapper.hidden.offerchat-theme-sushi.offerchat-theme-gradient.oF.offerchat-rounded-corner
-                .offerchat-widget-head.offerchat-wstyle2
-                  .offerchat-minimize-control-2
-                  .offerchat-agent-style-2
-                    .offerchat-agent-thumbnail-2
-                      =image_tag 'thumb70.png'
-                    .offerchat-agent-details
-                      .offerchat-agent-name
-                        Jonathan
-                      .offerchat-agent-position
-                        Sales Representative
-                .offerchat-inner-wrap
-                  .offerchat-chat-wrapper
-                    .offerchat-chat.offerchat-agent
-                      .offerchat-user-timestamp
-                        8:10 pm
-                      .offerchat-user
-                        Jonathan
-                      .offerchat-user-message
-                        How can I help you today?
-                    .offerchat-chat.offerchat-visitor
-                      .offerchat-user-timestamp
-                        8: 10 pm
-                      .offerchat-user
-                        You
-                      .offerchat-user-message
-                        I need something but i don't know what
-                      .offerchat-user-message
-                        Maybe you can help me out
-                    .offerchat-chat.offerchat-agent
-                      .offerchat-user-timestamp
-                        8:10 pm
-                      .offerchat-user
-                        Jonathan
-                      .offerchat-user-message
-                        How can I help you today?
+        
         
 
+        
+                   
 
+
+    .page-sidebar
+      .widget-preview-wrapper.block
+        .widget-option-box           
+          .offerchat-widget-wrapper.offerchat-theme-sushi.offerchat-theme.oF._1F.offerchat-rounded-corner
+            .offerchat-widget-head.offerchat-block
+              .offerchat-minimize-control
+              =image_tag "bubble-chat.png", :class => "offerchat-ico-chat-bubble" 
+              Chat with me, I'm here to help
+            .offerchat-inner-wrap
+              .offerchat-agent-show.offerchat-block
+                .offerchat-agent-thumbnail
+                  =image_tag 'thumbnail40.png'
+                .offerchat-agent-details
+                  Hi! I'm
+                  .offerchat-agent-name
+                    Jonathan
+                  .offerchat-agent-position
+                    Sales representative
+              .offerchat-chat-wrapper
+                .offerchat-chat.offerchat-agent
+                  .offerchat-user-timestamp
+                    8:10 pm
+                  .offerchat-user
+                    Jonathan
+                  .offerchat-user-message
+                    How can I help you today?
+              .offerchat-response-wrapper
+                .offerchat-field-wrap
+                  %textarea#ofc_chat_field.offerchat-input{ :placeholder => 'Type your message and hit enter' }
+              .offerchat-footer
+                %a{ :href => '#' }
+                  =image_tag 'sampleBanner.png', :class => 'offerchat-companyBanner'
+          
+
+    
 
 
 
