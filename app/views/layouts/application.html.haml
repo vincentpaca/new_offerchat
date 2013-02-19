@@ -362,31 +362,28 @@
       .modal-body
         .form-wrapper
           .field-wrapper
+            
             %fieldset
-              .message-text.success
-                You have successfully updated your password. 
-              %p
-                You will be logged out and asked to login again in 
-                %strong
-                  3
-                secs
-            / %fieldset
-            /   .label-container
-            /     %label Old Password
-            /   .input-container
-            /     %input.full{ :type => 'password'}
+              .label-container
+                %label Old Password
+              .input-container
+                %input.full{ :type => 'password'}
 
-            / %fieldset
-            /   .label-container
-            /     %label Confirm New Password
-            /   .input-container
-            /     %input.full{ :type => 'password'}
+            %fieldset
+              .label-container
+                %label Confirm New Password
+              .input-container
+                %input.full{ :type => 'password'}
 
-            / %fieldset
-            /   .label-container
-            /     %label New Password
-            /   .input-container
-            /     %input.full{ :type => 'password'}
+            %fieldset
+              .label-container
+                %label New Password
+              .input-container
+                %input.full{ :type => 'password'}
+            %fieldset       
+              .message-notice
+                You will be logged out and asked to login again after you've changed your password
+              
 
       .modal-footer
         %button.btn.action.small Reset Password

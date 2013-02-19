@@ -133,6 +133,9 @@ $("#closeChat").click(function(){
 $(".dropdown-group > .btn").click(function(){
   $(".dropdown-menu").toggle();
 });
+$(".dropdown-tab").click(function(){
+  $(".dropdown-tab .dropdown-menu").toggle();
+});
 
 $('.table-head-collapsible').click(function(){
     $(this).next().toggle('fast');
