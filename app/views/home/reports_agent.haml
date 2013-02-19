@@ -10,6 +10,25 @@
   .pB_1a.pB-section-fixed
     %p
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras dolor dolor, condimentum at vulputate vitae, eleifend nec dolor. Aenean vitae enim est. 
+    %div{ :style => 'display: block; margin-bottom: 5px' }
+      .dropdown-group
+        %button.btn.websites
+          %i.icon.icon-globe 
+          All websites 
+          %span.caret{ :style => 'float: right; margin-top: 7px;' }
+        %ul.dropdown-menu.websites{ :style => 'display: none' }
+          %li
+            %a{ :href => '#' }
+              Buzzednow.com
+              %span.small http://www.buzzednow.com
+          %li
+            %a{ :href => '#' }
+              Buyrealmarketing
+              %span.small http://www.buyrealmarketing.com
+          %li
+            %a{ :href => '#' }
+              Cebu Pacific Air Promos
+              %span.small http://www.cebupacificair-promos.com
     .dropdown-group
       %button.btn.agents
         .caret
