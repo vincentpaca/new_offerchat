@@ -23,6 +23,37 @@
         .block.tr0
           %a.btn.small
             Login to your Google account
+      %a.group#adiumLink
+        %h3.bordered-1
+          Adium
+          %i.icon.right.icon-arrow-down
+      .block.tr0.group.settings-section#adiumSection{ :style => 'display: none' }
+        %ul.in-list
+          %li
+            %p 
+              1. Open Adium on your computer.
+          %li
+            %p
+              2. Click File > Add Account > XMPP
+            %p
+              =image_tag('adium_step1.png')
+          %li
+            %p
+              3. Enter the necessary account credentials in the format shown below.
+            %p
+              =image_tag('adium_step2.png')
+            %p
+              Your Jabber ID is Offerchat registered email address without the ampersand (@) and dot (.) characters plus the Offerchat XMPP domain which is realtime.offerchat.com. Then type the password you're using for your Offerchat account.
+              As an example, let's say my registered Offerchat email address is myemail@me.com, the Jabber ID I should enter is myemailmecom@realtime.offerchat.com
+          %li
+            %p
+              4. Click OK after entering the Jabber ID and password.
+            %p
+              You can now chat with your customers from the Adium IM client on your computer. This is how it looks like in action:
+            %p
+              =image_tag('adium_step3.jpg')
+ 
+
       %a.group#pidginLink
         %h3.bordered-1
           Pidgin
@@ -31,7 +62,7 @@
 
         %ul.in-list
           %li
-            %p 
+            %p
               1. Open Pidgin on your computer.
           %li
             %p

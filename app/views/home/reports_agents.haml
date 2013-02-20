@@ -9,11 +9,11 @@
 
 .page-body.group{ :style => 'padding: 0' }
   .page-selector
-    .dropdown-tab-panel
-      .dropdown-tab    
+    .dropdown-tab-panel.group
+      .dropdown-tab.websites 
         %i.icon.icon-globe 
         All websites 
-        %span.caret{ :style => 'float: right; margin-top: 7px;' }
+        %span.caret{ :style => 'float: right; margin-top: 9px;' }
 
         %ul.dropdown-menu.websites{ :style => 'display: none' }
           %li
@@ -28,353 +28,351 @@
             %a{ :href => '#' }
               Cebu Pacific Air Promos
               %span.small http://www.cebupacificair-promos.com
-  .date-selector._lT
-    %ul
-      %li
-        %a
+
+      .dropdown-tab-panel.date-selector.right
+        .dropdown-tab.first
           Today
-      %li
-        %a
+        .dropdown-tab
           This week
-      %li
-        %a
+        .dropdown-tab
           This month
-      %li
-        %a.active#customDateTrigger
+        .dropdown-tab#customDateTrigger
           Custom date
-        .custom-date-range-wrapper
-          .caret.cT1
-          .custom-date-input-wrapper
-            %button.btn.action.small
-              Go
-            %input#dateRange{ :placeholder => 'Select a date' }
+          .custom-date-range-wrapper
+            .caret.cT1
+            .custom-date-input-wrapper
+              %button.btn.action.small
+                Go
+              %input#dateRange{ :placeholder => 'Select a date' }
+  %div.scrollable
+    
 
-%div{ :style => 'margin-top: 30px' }
-  
+    %div{ :style => 'margin-top: 30px' }
+      
 
-  .table-wrapper
-    .table-row-wrapper.table-row-selectable
+      .table-wrapper
+        .table-row-wrapper.table-row-selectable
 
-      / No chat triggers are added yet
-      .table-row.table-head._m0.group
-        
-        .td-container.status-cell
-          .td-content
-            &nbsp;
-        
-        .td-container.name-cell
-          .td-content
-            Agent
-        
-        .td-container.h_44-cell
-          .td-content
-            Opportunities
-        .td-container.h_44-cell
-          .td-content
-            Incoming
-        .td-container.h_44-cell
-          .td-content
-            Proactive
-        .td-container.h_44-cell
-          .td-content
-            Ave. time to respond  
-        .td-container.h_44-cell
-          .td-content
-            Ave. handling time
-        .td-container.h_43-cell
-          .td-content
-            Rating  
-      %div.scrollable
-        %a.table-row.table-body.group
-          .td-container.status-cell
-            .td-content              
-         
-          .td-container.name-cell
-            .td-content
-              %span
-                Reina Figuracion
-          .td-container.h_44-cell
-            .td-content
-              435                
-          .td-container.h_44-cell
-            .td-content
-              125
-             
-              %span.missed-chat
-                (
-                %span.red -24
-                )
-              
-          .td-container.h_44-cell
-            .td-content.green
-              \+89
+          / No chat triggers are added yet
+          .table-row.table-head._m0.group
+            
+            .td-container.status-cell
+              .td-content
+                &nbsp;
+            
+            .td-container.name-cell
+              .td-content
+                Agent
+            
+            .td-container.h_44-cell
+              .td-content
+                Opportunities
+            .td-container.h_44-cell
+              .td-content
+                Incoming
+            .td-container.h_44-cell
+              .td-content
+                Proactive
+            .td-container.h_44-cell
+              .td-content
+                Ave. time to respond  
+            .td-container.h_44-cell
+              .td-content
+                Ave. handling time
+            .td-container.h_43-cell
+              .td-content
+                Rating  
           
-          .td-container.h_44-cell
-            .td-content
-              45 secs
-          .td-container.h_44-cell
-            .td-content
-              45 secs
-          .td-container.h_43-cell
-            .td-content
-              86%
+          %a.table-row.table-body.group
+            .td-container.status-cell
+              .td-content              
+           
+            .td-container.name-cell
+              .td-content
+                %span
+                  Reina Figuracion
+            .td-container.h_44-cell
+              .td-content
+                435                
+            .td-container.h_44-cell
+              .td-content
+                125
+               
+                %span.missed-chat
+                  (
+                  %span.red -24
+                  )
+                
+            .td-container.h_44-cell
+              .td-content.green
+                \+89
+            
+            .td-container.h_44-cell
+              .td-content
+                45 secs
+            .td-container.h_44-cell
+              .td-content
+                45 secs
+            .td-container.h_43-cell
+              .td-content
+                86%
 
-        %a.table-row.table-body.group
-          .td-container.status-cell
-            .td-content              
-         
-          .td-container.name-cell
-            .td-content
-              %span
-                Reina Figuracion
-          .td-container.h_44-cell
-            .td-content
-              435                
-          .td-container.h_44-cell
-            .td-content
-              125
-             
-              %span.missed-chat
-                (
-                %span.red -24
-                )
-              
-          .td-container.h_44-cell
-            .td-content.green
-              \+89
-          
-          .td-container.h_44-cell
-            .td-content
-              45 secs
-          .td-container.h_44-cell
-            .td-content
-              45 secs
-          .td-container.h_43-cell
-            .td-content
-              86%
+          %a.table-row.table-body.group
+            .td-container.status-cell
+              .td-content              
+           
+            .td-container.name-cell
+              .td-content
+                %span
+                  Reina Figuracion
+            .td-container.h_44-cell
+              .td-content
+                435                
+            .td-container.h_44-cell
+              .td-content
+                125
+               
+                %span.missed-chat
+                  (
+                  %span.red -24
+                  )
+                
+            .td-container.h_44-cell
+              .td-content.green
+                \+89
+            
+            .td-container.h_44-cell
+              .td-content
+                45 secs
+            .td-container.h_44-cell
+              .td-content
+                45 secs
+            .td-container.h_43-cell
+              .td-content
+                86%
 
-        %a.table-row.table-body.group
-          .td-container.status-cell
-            .td-content              
-         
-          .td-container.name-cell
-            .td-content
-              %span
-                Reina Figuracion
-          .td-container.h_43-cell
-            .td-content
-              435
-                
-          .td-container.h_43-cell
-            .td-content
-              435
-             
-          .td-container.h_43-cell
-            .td-content
-              435
-          .td-container.h_44-cell
-            .td-content
-              45 secs
-        %a.table-row.table-body.group
-          .td-container.status-cell
-            .td-content              
-         
-          .td-container.name-cell
-            .td-content
-              %span
-                Reina Figuracion
-          .td-container.h_43-cell
-            .td-content
-              435
-                
-          .td-container.h_43-cell
-            .td-content
-              435
-             
-          .td-container.h_43-cell
-            .td-content
-              435
-          .td-container.h_44-cell
-            .td-content
-              45 secs
-        %a.table-row.table-body.group
-          .td-container.status-cell
-            .td-content              
-         
-          .td-container.name-cell
-            .td-content
-              %span
-                Reina Figuracion
-          .td-container.h_43-cell
-            .td-content
-              435
-                
-          .td-container.h_43-cell
-            .td-content
-              435
-             
-          .td-container.h_43-cell
-            .td-content
-              435
-          .td-container.h_44-cell
-            .td-content
-              45 secs
-        %a.table-row.table-body.group
-          .td-container.status-cell
-            .td-content              
-         
-          .td-container.name-cell
-            .td-content
-              %span
-                Reina Figuracion
-          .td-container.h_43-cell
-            .td-content
-              435
-                
-          .td-container.h_43-cell
-            .td-content
-              435
-             
-          .td-container.h_43-cell
-            .td-content
-              435
-          .td-container.h_44-cell
-            .td-content
-              45 secs
-        %a.table-row.table-body.group
-          .td-container.status-cell
-            .td-content              
-         
-          .td-container.name-cell
-            .td-content
-              %span
-                Reina Figuracion
-          .td-container.h_43-cell
-            .td-content
-              435
-                
-          .td-container.h_43-cell
-            .td-content
-              435
-             
-          .td-container.h_43-cell
-            .td-content
-              435
-          .td-container.h_44-cell
-            .td-content
-              45 secs
-        %a.table-row.table-body.group
-          .td-container.status-cell
-            .td-content              
-         
-          .td-container.name-cell
-            .td-content
-              %span
-                Reina Figuracion
-          .td-container.h_43-cell
-            .td-content
-              435
-                
-          .td-container.h_43-cell
-            .td-content
-              435
-             
-          .td-container.h_43-cell
-            .td-content
-              435
-          .td-container.h_44-cell
-            .td-content
-              45 secs
-        %a.table-row.table-body.group
-          .td-container.status-cell
-            .td-content              
-         
-          .td-container.name-cell
-            .td-content
-              %span
-                Reina Figuracion
-          .td-container.h_43-cell
-            .td-content
-              435
-                
-          .td-container.h_43-cell
-            .td-content
-              435
-             
-          .td-container.h_43-cell
-            .td-content
-              435
-          .td-container.h_44-cell
-            .td-content
-              45 secs
-        %a.table-row.table-body.group
-          .td-container.status-cell
-            .td-content              
-         
-          .td-container.name-cell
-            .td-content
-              %span
-                Reina Figuracion
-          .td-container.h_43-cell
-            .td-content
-              435
-                
-          .td-container.h_43-cell
-            .td-content
-              435
-             
-          .td-container.h_43-cell
-            .td-content
-              435
-          .td-container.h_44-cell
-            .td-content
-              45 secs
-        %a.table-row.table-body.group
-          .td-container.status-cell
-            .td-content              
-         
-          .td-container.name-cell
-            .td-content
-              %span
-                Reina Figuracion
-          .td-container.h_43-cell
-            .td-content
-              435
-                
-          .td-container.h_43-cell
-            .td-content
-              435
-             
-          .td-container.h_43-cell
-            .td-content
-              435
-          .td-container.h_44-cell
-            .td-content
-              45 secs
-        %a.table-row.table-body.group
-          .td-container.status-cell
-            .td-content              
-         
-          .td-container.name-cell
-            .td-content
-              %span
-                Reina Figuracion
-          .td-container.h_43-cell
-            .td-content
-              435
-                
-          .td-container.h_43-cell
-            .td-content
-              435
-             
-          .td-container.h_43-cell
-            .td-content
-              435
-          .td-container.h_44-cell
-            .td-content
-              45 secs
+          %a.table-row.table-body.group
+            .td-container.status-cell
+              .td-content              
+           
+            .td-container.name-cell
+              .td-content
+                %span
+                  Reina Figuracion
+            .td-container.h_43-cell
+              .td-content
+                435
+                  
+            .td-container.h_43-cell
+              .td-content
+                435
+               
+            .td-container.h_43-cell
+              .td-content
+                435
+            .td-container.h_44-cell
+              .td-content
+                45 secs
+          %a.table-row.table-body.group
+            .td-container.status-cell
+              .td-content              
+           
+            .td-container.name-cell
+              .td-content
+                %span
+                  Reina Figuracion
+            .td-container.h_43-cell
+              .td-content
+                435
+                  
+            .td-container.h_43-cell
+              .td-content
+                435
+               
+            .td-container.h_43-cell
+              .td-content
+                435
+            .td-container.h_44-cell
+              .td-content
+                45 secs
+          %a.table-row.table-body.group
+            .td-container.status-cell
+              .td-content              
+           
+            .td-container.name-cell
+              .td-content
+                %span
+                  Reina Figuracion
+            .td-container.h_43-cell
+              .td-content
+                435
+                  
+            .td-container.h_43-cell
+              .td-content
+                435
+               
+            .td-container.h_43-cell
+              .td-content
+                435
+            .td-container.h_44-cell
+              .td-content
+                45 secs
+          %a.table-row.table-body.group
+            .td-container.status-cell
+              .td-content              
+           
+            .td-container.name-cell
+              .td-content
+                %span
+                  Reina Figuracion
+            .td-container.h_43-cell
+              .td-content
+                435
+                  
+            .td-container.h_43-cell
+              .td-content
+                435
+               
+            .td-container.h_43-cell
+              .td-content
+                435
+            .td-container.h_44-cell
+              .td-content
+                45 secs
+          %a.table-row.table-body.group
+            .td-container.status-cell
+              .td-content              
+           
+            .td-container.name-cell
+              .td-content
+                %span
+                  Reina Figuracion
+            .td-container.h_43-cell
+              .td-content
+                435
+                  
+            .td-container.h_43-cell
+              .td-content
+                435
+               
+            .td-container.h_43-cell
+              .td-content
+                435
+            .td-container.h_44-cell
+              .td-content
+                45 secs
+          %a.table-row.table-body.group
+            .td-container.status-cell
+              .td-content              
+           
+            .td-container.name-cell
+              .td-content
+                %span
+                  Reina Figuracion
+            .td-container.h_43-cell
+              .td-content
+                435
+                  
+            .td-container.h_43-cell
+              .td-content
+                435
+               
+            .td-container.h_43-cell
+              .td-content
+                435
+            .td-container.h_44-cell
+              .td-content
+                45 secs
+          %a.table-row.table-body.group
+            .td-container.status-cell
+              .td-content              
+           
+            .td-container.name-cell
+              .td-content
+                %span
+                  Reina Figuracion
+            .td-container.h_43-cell
+              .td-content
+                435
+                  
+            .td-container.h_43-cell
+              .td-content
+                435
+               
+            .td-container.h_43-cell
+              .td-content
+                435
+            .td-container.h_44-cell
+              .td-content
+                45 secs
+          %a.table-row.table-body.group
+            .td-container.status-cell
+              .td-content              
+           
+            .td-container.name-cell
+              .td-content
+                %span
+                  Reina Figuracion
+            .td-container.h_43-cell
+              .td-content
+                435
+                  
+            .td-container.h_43-cell
+              .td-content
+                435
+               
+            .td-container.h_43-cell
+              .td-content
+                435
+            .td-container.h_44-cell
+              .td-content
+                45 secs
+          %a.table-row.table-body.group
+            .td-container.status-cell
+              .td-content              
+           
+            .td-container.name-cell
+              .td-content
+                %span
+                  Reina Figuracion
+            .td-container.h_43-cell
+              .td-content
+                435
+                  
+            .td-container.h_43-cell
+              .td-content
+                435
+               
+            .td-container.h_43-cell
+              .td-content
+                435
+            .td-container.h_44-cell
+              .td-content
+                45 secs
+          %a.table-row.table-body.group
+            .td-container.status-cell
+              .td-content              
+           
+            .td-container.name-cell
+              .td-content
+                %span
+                  Reina Figuracion
+            .td-container.h_43-cell
+              .td-content
+                435
+                  
+            .td-container.h_43-cell
+              .td-content
+                435
+               
+            .td-container.h_43-cell
+              .td-content
+                435
+            .td-container.h_44-cell
+              .td-content
+                45 secs
 
-     
+         
 
             
 

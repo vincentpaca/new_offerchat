@@ -8,11 +8,11 @@
   
 .page-body.group{ :style => 'padding: 0' }
   .page-selector
-    .dropdown-tab-panel
-      .dropdown-tab    
+    .dropdown-tab-panel.group
+      .dropdown-tab.websites 
         %i.icon.icon-globe 
         All websites 
-        %span.caret{ :style => 'float: right; margin-top: 7px;' }
+        %span.caret{ :style => 'float: right; margin-top: 9px;' }
 
         %ul.dropdown-menu.websites{ :style => 'display: none' }
           %li
@@ -27,6 +27,22 @@
             %a{ :href => '#' }
               Cebu Pacific Air Promos
               %span.small http://www.cebupacificair-promos.com
+
+      .dropdown-tab-panel.date-selector.right
+        .dropdown-tab.first
+          Today
+        .dropdown-tab
+          This week
+        .dropdown-tab
+          This month
+        .dropdown-tab#customDateTrigger
+          Custom date
+          .custom-date-range-wrapper
+            .caret.cT1
+            .custom-date-input-wrapper
+              %button.btn.action.small
+                Go
+              %input#dateRange{ :placeholder => 'Select a date' }
   .scrollable
     .pB_1a.pB-section-fixed
       %div{ :style => 'display: block; margin-bottom: 5px' }
@@ -64,26 +80,7 @@
           %li
             %a{ :href => '#' }
               Reina Figuracion
-      .date-selector._lT._yB
-        %ul
-          %li
-            %a
-              Today
-          %li
-            %a
-              This week
-          %li
-            %a
-              This month
-          %li
-            %a.active#customDateTrigger
-              Custom date
-            .custom-date-range-wrapper
-              .caret.cT1
-              .custom-date-input-wrapper
-                %button.btn.action.small
-                  Go
-                %input#dateRange{ :placeholder => 'Select a date' }
+    
                 
     /* .scrollable
     %div

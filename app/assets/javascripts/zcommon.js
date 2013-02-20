@@ -35,6 +35,9 @@ $.FancyNotifications.notice("This is a notice message.");
   $("#gtalkLink").click(function(){
     $("#gtalkSection").slideToggle('fast');
   });
+  $("#adiumLink").click(function(){
+    $("#adiumSection").slideToggle('fast');
+  });
 
   $("#feedBackBtn").click(function(){
     $("#feedbackModal").removeClass('hide');
@@ -133,9 +136,14 @@ $("#closeChat").click(function(){
 $(".dropdown-group > .btn").click(function(){
   $(".dropdown-menu").toggle();
 });
-$(".dropdown-tab").click(function(){
+$(".dropdown-tab.websites").click(function(){
   $(".dropdown-tab .dropdown-menu").toggle();
 });
+$(".date-selector .dropdown-tab").click(function(){
+  $('.date-selector .dropdown-tab').removeClass('active');
+  $(this).addClass('active');
+});
+
 
 $('.table-head-collapsible').click(function(){
     $(this).next().toggle('fast');
