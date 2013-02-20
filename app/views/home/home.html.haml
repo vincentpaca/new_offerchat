@@ -28,7 +28,12 @@
           %a.btn.small
             Take the tour
       
-      .block.group{ :style => 'border-bottom: 1px solid #e1e1e1; height: 340px' }
+      
+
+
+
+
+      .block.group{ :style => 'border-bottom: 1px solid #e1e1e1' }
         .half
           %button.close-dark{ :style => 'top: 5px' }
           %p 
@@ -85,6 +90,51 @@
               %li
                 %a
                   Orthofill
+
+
+      .block.group{ :style => 'border-bottom: 1px solid #e1e1e1;' }
+        .half._f3
+          %h3
+            Your scoreboard
+          .reports-container
+            %ul.reports-list.group.home-reports
+              %li
+                %h3                  
+                  Opportunities
+                  %span.report-label.page-views
+                .report-metric-value
+                  1,345
+              %li
+                %h3                  
+                  Incoming
+                  %span.report-label.active-chats
+                .report-metric-value
+                  139 
+              %li
+                %h3                  
+                  Missed Chats
+                  %span.report-label.missed-chats
+                .report-metric-value
+                  43
+              %li
+                %h3                  
+                  Proactive Chats
+                  %span.report-label.proactive-chats
+                .report-metric-value
+                  32
+
+        .half.agent-score-home
+          
+          %h3
+            Your Agent score
+          .block
+            %input{ :class => 'dial',   :value => "3.2" }
+            %div{ :style => 'position: relative' }
+              %small.help-label
+                %a What is this?
+      
+
+
       .graph-static-container
         .graph-static-headline
           COMING SOON

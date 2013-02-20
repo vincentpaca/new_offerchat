@@ -95,6 +95,8 @@
 
 
           %ul.menu-list.group
+            %li 
+              %a Reports
             %li
               %a.active Websites
               .caret.menu-marker
@@ -145,13 +147,13 @@
 
           .sidebar-inner.scrollable
             .section-nav
-              %a.nav-parent#dashboardNav.selected
+              %a.nav-parent#dashboardNav
                 %i.icon-icon-home
                 Dashboard
             .section-nav
-              %a.nav-parent#firstNav
+              %a.nav-parent#firstNav.selected
                 BuyRealMarketing
-              .nav-bg{ :style => 'display: none' }
+              .nav-bg{ :style => 'display: block' }
                 
                 %a.nav.active
                   %i.icon.icon-chat
