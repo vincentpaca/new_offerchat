@@ -8,8 +8,8 @@
     
 
   %body
-    %a#feedBackBtn
-      Send feedback
+    / %a#feedBackBtn
+    /   Send feedback
     .dashboard.group
       .dashboard-header.group
         .container
@@ -22,6 +22,7 @@
             .notification-list-container.hide
               .caret.notification-marker
               %h3 Incoming Chats
+
               .scrollable
                 %h4.list-group-head
                   %a
@@ -213,6 +214,8 @@
          
         .dashboard-content.group
           = yield
+
+
     .modal.dialog-box.hide
       .modal-header
         %button.close
@@ -648,6 +651,26 @@
         #frotateG_07.f_circleG
         #frotateG_08.f_circleG
 
+  .footer-fixed
+    %ul.footer-list
+      %li
+        \&copy; 2013 Offerchat
+      %li
+        .language-selector        
+          %label.language-dropdown{ :for => 'userLanguage' }
+            %span.language
+              English
+            %span.caret  
+          %select#userLanguage
+            %option English
+            %option Español
+            %option Deutsch
+            %option Français
+            %option Português
+            %option Polski
+      %li
+        =link_to 'Knowledgebase','#'
+      
 
 
   / %script{ :type => "text/javascript", :src => "https://www.google.com/jsapi" }

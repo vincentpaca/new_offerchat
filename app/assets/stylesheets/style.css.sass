@@ -1785,8 +1785,12 @@ a.social-btn
     border-color:  transparent transparent #333 transparent 
     top: -13px
     left: 210px
+  &.bottom
+    border-color: #333 transparent transparent transparent 
+    bottom: -14px
+    left: 201px
 
-.tooltip-tour
+.tooltip-tour, .tooltip
   h3
     color: #fff
     font-weight: 700
@@ -1843,6 +1847,11 @@ a.social-btn
     @extend .tour-admin-websites
     top: 44px
     left: -177px
+
+  &.score-label
+    top: -199px
+    left: -96px
+
 
 .date-selector
   display: inline-block
@@ -1940,6 +1949,41 @@ a.social-btn
     left: 50%
     margin-left: -40px
     top: 12px
+
+.footer-fixed
+  position: fixed
+  padding: 5px
+  overflow: hidden
+  bottom: 0 
+  left: 0
+  width: 100%
+  background: #e1e1e1
+  border-top: 1px solid #d1d1d1
+  z-index: 1600
+  
+.footer-list
+  > li
+    display: inline-block
+    margin-right: 30px
+    position: relative
+.language-dropdown
+  display: block
+  padding: 1px 5px
+  border: 1px solid #bbb
+  box-shadow: 0 1px 0 #fff
+  border-radius: 3px
+  background: #fff
+  .language
+    margin-right: 5px
+#userLanguage
+  position: absolute
+  left: -1px
+  top: 1px
+  opacity: 0
+  padding: 0
+  border: 0
+  cursor: pointer
+  min-width: 250px
 
 
 .blink
