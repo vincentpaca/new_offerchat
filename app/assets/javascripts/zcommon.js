@@ -206,10 +206,17 @@ $("#widgetCode").click(function() {
         $(".tour-chat-settings").fadeOut(300);
         $(".tour-widget-settings").fadeIn(300);
       });
+
       $(".tour-widget-settings .action").click(function(){
         $(".tour-widget-settings").fadeOut(300);
+        $(".tour-admin-reports").fadeIn(300);
+      });
+
+      $(".tour-admin-reports .action").click(function(){
+        $(".tour-admin-reports").fadeOut(300);
         $(".tour-admin-websites").fadeIn(300);
       });
+
       $(".tour-admin-websites .action").click(function(){
         $(".tour-admin-websites").fadeOut(300);
         $(".tour-admin-users").fadeIn(300);
