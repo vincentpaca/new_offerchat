@@ -210,13 +210,16 @@ pre
   padding: 10px 0
 textarea, input[type=text], input[type=password]
   border: 1px solid #b1b1b1
+  font:
+    family: Arial, 'Helvetica Neue', Helvetica, sans-serif
+    size: 13px
 
 em
   font-style: italic
 body
   font: 
-    family: 'PT Sans', sans-serif
-    /* family: "FS Albert Web Regular", Arial, 'Helvetica Neue', Helvetica, sans-serif
+    /* family: 'PT Sans', sans-serif
+    family: Arial, 'Helvetica Neue', Helvetica, sans-serif
     size-adjust: 0.48
     weight: normal
     style: normal
@@ -352,6 +355,7 @@ button
   padding: 4px 10px
   border-radius: 3px
   box-shadow: 0 1px 0 #fff inset
+  line-height: 16px
   &.right
     float: right
   &.small
@@ -1126,11 +1130,14 @@ input.ui-button-input
   & + .ui-button-group
     margin-left: 5px
   & > .btn
+    font-family: Arial, sans-serif
     position: relative
     border-radius: 0
     font:
       size: 11px
       weight: bold
+    &.small
+      font-size: 11px
     & + .btn
       margin-left: -3px
     &:first-child
@@ -1691,11 +1698,11 @@ ul.time-report-list
 .ui-agent-details
   h3
     font-weight: bold 
-    font-family: "PT Sans", sans-serif
+    /* font-family: "PT Sans", sans-serif
     text-align: left
 .agent-rating-list
   margin-top: 5px
-  font-family: "PT Sans", sans-serif
+  /* font-family: "PT Sans", sans-serif
   > li
     margin-right: 5px
     display: inline-block
