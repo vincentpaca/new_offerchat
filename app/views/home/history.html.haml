@@ -4,13 +4,24 @@
       %input{ :type => 'text', :placeholder => 'Search a conversation' }
       %button{ :type => 'submit' }
   %h3 Chat History
-  .module-header._c8{ :style => 'display: inline-block;' }
-    .ui-button-group
-      %button.btn Today
-      %button.btn Yesterday
-      %button.btn This week
-      %button.btn.active This Month
-      / %button.btn.active Custom date
+
+.page-selector
+  .dropdown-tab-panel.group
+    .dropdown-tab-panel.date-selector.right
+      .dropdown-tab.first
+        Today
+      .dropdown-tab
+        This week
+      .dropdown-tab
+        This month
+      .dropdown-tab#customDateTrigger
+        Custom date
+        .custom-date-range-wrapper
+          .caret.cT1
+          .custom-date-input-wrapper
+            %button.btn.action.small
+              Go
+            %input#dateRange{ :placeholder => 'Select a date' }
 
 
 .table-wrapper.scrollable
