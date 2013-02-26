@@ -148,7 +148,11 @@ i.icon
   color: #e55151
 .green
   color: #4ec05e
-
+select
+  padding: 5px
+  outline: none
+  &:focus
+    border: 1px solid #4fb5e4
 small
   &.help-label
     color: #c1c1c1
@@ -183,15 +187,16 @@ p
   margin: 5px 0 10px 0
   &.small
     color: #999
+ 
 input, textarea
   padding: 5px
   outline: none
   margin: 0
   box-sizing: border-box
   -moz-box-sizing: border-box
-input, textarea
   &.full
     width: 100%
+
 textarea
   min-height: 90px
   font-family: Arial, sans-serif
@@ -210,6 +215,8 @@ pre
   padding: 10px 0
 textarea, input[type=text], input[type=password]
   border: 1px solid #b1b1b1
+  &:focus
+    border: 1px solid #4fb5e4
   font:
     family: Arial, 'Helvetica Neue', Helvetica, sans-serif
     size: 13px
@@ -232,6 +239,10 @@ strong
 .block
   margin: 20px 0 20px 0
   position: relative
+
+  h3
+    font-family: "PT Sans", sans-serif
+    font-size: 19px
 
   &.tr
     border-bottom: 1px solid #f1f1f1
@@ -518,9 +529,12 @@ button
   left: 161px
   top: 40px
   h3
-    font-size: 12px
+    
     text-align: center
-    font-weight: bold
+    font:
+      weight: bold
+      size: 13px
+
     color: #676767
     padding: 7px
     border-bottom: 1px solid #e1e1e1
@@ -528,6 +542,7 @@ button
     text-shadow: 0 1px 0 #fff
     border-top-left-radius: 5px
     border-top-right-radius: 5px
+
 .notifications-pos-footer
   position: absolute
   background: #fff
@@ -802,6 +817,7 @@ li.upload-photo
   font-size: 17px
   font-weight: 700
   color: #333
+  font-family: "PT Sans", sans-serif
 
 .user-settings
   position: absolute
@@ -883,6 +899,8 @@ a.nav, .nav
   text-shadow: 0 1px 0 #fff
   h3
     font-size: 20px
+    font-family: "PT Sans", sans-serif
+    font-weight: 700
 .page-body
   padding: 20px
   line-height: 1.4
@@ -988,7 +1006,7 @@ label.chat-count
 .chat-message-1
   width: 80%
   line-height: 1.4
-  font-size: 15px
+  font-size: 13px
 
 span.timestamp
   float: right
@@ -1054,6 +1072,7 @@ span.timestamp
 ._uB
   color: #333
   font-size: 15px
+  font-family: "PT Sans", sans-serif
 
 .chat-options
   float: right
@@ -1063,6 +1082,9 @@ span.timestamp
 
 .module-header
   position: relative
+  h3
+    font-family: "PT Sans", sans-serif
+    font-weight: 700
   &._y9
     padding-top: 15px
   padding: 10px
@@ -1215,6 +1237,7 @@ button.back
       vertical-align: top
 .visitor-username
   font-weight: 700
+  font-family: "PT Sans", sans-serif
   margin-right: 10px
   font-size: 19px
   color: #333
@@ -1297,7 +1320,9 @@ button.back
     border-top-right-radius: 5px
     h2
       color: #fff
-      font-size: 16px
+      font-size: 19px
+      font-weight: bold
+      font-family: "PT Sans", sans-serif
     &.error
       background: #f95656
   .modal-footer
@@ -1756,11 +1781,11 @@ ul.time-report-list
   background: #fbf5e9
   text-shadow: 0 1px 0 #fff
   border: 1px solid #eee3ce
-  font-size: 15px
+  
   margin-bottom: 10px
   h1
-    font-size: 30px
-    letter-spacing: -1px
+    font-size: 27px
+    font-family: "PT Sans", sans-serif
     line-height: 1.4
     color: #463f31
 
@@ -1801,7 +1826,8 @@ a.social-btn
   h3
     color: #fff
     font-weight: 700
-    font-size: 13px
+    font-family: "PT Sans", sans-serif
+    font-size: 17px
     line-height: 1
   position: absolute
   text-align: left
@@ -1813,6 +1839,7 @@ a.social-btn
   color: #fff
   padding: 10px
   z-index: 2050
+  color: #e1e1e1
   &.hide
     display: none
 
@@ -1933,6 +1960,7 @@ a.social-btn
 .plan
   h3
     font-size: 17px
+    font-family: 'PT Sans', sans-serif
     border-bottom: 1px solid #e1e1e1
 .agent-visual-count
   margin: 10px 0
