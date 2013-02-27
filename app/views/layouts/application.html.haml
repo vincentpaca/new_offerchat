@@ -432,33 +432,17 @@
         %button.btn.action.small Transfer
         %button.btn.small Cancel
 
-    .modal.modal-chat-view.hide
+    .modal.modal-chat-view
       .modal-header
         %button.close
         %h2 Viewing conversation history
-      .chat-view-inner{ :style => 'min-height: 450px' }
-        .chat-header      
-          .visitor-info-wrapper
-            %ul.visitor-info-list
-              
-              %li
-                %span.visitor-username{ :style => 'position: relative; top: 1px' } y43fddp
-              %li 
-                %span.visitor-location 
-                  %i.icon.map-pin
-                  Cebu, Philippines
-              %li
-                %span.visitor-browser{ :title => 'Mozilla Firefox 4.0' }
-                  %i.icon.browser-mozilla              
-              %li
-                %span.visitor-system{ :title => 'Linux' }
-                  %i.icon.system-linux             
-              %li
-                %a#more-info{ :style => 'display: inline-block; width: 70px;  text-align: center;' }
-                  more info 
-              
-          .visitor-more-info        
-            %ul._y5
+      .chat-view-inner{ :style => 'min-height: 400px' }
+        .history-sidebar-info
+          .history-sidebar-inner
+            %strong
+              %span._ub
+                Visitor-y43fddp
+            %ul._f5
               %li
                 .info-label From 
                 .info-value http://www.offerchat.com
@@ -466,14 +450,17 @@
                 .info-label Time spent 
                 .info-value 15:30
               %li
+                .info-label Location
+                .info-value Makati, Philippines
+              %li
                 .info-label IP Address
-                .info-value 192.168.14.34
+                .info-value 192.168.34.2
               %li
                 .info-label System/Browser
                 .info-value Windows 8/Mozilla Firefox 17.1                
 
         .chat-body
-          .chat-content-area.scrollable
+          .chat-content-area.chat-history-body.scrollable
             %ul.chat-list
               %li.chat-group.ls
                 .chat-status-inner
@@ -637,7 +624,7 @@
         %button.btn.small
           Reconnect
 
-    .modal-backdrop.hide
+    .modal-backdrop
     .modal-backdrop.white.hide
 
     .modal-loader-wrapper.hide
