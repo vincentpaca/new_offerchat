@@ -85,6 +85,7 @@
             .td-content
               %i.icon.icon-check
 
+
         %a.table-row.table-body.group
           .td-container.status-cell
             .td-content
@@ -117,6 +118,8 @@
           .td-container.xs-cell.xL5
             .td-content
               %i.icon.icon-check
+          .td-container.status-cell
+            %i.icon.icon-edit.g0
               
 
         %a.table-row.table-body.group
@@ -151,6 +154,8 @@
           .td-container.xs-cell.xL5
             .td-content
               %i.icon.icon-check
+          .td-container.status-cell
+            %i.icon.icon-edit.g0
               
 
         .table-row.table-body.group.inactive
@@ -183,8 +188,11 @@
               .td-content
                 %span
                   Operator
-          .td-container.xs-cell
-            .td-content
+            .td-container.xs-cell
+              .td-content
+                &nbsp;
+            .td-container.status-cell
+              %i.icon.icon-edit.g0
              
               
 
@@ -218,9 +226,12 @@
               .td-content
                 %span
                   Operator
-          .td-container.xs-cell
-            .td-content
-              not verified
+            .td-container.xs-cell
+              .td-content
+                not verified
+
+            .td-container.status-cell
+              %i.icon.icon-edit.g0
              
        
       .table-footer

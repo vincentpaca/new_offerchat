@@ -141,6 +141,12 @@ i.icon
     background-position: 0 -212px
     &.disabled
       opacity: .3
+  &.icon-edit
+    @include iconSize(12px, 12px)
+    background-position: -91px -128px
+    top: 3px
+    &.g0
+      opacity: .3
 
 
 
@@ -1400,8 +1406,19 @@ button.back
     z-index: 1000
   &.table-body
     cursor: pointer
+    .icon.icon-edit
+      opacity: 0
+      -webkit-transition: all .1s ease-in-out
+      -moz-transition: all .1s ease-in-out
+      -o-transition: all .1s ease-in-out
+      transition: all .1s ease-in-out
     &:hover
       background: #f5f5f5
+      .icon.icon-edit
+        opacity: .3
+
+    
+   
   &.trow-unread
     .visitor-cell, .message-cell
       color: #222
@@ -1415,7 +1432,8 @@ button.back
       background: #fff
   &.inactive, &.inactive a
     color: #bbb
-   
+
+
 
 
 .td-container
@@ -1951,7 +1969,6 @@ a.social-btn
       &:hover
         color: #2885d4
       .agent-seat-count
-        font-size: 11px
         color: #bbb
 
 .agent-plan-status
