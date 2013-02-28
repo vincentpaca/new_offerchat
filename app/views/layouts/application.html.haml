@@ -432,7 +432,27 @@
         %button.btn.action.small Transfer
         %button.btn.small Cancel
 
-    .modal.modal-chat-view
+    .modal.hide#forwardToEmailModal
+      .modal-header
+        %button.close
+        %h2 Email this chat transcript
+      .modal-body
+        .form-wrapper
+          .field-wrapper
+            %fieldset
+              .label-container
+                %label
+                  Send to email address
+
+              .input-container
+                %input.full{ :type => 'text' }
+
+            
+      .modal-footer
+        %button.btn.action.small Send transcript
+        %button.btn.small Cancel
+
+    .modal.modal-chat-view.hide
       .modal-header
         %button.close
         %h2 Viewing conversation history
@@ -476,6 +496,8 @@
               %li.chat-group.group
                 
                 %div
+                  %span.timestamp
+                    Jan 21, 8:31AM
                   %strong 
                     %span._uB Jonathan (You)
                 .chat-message-1
@@ -505,9 +527,16 @@
                 .chat-status-inner.red
                   %p Visitor-y43fddp has left the conversation
       .modal-footer
-        %button.btn.small
-          Export Transcript
-        %button.btn.small
+        .dropdown-group
+          %button.btn.small
+            Export Transcript 
+            %span.caret
+          %ul.dropdown-menu.wS{ :style => 'display: none'}
+            %li
+              = link_to '.csv','#'
+            %li
+              = link_to '.pdf','#'
+        %button.btn.small#sendToEmailBtn
           Forward to email
        
     .modal#feedbackModal.hide
@@ -624,7 +653,7 @@
         %button.btn.small
           Reconnect
 
-    .modal-backdrop
+    .modal-backdrop.hide
     .modal-backdrop.white.hide
 
     .modal-loader-wrapper.hide

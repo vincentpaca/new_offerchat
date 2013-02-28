@@ -65,6 +65,11 @@ $.FancyNotifications.notice("This is a notice message.");
     $(".modal-backdrop").removeClass('hide');
   });
 
+  $("#sendToEmailBtn").click(function(){
+    $(".modal-chat-view").addClass('hide');
+    $("#forwardToEmailModal").removeClass('hide');
+  });
+
   $(".user-profile").click(function(){
     $(".user-settings").slideToggle('fast');
   });
