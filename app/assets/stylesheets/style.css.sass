@@ -250,7 +250,9 @@ strong
 .block
   margin: 20px 0 20px 0
   position: relative
-  
+  &.first-block
+    margin-top: 0
+    padding-top: 0
   h3
     font-family: "PT Sans", sans-serif
     font-size: 19px
@@ -259,9 +261,7 @@ strong
     border-bottom: 1px solid #f1f1f1
     padding: 10px 0
     margin: 10px 0
-    &.first-block
-      margin-top: 0
-      padding-top: 0
+    
     &.tr0
       @extend .tr
       border-bottom: none
