@@ -16,71 +16,92 @@
 .page-body.group{ :style => 'padding: 0' } 
   ._pB_1.scrollable
     .pB_1a
-      .block.group{ :style => 'border-bottom: 1px solid #e1e1e1' }
+      .block.tr.first-block.group#dashboardGuide{ :style => 'border-bottom: 1px solid #e1e1e1' }
+        %h3
+          Let us help you setup your chat
+        %ul.configure-steps.group
+          %li.mark-done
+            %a
+              %div
+                %i.icon.icon-marker
+              Installation
+          %li.mark-done
+            %a
+              %div
+                %i.icon.icon-marker
+              Customize
+          %li.mark-done
+            %a
+              %div
+                %i.icon.icon-marker
+              Prechat form
+          %li
+            %a
+              %div
+                %i.icon.icon-marker
+              Display name
+          %li
+            %a
+              %div
+                %i.icon.icon-marker
+              Add a saved response
+          %li
+            %a
+              %div
+                %i.icon.icon-marker
+              Add a new agent
 
-        fdsfsdfsd
-
-      .welcome-message
-        %button.close-dark
-        %h1
-          The new offerchat dashboard beta
-        %p
-          For months, we've been listening to your feedback to pinpoint what you want and need. The result is the new dashboard you're currently in. We've upgraded the look and feel of the Offerchat dashboard to provide you with a more intuitive, easier to use tool, and a better experience overall.
-
-        %p
-          Take a short tour through the Offerchat dashboard,
-          %a.btn.small
-            Take the tour
-      
-      
-
-
-
-
-      .block.group{ :style => 'border-bottom: 1px solid #e1e1e1' }
+      .block.tr.group{ :style => 'border-bottom: 1px solid #e1e1e1' }
         .half
-          %button.close-dark{ :style => 'top: 5px' }
-          %p 
-            Configuration completeness: 
-            %strong 25%
-          .progress-bar
-            .progress{ :style => 'width: 25%' }
+          %h3 Overview
+          %ul.site-home-list
+            %li.group
+              %h4
+                Chat triggers
+              Automate your widget to chat to a customer when a condition is met.
+            %li.group
+              %h4
+                Widget Style
+              Customize the look and feel of your widget
+            %li.group
+              %h4
+                Saved Responses
+              Quickly access responses to reply faster to your customers
+              
+          / %button.close-dark{ :style => 'top: 5px' }
+          / %p 
+          /   Configuration completeness: 
+          /   %strong 25%
+          / .progress-bar
+          /   .progress{ :style => 'width: 25%' }
           
-          .block.tr0.group
-            %ul.link-list
-              %li._hl
-                1. Install widget
-                %i.icon.icon-check
-              %li._hl
-                2. Customize your widget
-                %i.icon.icon-check
-              %li 
-                3.
-                =link_to 'Setup pre chat form','#'
-              %li 
-                4.
-                =link_to 'Set widget display name','#'
-              %li 
-                5.
-                =link_to 'Add profile picture','#'
-              %li 
-                6.
-                =link_to 'Create a saved response','#'
+          / .block.tr0.group
+          /   %ul.link-list
+          /     %li._hl
+          /       1. Install widget
+          /       %i.icon.icon-check
+          /     %li._hl
+          /       2. Customize your widget
+          /       %i.icon.icon-check
+          /     %li 
+          /       3.
+          /       =link_to 'Setup pre chat form','#'
+          /     %li 
+          /       4.
+          /       =link_to 'Set widget display name','#'
+          /     %li 
+          /       5.
+          /       =link_to 'Add profile picture','#'
+          /     %li 
+          /       6.
+          /       =link_to 'Create a saved response','#'
             
-            .block.tr0.group
-              %p
-                Help spread the word
-              %a.social-btn.facebook
-                %i.icon.icon-facebook
-                Share on Facebook
-              %a.social-btn.twitter
-                %i.icon.icon-twitter
-                Follow us on Twitter
+            
         .half._k4
-          %p 
-            %button.btn.small.right{ :style => 'margin-top: 3px' }
-              Add website
-            %h3.bordered Website Profiles
+          
+          %button.btn.small.right{ :style => 'margin-top: -2px' }
+            Add website
+          %h3 Website Profiles
           .block.tr0group
             %ul.site-home-list
               %li.group
@@ -213,7 +234,29 @@
                 32
 
   .page-sidebar._s0.scrollable
-    .block.tr.group
+    .block.tr0.group
+      .welcome-message
+        %button.close-dark
+        %h1
+          The new offerchat dashboard beta
+        %p
+          We've upgraded the look and feel of the Offerchat dashboard to provide you with a more intuitive, easier to use tool, and a better experience overall.
+
+        %p
+          Take a short tour through the Offerchat dashboard,
+        %a.btn.small
+          Take the tour
+      %p
+        Help spread the word
+      %a.social-btn.facebook
+        %i.icon.icon-facebook
+        Share on Facebook
+      %a.social-btn.twitter
+        %i.icon.icon-twitter
+        Follow us on Twitter
+    
+    
+    .block.tr0.group
       %h3 Getting Started
       %ul.link-list
         %li
@@ -222,6 +265,7 @@
           =link_to 'How to get the most out of our live chat service.','#'
         %li
           =link_to 'How to configure our live chat widget to match your website','#'
+
     .block.tr.group
       %h3 Latest Blog Posts
       %ul.link-list

@@ -147,6 +147,11 @@ i.icon
     top: 3px
     &.g0
       opacity: .3
+  &.icon-marker
+    @include iconSize(27px, 27px)
+    background-position: -27px -237px
+    opacity: .4
+    margin-bottom: 10px
 
 
 
@@ -245,7 +250,7 @@ strong
 .block
   margin: 20px 0 20px 0
   position: relative
-
+  
   h3
     font-family: "PT Sans", sans-serif
     font-size: 19px
@@ -254,6 +259,9 @@ strong
     border-bottom: 1px solid #f1f1f1
     padding: 10px 0
     margin: 10px 0
+    &.first-block
+      margin-top: 0
+      padding-top: 0
     &.tr0
       @extend .tr
       border-bottom: none
@@ -927,15 +935,21 @@ a.nav, .nav
   position: relative 
   margin-left: 20px
   width: 218px
+  padding-right: 10px
   &._s0
     float: right
     width: 28%
     margin: 0
-    margin-left: 2%
-
+#dashboardGuide
+  display: none
 .site-home-list
   li
     margin: 10px 0
+    color: #999
+  h4
+    font-weight: bold
+    color: #333
+
 
 .header-search
   display: inline-block
@@ -1328,6 +1342,32 @@ button.back
   display: inline-block    
   vertical-align: middle
 
+.configure-steps
+  margin-top: 10px
+  li
+    display: inline-block
+    width: 16.666%
+    float: left
+    text-align: center
+    border-radius: 5px
+    &.mark-done
+      
+      &:hover
+        background: none
+      .icon-marker
+        background-position: 0 -237px
+        opacity: 1
+      a
+        color: #ccc
+        opacity: 1
+        text-decoration: line-through
+        cursor: default
+    a
+      display: block
+      padding: 10px
+      opacity: 1
+      
+    
 .modal
   position: fixed
   box-shadow: 0 1px 10px rgba(0,0,0,.3)
@@ -1822,7 +1862,7 @@ ul.time-report-list
   z-index: 99999
 
 .welcome-message
-  padding: 10px
+  padding: 5px
   border-radius: 5px
   background: #fbf5e9
   text-shadow: 0 1px 0 #fff
@@ -1830,7 +1870,7 @@ ul.time-report-list
   
   margin-bottom: 10px
   h1
-    font-size: 27px
+    font-size: 19px
     font-family: "PT Sans", sans-serif
     line-height: 1.4
     color: #463f31

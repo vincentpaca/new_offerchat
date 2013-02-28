@@ -239,6 +239,10 @@ $("#widgetCode").click(function() {
     },1000)
   }, 1000)
 
+  setTimeout(function(){
+    $("#dashboardGuide").slideDown('fast');
+  },2000)
+
   $("#skipTour").click(function(){
     $(".tooltip-tour, .modal-backdrop.white").remove();
   });
