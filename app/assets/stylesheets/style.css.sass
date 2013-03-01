@@ -171,6 +171,7 @@ small
     
 h1,h2,h3
   color: #333
+  font-family: "PT Sans", sans-serif
 h3
   font:
     size: 17px
@@ -192,6 +193,8 @@ h3
 a
   color: #2885d4
   text-decoration: none
+  &.thin
+    font-weight: normal
 a,button, input[type=submit]
   cursor: pointer
 p
@@ -254,7 +257,7 @@ strong
     margin-top: 0
     padding-top: 0
   h3
-    font-family: "PT Sans", sans-serif
+    
     font-size: 19px
 
   &.tr
@@ -913,11 +916,14 @@ a.nav, .nav
   text-shadow: 0 1px 0 #fff
   h3
     font-size: 20px
-    font-family: "PT Sans", sans-serif
+    
     font-weight: 700
 .page-body
   padding: 20px
   line-height: 1.4
+  h1
+    font-size: 26px
+    font-weight: 700
   &._tL
     max-width: 600px
   ._pB_1
@@ -1131,7 +1137,7 @@ span.timestamp
 .module-header
   position: relative
   h3
-    font-family: "PT Sans", sans-serif
+    
     font-weight: 700
   &._y9
     padding-top: 15px
@@ -1396,7 +1402,7 @@ button.back
       color: #fff
       font-size: 19px
       font-weight: bold
-      font-family: "PT Sans", sans-serif
+      
     &.error
       background: #f95656
   .modal-footer
@@ -1645,7 +1651,7 @@ button.back
 .message-notice
   background: #fbf3e3
   border: 1px solid #f0e3c7
-  padding: 5px
+  padding: 5px 15px
   color: #292722
   text-shadow: 0 1px 0 #fff
 
@@ -1694,6 +1700,7 @@ button.back
   padding: 5px 20px
 
 .reports-list
+  margin: 20px 0
   li
     display: inline-block    
     margin: 0 50px 0 0
@@ -1720,7 +1727,6 @@ button.back
       font-size: 30px
   h3
     
-    font-size: 15px
     color: #9f9f9f
   &.home-reports
     margin-top: 20px
@@ -1743,20 +1749,31 @@ button.back
   letter-spacing: -2px
 
 ul.time-report-list
-  padding: 10px 0 0 0 
+  padding: 20px 0 0 0 
   border-top: 1px solid #e1e1e1
   li
     position: relative
     margin: 0 30px 0 0
     display: inline-block
   h3
-    font-size: 15px 
-    font-weight: bold
     color: #9f9f9f
   .report-metric-value
     font-size: 20px
     letter-spacing: 0
 
+.image-container-inline
+  .image
+    display: inline-block
+
+    img
+      border-radius: 50%
+      border: 1px solid #e1e1e1
+.image-description
+  display: inline-block
+  vertical-align: top
+  width: 60%
+  margin-left: 30px
+  margin-top: 5%
 .dropdown-tab-panel
   background: #f1f1f1
   height: 39px
@@ -1812,7 +1829,7 @@ ul.time-report-list
     /* font-family: "PT Sans", sans-serif
     text-align: left
 .agent-rating-list
-  margin-top: 5px
+  margin-top: 10px
   /* font-family: "PT Sans", sans-serif
   > li
     margin-right: 5px
@@ -1871,7 +1888,7 @@ ul.time-report-list
   margin-bottom: 10px
   h1
     font-size: 19px
-    font-family: "PT Sans", sans-serif
+    
     line-height: 1.4
     color: #463f31
 
@@ -1912,7 +1929,7 @@ a.social-btn
   h3
     color: #fff
     font-weight: 700
-    font-family: "PT Sans", sans-serif
+    
     font-size: 17px
     line-height: 1
   position: absolute
@@ -2045,7 +2062,7 @@ a.social-btn
 .plan
   h3
     font-size: 17px
-    font-family: 'PT Sans', sans-serif
+    
     border-bottom: 1px solid #e1e1e1
 .agent-visual-count
   margin: 10px 0
