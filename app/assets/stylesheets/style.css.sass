@@ -268,6 +268,11 @@ strong
     &.tr0
       @extend .tr
       border-bottom: none
+    &.tr1
+      @extend .tr0
+      border-top: 1px solid #e1e1e1
+    &.text-right
+      text-align: right
   .half
     width: 50%
     display: inline-block
@@ -1520,7 +1525,6 @@ button.back
   display: inline-block
   float: left
   margin-right: 10px
-  overflow: hidden
   white-space: nowrap
   position: relative
   &.status-cell
@@ -1571,6 +1575,7 @@ button.back
     line-height: 2
     text-overflow: ellipsis
     white-space: nowrap
+    overflow: hidden
     /* span
     /*   vertical-align: middle
     &.small

@@ -7,6 +7,25 @@
 
 .page-selector
   .dropdown-tab-panel.group
+    .dropdown-tab.websites 
+      %i.icon.icon-globe 
+      All websites 
+      %span.caret{ :style => 'float: right; margin-top: 9px;' }
+
+      %ul.dropdown-menu.websites{ :style => 'display: none' }
+        %li
+          %a{ :href => '#' }
+            Buzzednow.com
+            %span.small http://www.buzzednow.com
+        %li
+          %a{ :href => '#' }
+            Buyrealmarketing
+            %span.small http://www.buyrealmarketing.com
+        %li
+          %a{ :href => '#' }
+            Cebu Pacific Air Promos
+            %span.small http://www.cebupacificair-promos.com
+
     .dropdown-tab-panel.date-selector.right
       .dropdown-tab.first
         Today

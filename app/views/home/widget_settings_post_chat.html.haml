@@ -15,11 +15,27 @@
 
       .block.tr.group.settings-section
         .label
-          Display Post Chat Survey 
-        .ui-button-group.right
+          Post Chat Survey 
+        .ui-button-group
           %button.btn.active Enabled
           %button.btn Disabled
       
+      .block.tr.group.settings-section
+        .label.vT
+          Widget Label
+        .input-container
+          %input{ :type => 'text', :value => 'Chat with us! We\'re online now', :style => 'width: 200px' }
+          6 chars left
+          .message-text.error
+            This field is required
+      .block.tr.group.settings-section
+        .label.vT
+          Description
+        .input-container
+          %input{ :type => 'text', :value => 'Please take a moment to rate this chat session', :style => 'width: 200px' }
+          6 chars left
+          .message-text.error
+            This field is required
 
       .block.tr.group.settings-section
    

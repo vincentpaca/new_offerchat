@@ -2,6 +2,7 @@
  background-color:#ffc5c5; 
  color: #472c2c;
  text-shadow: 0 1px 0 #ffe0e0;
+
 }
 #flash_alert .flash-message{
  background-color:#ffd6a6;
@@ -29,6 +30,7 @@
  text-align:center;
  font-size:1em;
  position:fixed;
+ font-weight: bold;
  top:0;
  height:1.3em;
  left:0;
