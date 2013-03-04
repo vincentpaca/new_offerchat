@@ -8,58 +8,59 @@
       %button.btn Pre chat form
       %button.btn Embed widget
 .scrollable
-  .page-body._tL
+  .page-body
+
     Gather live chat customer service feedback straight from your customers immediately after a chat session.
+    %div
+      .block.group._f0
 
-    .block
+        .block.tr.group.settings-section
+          .label
+            Show Post Chat Survey after a chat session 
+          .ui-button-group.right
+            %button.btn.active Enabled
+            %button.btn Disabled
+        
+        .block.tr.group.settings-section
+          .label.vT
+            Widget Label
+          .input-container
+            %input{ :type => 'text', :value => 'Chat with us! We\'re online now', :style => 'width: 200px' }
+            6 chars left
+            .message-text.error
+              This field is required
+        .block.tr.group.settings-section
+          .label.vT
+            Description
+          .input-container
+            %input{ :type => 'text', :value => 'Please take a moment to rate this chat session', :style => 'width: 200px' }
+            6 chars left
+            .message-text.error
+              This field is required
 
-      .block.tr.group.settings-section
-        .label
-          Post Chat Survey 
-        .ui-button-group
-          %button.btn.active Enabled
-          %button.btn Disabled
-      
-      .block.tr.group.settings-section
-        .label.vT
-          Widget Label
-        .input-container
-          %input{ :type => 'text', :value => 'Chat with us! We\'re online now', :style => 'width: 200px' }
-          6 chars left
-          .message-text.error
-            This field is required
-      .block.tr.group.settings-section
-        .label.vT
-          Description
-        .input-container
-          %input{ :type => 'text', :value => 'Please take a moment to rate this chat session', :style => 'width: 200px' }
-          6 chars left
-          .message-text.error
-            This field is required
-
-      .block.tr.group.settings-section
+    
    
-        .widget-preview-wrapper.block          
-          .offerchat-widget-wrapper.offerchat-theme-goldenbell
-            .offerchat-widget-head.offerchat-block
-              .offerchat-minimize-control
-              Chat with me, I'm here to help
-            .offerchat-inner-wrap{ :style => 'display: block;' }
-              .offerchat-block
-                Please take a moment to rate this chat session
-                .offerchat-field-wrap.group
-                  .offerchat-rating-container
-                    %a.offerchat-rate.offerchat-rate-up.active
-                      .offerchat-rate-up-icon 
-                      Good
-                    %a.offerchat-rate.offerchat-rate-down 
-                      .offerchat-rate-down-icon
-                      Bad
-                .offerchat-field-wrap{ :style => 'margin-top: 10px' }
-                  Send your comments
-                  %textarea.offerchat-input{ :placeholder => '' } 
-                .offerchat-field-wrap
-                  %input.offerchat-submit-form{ :type => 'submit', :value => 'Send feedback' }
+      .widget-preview-wrapper{ :style => 'display: inline-block; vertical-align: top; position: relative; top: 90px; left: 20px' }     
+        .offerchat-widget-wrapper.offerchat-theme-goldenbell
+          .offerchat-widget-head.offerchat-block
+            .offerchat-minimize-control
+            Chat with me, I'm here to help
+          .offerchat-inner-wrap{ :style => 'display: block;' }
+            .offerchat-block
+              Please take a moment to rate this chat session
+              .offerchat-field-wrap.group
+                .offerchat-rating-container
+                  %a.offerchat-rate.offerchat-rate-up.active
+                    .offerchat-rate-up-icon 
+                    Good
+                  %a.offerchat-rate.offerchat-rate-down 
+                    .offerchat-rate-down-icon
+                    Bad
+              .offerchat-field-wrap{ :style => 'margin-top: 10px' }
+                Send your comments
+                %textarea.offerchat-input{ :placeholder => '' } 
+              .offerchat-field-wrap
+                %input.offerchat-submit-form{ :type => 'submit', :value => 'Send feedback' }
 
 
               
