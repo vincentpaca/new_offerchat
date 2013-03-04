@@ -48,6 +48,13 @@
           6 chars left
           .message-text.error
             This field is required
+      .block.tr.group.settings-section
+        .label
+          Greeting Label
+        .input-container
+          %input{ :type => 'text', :value => 'Hi Im', :style => 'width: 150px' }
+          %input{ :type => 'text', :disabled => 'disabled', :value => 'Jonathan', :style => 'width: 70px' }
+          6 chars left
 
 
     .block
@@ -105,7 +112,7 @@
         .widget-preview-wrapper.block
           .widget-option-box
             .widget-select-option.widget-1
-              .offerchat-widget-wrapper.hidden.offerchat-theme-sushi.offerchat-theme-gradient.oF.offerchat-rounded-corner
+              .offerchat-widget-wrapper.offerchat-theme-sushi.offerchat-theme-gradient.oF.offerchat-rounded-corner
                 .offerchat-widget-head.offerchat-block
                   .offerchat-minimize-control
                   =image_tag "bubble-chat.png", :class => "offerchat-ico-chat-bubble" 
@@ -140,7 +147,7 @@
 
           .widget-option-box.last
             .widget-select-option.selected.widget-2
-              .offerchat-widget-wrapper.hidden.offerchat-theme-sushi.offerchat-theme-gradient.oF.offerchat-rounded-corner
+              .offerchat-widget-wrapper.offerchat-theme-sushi.offerchat-theme-gradient.oF.offerchat-rounded-corner
                 .offerchat-widget-head.offerchat-wstyle2
                   .offerchat-minimize-control-2
                   .offerchat-agent-style-2
