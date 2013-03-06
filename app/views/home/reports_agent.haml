@@ -122,7 +122,7 @@
                 lineColors: ['#3cb2e9', '#eeb445', '#e56666', '#8acb70'],
                 xkey: 'period',
                 ykeys: ['views', 'active','missed','proactive'],
-                labels: ['Page Views', 'Active Chats','Missed Chats','Proactive Chats'],
+                labels: ['Opportunities', 'Active Chats','Missed Chats','Proactive Chats'],
               });
 
           .pB_1a 
@@ -167,8 +167,10 @@
                     3 mins, 44 sec
 
             .block.tr.tr1.text-right.group
-              %a
-                Export data to csv
+              Export to 
+              .ui-button-group
+                %button.btn .pdf
+                %button.btn .csv
                 
 
 

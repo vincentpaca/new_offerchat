@@ -10,6 +10,9 @@ $.FancyNotifications.notice("This is a notice message.");
   
 
   
+  $(".website-settings-group").click(function(){
+    $(this).toggleClass('active');
+  });
   
   $(".chat-count").effect("bounce", { times: 5 }, 100);
 
