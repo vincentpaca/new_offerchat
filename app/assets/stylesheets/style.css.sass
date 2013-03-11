@@ -342,10 +342,10 @@ ul.menu-list
   background: image-url('logo.png') no-repeat
   width: 147px
   height: 27px
-  display: block
-  float: left
+  display: inline-block
+  margin-right: 30px
   position: relative
-  top: 5px
+  top: -5px
   small
     color: #fff
     font-size: 10px
@@ -805,6 +805,69 @@ a.nav-parent
     box-shadow: 0 1px 2px rgba(0,0,0,.3) inset
 .section-nav:last-child .nav-parent
   border-bottom: 1px solid #e1e1e1
+
+.website-settings-group
+  position: absolute
+  right: 13px
+  top: 10px
+  opacity: .5
+  &.active
+    opacity: 1
+    .website-settings-dropdown
+      background: #fff
+
+    .website-settings-options
+      display: block
+  &.dashboard-dropdown
+    display: inline-block
+    position: relative
+    top: 0
+    right: 0
+    .website-settings-dropdown
+      width: 45px
+      height: 32px
+    .website-settings-options
+      top: 38px
+  &.active
+    .icon-gear-2
+      border-bottom: 1px solid #c9c9c9
+    .icon-home-2
+      background-position: -31px -270px
+
+
+.website-settings-dropdown
+  width: 16px
+  height: 16px
+  cursor: pointer
+  padding: 3px
+  float: right
+  &:hover
+    background: rgba(255,255,255,.4)
+
+.website-settings-options
+  display: none
+  width: 155px
+  position: absolute
+  z-index: 1000
+  background: #fff
+  right: 0
+  top: 20px
+  box-shadow: 0 2px 3px rgba(0,0,0,.2)
+  a
+    font-size: 11px
+    display: block
+    padding: 7px 13px
+    font-weight: bold
+    color: #464646
+    &:hover
+      background: #5A8DC2
+      color: #fff
+      text-shadow: 0 -1px 0 rgba(0,0,0,.2)
+a.icon-settings
+  background: #fff
+  padding: 5px
+  width: 16px
+  height: 16px
 
 a.nav, .nav
   padding: 10px
