@@ -34,47 +34,29 @@
 
           %ul.menu-list.group
             %li
-              %a
-                History
-              .tooltip-tour.tour-admin-history.group.hide
-                .caret-tour.top
-                %h3 History
-                %p
-                  Displays a list of all your chat history or archived chat messages including your users.
-                %button.btn.small.action
-                  Next
-            %li 
-              %a Reports
-              .tooltip-tour.tour-admin-reports.group.hide
-                .caret-tour.top
-                %h3 Reports
-                %p
-                  Displays a list of all your websites with active live chat widget installed. You can add or delete websites from here.
-                %button.btn.small.action
-                  Next
-            %li
-              %a.active Websites
-              .caret.menu-marker
-              .tooltip-tour.tour-admin-websites.group.hide
-                .caret-tour.top
-                %h3 Your Websites
-                %p
-                  Displays a list of all your websites with active live chat widget installed. You can add or delete websites from here.
-                %button.btn.small.action
-                  Next
-            %li 
-              %a Users
-              .tooltip-tour.tour-admin-users.group.hide
-                .caret-tour.top
-                %h3 Your Users
-                %p
-                  Displays a list of all users added to your account. You can add users, delete users or change user roles.
-                %button.btn.small.action
-                  Next
-            %li 
-              %a My Account
-            %li.logout
-              %a Logout
+              %a.user-thumbnail{ :style => "background-image: url(#{ image_path('person1.jpg') })" }
+              .user-profile
+                .profile-agent-name Jonathan
+                .user-current-status 
+                  %a
+                    %span.status.online  
+                    Online
+                  
+                    %i.icon.icon-arrow-down
+                /   .status-connection
+                /     Connecting...
+                .user-settings{ :style => 'display: none' }
+                  .user-select-status
+                    %a.option-status
+                      %span.status.away
+                      Away
+                    %a.option-status
+                      %span.status.offline 
+                      Offline
+                    %a.option-status.gL
+                      Settings
+                    %a.option-status.signout.gL
+                      Signout
       
 
       %div.group{ :style => 'position:relative; min-width:1055px; max-width:100%' }
