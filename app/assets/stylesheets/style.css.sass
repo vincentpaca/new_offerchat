@@ -726,7 +726,8 @@ li.upload-photo
   .status-connection
     font-style: italic
   a
-    color: #636363
+    color: #fff
+    font-size: 11px
 .user-thumbnail
   height: 50px
   width: 50px
@@ -747,30 +748,35 @@ li.upload-photo
   margin-left: 10px
   cursor: pointer
 .profile-agent-name
-  font-size: 17px
+  font-size: 13px
   font-weight: 700
-  color: #333
-  font-family: "PT Sans", sans-serif
 
 .user-settings
   position: absolute
   z-index: 110
   min-width: 100px
   border-radius: 5px
-  top: 45px
-  left: 53px
+  top: 40px
+  left: 9px
   background: rgba(0,0,0,.9)
   overflow: hidden
   a.option-status
-    padding: 3px 7px
+    padding: 5px 10px
     color: #fff
     display: block
+    font-weight: bold
+    font-size: 11px
     -webkit-transition: all .1s ease-in-out
     -moz-transition: all .1s ease-in-out
     -o-transition: all .1s ease-in-out
     transition: all .1s ease-in-out
     &:hover
       background: rgba(255,255,255,.10)
+    &.gL
+      border-top: 1px solid #999      
+      padding-left: 22px
+    &.signout
+      color: #eb6767
 
 
 a.nav-parent

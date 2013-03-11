@@ -61,32 +61,8 @@
 
       %div.group{ :style => 'position:relative; min-width:1055px; max-width:100%' }
         .dashboard-sidebar
-          .profile-container.group
-            %a.user-thumbnail{ :style => "background-image: url(#{ image_path('person1.jpg') })" }
-            .user-profile
-              .profile-agent-name Jonathan
-              .user-current-status 
-                %a
-                  %span.status.online  
-                  Online
-                
-                  %i.icon.icon-arrow-down
-              /   .status-connection
-              /     Connecting...
-              .user-settings{ :style => 'display: none' }
-                .user-select-status
-                  %a.option-status
-                    %span.status.away
-                    Away
-                  %a.option-status
-                    %span.status.offline 
-                    Offline
-
           .sidebar-inner.scrollable
-            .section-nav
-              %a.nav-parent#dashboardNav
-                %i.icon-icon-home
-                Dashboard
+           
             .section-nav
               %a.nav-parent#firstNav.selected
                 BuyRealMarketing
