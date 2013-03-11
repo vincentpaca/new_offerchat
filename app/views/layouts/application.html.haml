@@ -99,6 +99,13 @@
             %li
               %a
                 History
+              .tooltip-tour.tour-admin-history.group.hide
+                .caret-tour.top
+                %h3 History
+                %p
+                  Displays a list of all your chat history or archived chat messages including your users.
+                %button.btn.small.action
+                  Next
             %li 
               %a Reports
               .tooltip-tour.tour-admin-reports.group.hide
@@ -170,12 +177,10 @@
                   %i.icon.icon-chat
                   Chats
                   %label.chat-count.nu 10
-                %a.nav
-                  %i.icon.icon-chat-history
-                  History
+                
                 %a.nav
                   %i.icon.icon-gear
-                  Chat settings
+                  Live Chat settings
                 %a.nav
                   %i.icon.icon-widget
                   Widget settings
@@ -607,15 +612,9 @@
         Next
     
   
-    .tooltip-tour.tour-history.group.hide
-      .caret-tour.left
-      %h3 Chat History
-      %p
-        Click to show all chat history or archived chat messages.
-      %button.btn.small.action
-        Next
+    
 
-    .tooltip-tour.tour-chat-settings.group.hide
+    .tooltip-tour.tour-widget-settings.group.hide
       .caret-tour.left
       %h3 Widget Settings
       %p
@@ -624,7 +623,7 @@
         Next
     
  
-    .tooltip-tour.tour-widget-settings.group.hide
+    .tooltip-tour.tour-chat-settings.group.hide
       .caret-tour.left
       %h3 Live Chat Settings
       %p

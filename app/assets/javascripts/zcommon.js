@@ -204,12 +204,9 @@ $("#widgetCode").click(function() {
       });
       $(".tour-chats .action").click(function(){
         $(".tour-chats").fadeOut(300);
-        $(".tour-history").fadeIn(300);
-      });
-      $(".tour-history .action").click(function(){
-        $(".tour-history").fadeOut(300);
         $(".tour-chat-settings").fadeIn(300);
       });
+      
       $(".tour-chat-settings .action").click(function(){
         $(".tour-chat-settings").fadeOut(300);
         $(".tour-widget-settings").fadeIn(300);
@@ -217,6 +214,11 @@ $("#widgetCode").click(function() {
 
       $(".tour-widget-settings .action").click(function(){
         $(".tour-widget-settings").fadeOut(300);
+        $(".tour-admin-history").fadeIn(300);
+      });
+
+      $(".tour-admin-history .action").click(function(){
+        $(".tour-admin-history").fadeOut(300);
         $(".tour-admin-reports").fadeIn(300);
       });
 
