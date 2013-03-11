@@ -2,6 +2,8 @@ NewOfferchat::Application.routes.draw do
   root :to => "home#index"
   get :users, :controller => :home, :action => :users
   get :chats, :controller => :home, :action => :chats
+  get :chat_pending, :controller => :home, :action => :chat_pending
+  get :no_chat_selected, :controller => :home, :action => :no_chat_selected
   get :settings, :controller => :home, :action => :settings
   get :triggers, :controller => :home, :action => :triggers
   get :responses, :controller => :home, :action => :responses

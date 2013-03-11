@@ -15,184 +15,176 @@
         .container
           %a.logo
             %small beta
-          .global-notification
-            %a.notification-button
-              %span.notification-count
-                5
-            .notification-list-container.hide
-              .caret.notification-marker
-              %h3 Incoming Chats
-
-              .scrollable
-                %h4.list-group-head
-                  %a
-                    Buyrealmarketing
-                %ul.notifications-list
-                  %li
-                    %a
-                      %strong visitor-305495
-                      %span.msg-snip
-                        Anybody there?
-                  
-                  %li
-                    %a
-                      %strong Vince
-                      wants you to accept a chat
-                      %i.icon.icon-incoming
-
-                  %li
-                    %a
-                      %strong Eralph
-                      wants you to accept a chat
-                      %i.icon.icon-incoming
-
-
-
-                  %li
-                    %a
-                      %strong visitor-305495
-                      %span.msg-snip
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin mattis magna ut sem lobortis tempor.
-                  %li
-                    %a
-                      %strong visitor-305495
-                      %span.msg-snip
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin mattis magna ut sem lobortis tempor.
-                %h4.list-group-head
-                  %a
-                    Buzzednow
-                %ul.notifications-list
-                  %li
-                    %a
-                      %strong visitor-305495
-                      %span.msg-snip
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin mattis magna ut sem lobortis tempor.
-                  %li
-                    %a
-                      %strong visitor-305495
-                      %span.msg-snip
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin mattis magna ut sem lobortis tempor.
-                  %li
-                    %a
-                      %strong visitor-305495
-                      %span.msg-snip
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin mattis magna ut sem lobortis tempor.
-                  %li
-                    %a
-                      %strong visitor-305495
-                      %span.msg-snip
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin mattis magna ut sem lobortis tempor.
-                  %li
-                    %a
-                      %strong visitor-305495
-                      %span.msg-snip
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin mattis magna ut sem lobortis tempor.
-                  %li
-                    %a
-                      %strong visitor-305495
-                      %span.msg-snip
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin mattis magna ut sem lobortis tempor.
-              
-
-
+          .website-settings-group.dashboard-dropdown 
+            .website-settings-dropdown
+              %i.icon.icon-home-2
+              %span.caret{ :style => 'vertical-align: middle; margin-top: -15px' }
+            %ul.website-settings-options
+              %li
+                %a Dashboard
+              %li
+                %a History
+              %li
+                %a Reports
+              %li
+                %a User Management
+              %li
+                %a Websites
           %ul.menu-list.group
             %li
-              %a
-                History
-            %li 
-              %a Reports
-              .tooltip-tour.tour-admin-reports.group.hide
-                .caret-tour.top
-                %h3 Reports
-                %p
-                  Displays a list of all your websites with active live chat widget installed. You can add or delete websites from here.
-                %button.btn.small.action
-                  Next
-            %li
-              %a.active Websites
-              .caret.menu-marker
-              .tooltip-tour.tour-admin-websites.group.hide
-                .caret-tour.top
-                %h3 Your Websites
-                %p
-                  Displays a list of all your websites with active live chat widget installed. You can add or delete websites from here.
-                %button.btn.small.action
-                  Next
-            %li 
-              %a Users
-              .tooltip-tour.tour-admin-users.group.hide
-                .caret-tour.top
-                %h3 Your Users
-                %p
-                  Displays a list of all users added to your account. You can add users, delete users or change user roles.
-                %button.btn.small.action
-                  Next
-            %li 
-              %a My Account
-            %li.logout
-              %a Logout
+              %a.user-thumbnail{ :style => "background-image: url(#{ image_path('person1.jpg') })" }
+              .user-profile
+                .profile-agent-name Jonathan
+                .user-current-status 
+                  %a
+                    %span.status.online  
+                    Online
+                  
+                    %i.icon.icon-arrow-down
+                /   .status-connection
+                /     Connecting...
+                .user-settings{ :style => 'display: none' }
+                  .user-select-status
+                    %a.option-status
+                      %span.status.away
+                      Away
+                    %a.option-status
+                      %span.status.offline 
+                      Offline
+                    %a.option-status.gL
+                      Settings
+                    %a.option-status.signout.gL
+                      Signout
+              
+
+         
       
 
       %div.group{ :style => 'position:relative; min-width:1055px; max-width:100%' }
         .dashboard-sidebar
-          .profile-container.group
-            %a.user-thumbnail{ :style => "background-image: url(#{ image_path('person1.jpg') })" }
-            .user-profile
-              .profile-agent-name Jonathan
-              .user-current-status 
-                %a
-                  %span.status.online  
-                  Online
-                
-                  %i.icon.icon-arrow-down
-              /   .status-connection
-              /     Connecting...
-              .user-settings{ :style => 'display: none' }
-                .user-select-status
-                  %a.option-status
-                    %span.status.away
-                    Away
-                  %a.option-status
-                    %span.status.offline 
-                    Offline
+          
+            
+            
 
-          .sidebar-inner.scrollable
-            .section-nav
-              %a.nav-parent#dashboardNav
-                %i.icon-icon-home
-                Dashboard
+          .sidebar-inner.scrollable{ :style => 'height: 750px' }
+
             .section-nav
               %a.nav-parent#firstNav.selected
                 BuyRealMarketing
-              .nav-bg{ :style => 'display: block' }
+              .website-settings-group
+                .website-settings-dropdown
+                  %i.icon.icon-gear-2
+                %ul.website-settings-options
+                  %li
+                    %a Widget settings
+                  %li
+                    %a Live chat settings
+              .nav-bg{ :style => 'display: block' }                
                 
+                .user-filter.group
+                  %a.active All
+                  %a Visitors
+                  %a Agents
+                .website-notifications
+                  %a
+                    %strong Vince
+                    wants you to accept a chat
+                  / %a
+                  /   %strong Jonathan
+                  /   wants you to accept a chat
                 %a.nav.active
-                  %i.icon.icon-chat
-                  Chats
-                  %label.chat-count.nu 10
+                  %label.chat-count.nu 4
+                  %label.time-spent 5 mins
+                  visitor-23294
+                  .visitor-meta-info
+                    Cebu, Philippines
+                %a.nav.unread
+                  %label.chat-count.nu 2
+                  %label.time-spent 51 mins
+                  visitor-64782                       
+                  .visitor-meta-info
+                    Quebec, Canada
                 %a.nav
-                  %i.icon.icon-chat-history
-                  History
+                  %label.chat-count.nu 1
+                  %label.time-spent 1 min
+                  visitor-23294
+                  .visitor-meta-info
+                    Kathmahndu, Nepal
                 %a.nav
-                  %i.icon.icon-gear
-                  Chat settings
+                  %label.time-spent 12 mins
+                  Jonathan
+                  .visitor-meta-info
+                    Agent
                 %a.nav
-                  %i.icon.icon-widget
-                  Widget settings
+                  %label.time-spent 2 mins
+                  Harvey
+                  .visitor-meta-info
+                    Agent
+                %a.nav
+                  %label.time-spent 1 min
+                  Reina Figuracion
+                  .visitor-meta-info
+                    Admin
+                %a.nav
+                  %label.time-spent 1 min
+                  visitor-ds234
+                  .visitor-meta-info
+                    Quezon City, Philippines
+                %a.nav
+                  %label.time-spent 9 mins
+                  visitor-ds234
+                  .visitor-meta-info
+                    Quezon City, Philippines
+
+                        
+              
+            .section-nav
+              %a.nav-parent.active
+                .chat-marker !
+                Buzzednow.com
+              
+              .website-settings-group
+                .website-settings-dropdown
+                  %i.icon.icon-gear-2
+                %ul.website-settings-options
+                  %li
+                    %a Widget settings
+                  %li
+                    %a Live chat settings
             .section-nav
               %a.nav-parent
                 Buzzednow.com
-                %label.chat-count 10
+              .website-settings-group
+                .website-settings-dropdown
+                  %i.icon.icon-gear-2
+                %ul.website-settings-options
+                  %li
+                    %a Widget settings
+                  %li
+                    %a Live chat settings
             .section-nav
               %a.nav-parent
                 Buzzednow.com
-                %label.chat-count 10
+              .website-settings-group
+                .website-settings-dropdown
+                  %i.icon.icon-gear-2
+                %ul.website-settings-options
+                  %li
+                    %a Widget settings
+                  %li
+                    %a Live chat settings
             .section-nav
-              %a.nav-parent
-                Buzzednow.com
-            .section-nav
-              %a.nav-parent
-                Buzzednow.com                
+              %a.nav-parent.active
+                .chat-marker !
+                Buzzednow.com    
+              .website-settings-group
+                .website-settings-dropdown
+                  %i.icon.icon-gear-2
+                %ul.website-settings-options
+                  %li
+                    %a Widget settings
+                  %li
+                    %a Live chat settings            
             .section-nav
               %a.nav-parent
                 Buzzednow.com

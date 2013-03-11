@@ -249,6 +249,9 @@ $("#widgetCode").click(function() {
   $("#skipTour").click(function(){
     $(".tooltip-tour, .modal-backdrop.white").remove();
   });
+  setTimeout(function(){
+    $(".website-notifications").slideToggle(200)
+  }, 3000);
   
 
   

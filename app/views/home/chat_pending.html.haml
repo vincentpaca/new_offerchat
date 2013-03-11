@@ -4,7 +4,7 @@
       %button.close-dark#closeChat{ :title => 'End this chat',:style => 'top: 5px' }
       .visitor-info-wrapper{ :style => 'position: relative; top:-2px' } 
         %ul.visitor-info-list
-             
+              
           %li
             %span.visitor-username{ :style => 'position: relative; top: 1px' } y43fddp
             / .input-wrapper.visitor-input
@@ -105,9 +105,13 @@
               %p Visitor-y43fddp has left the conversation
 
     .chat-response-wrapper
-      .chat-area
-        %input{ :type => 'text', :placeholder => 'Enter your message' }
-          %button.send-msg-btn{ :type => 'submit' }
+      .chat-pending
+        Vince wants you to accept this chat
+        %div{ :style => 'display: inline-block; margin-left: 5px' }
+        %a.btn.action.small
+          Accept
+        %a.btn.small
+          Decline
 .chat-sidebar-wrapper
   .chat-sidebar
     .module-header{ :style => 'height: 17px' }
