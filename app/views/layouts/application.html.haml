@@ -32,6 +32,24 @@
               %li
                 %a Websites
 
+          .global-notification
+            %a.notification-button{ :title => "Notifications" }
+              %span.notification-count
+                5
+
+            .notification-list-container{ :style => "display: none" }
+              .caret.notification-marker
+              %h3 Incoming Chats
+              #noti-scroller{ :style => "max-height: 463px" }
+                %h4.list-group-head.hide
+                  %a
+                    BuzzedNow
+                
+              %ul.notifications-list
+                %li
+                  %p
+                    %center  No new notifications
+
           %ul.menu-list.group
             %li
               %a.user-thumbnail{ :style => "background-image: url(#{ image_path('person1.jpg') })" }
