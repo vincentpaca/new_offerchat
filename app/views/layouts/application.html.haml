@@ -500,7 +500,7 @@
 
 
     .tooltip-tour.tour-status.group.hide
-      .caret-tour.left
+      .caret-tour.top
       %h3 Your Online Status
       %p
         Shows your live chat status. You can toggle your status and appear as online, away or offline.
@@ -543,6 +543,23 @@
         Shows other live chat features such as Saved Responses, Chat Triggers for proactive chats and Timeout Notifications. 
       %p
         Only administrator/account owner can activate chat triggers and timeout notifications.
+      %button.btn.small.action
+        Next
+
+
+    .tooltip-tour.tour-chat-home.group.hide
+      .caret-tour.left
+      %h3 Your Home
+      %p
+        Manage your reports, users and websites, view chat history and your dashboard.
+      %button.btn.small.action
+        Next
+
+    .tooltip-tour.tour-notifications.group.hide
+      .caret-tour.top{ :style => 'left: 35px' }
+      %h3 Chat Notifications
+      %p
+        Allows you to see all incoming chats and chat transfers.
       %button.btn.small.action
         Next
 

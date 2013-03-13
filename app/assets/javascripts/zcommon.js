@@ -214,27 +214,23 @@ $("#widgetCode").click(function() {
 
       $(".tour-widget-settings .action").click(function(){
         $(".tour-widget-settings").fadeOut(300);
-        $(".tour-admin-history").fadeIn(300);
+        $(".tour-chat-home").fadeIn(300);
+        $(".dashboard-dropdown").addClass('active');
       });
 
-      $(".tour-admin-history .action").click(function(){
-        $(".tour-admin-history").fadeOut(300);
-        $(".tour-admin-reports").fadeIn(300);
+
+
+      $(".tour-chat-home .action").click(function(){
+        $(".tour-chat-home").fadeOut(300);
+        $(".tour-notifications").fadeIn(300);        
+        $(".dashboard-dropdown").removeClass('active');
       });
 
-      $(".tour-admin-reports .action").click(function(){
-        $(".tour-admin-reports").fadeOut(300);
-        $(".tour-admin-websites").fadeIn(300);
-      });
+      $(".tour-notifications .action").click(function(){
 
-      $(".tour-admin-websites .action").click(function(){
-        $(".tour-admin-websites").fadeOut(300);
-        $(".tour-admin-users").fadeIn(300);
-      });
-      $(".tour-admin-users .action").click(function(){
-        $(".tour-admin-users").fadeOut(300);
+        $(".tour-notifications").fadeOut(300);
         $(".tour-end").fadeIn(300);
-        $(".modal-backdrop").fadeIn(300);
+        $(".modal-backdrop").show();
       });
 
       $(".tour-end .action").click(function(){
