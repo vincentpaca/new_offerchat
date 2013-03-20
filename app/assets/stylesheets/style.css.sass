@@ -791,8 +791,9 @@ li.upload-photo
 
 .dashboard-sidebar
   width: 320px
-  border-right: 1px solid #efefef
+  border-right: 1px solid #e1e1e1
   box-sizing: border-box
+  -moz-box-sizing: border-box
   z-index: 999
   background: #f1f1f1
   position: absolute
@@ -818,6 +819,7 @@ li.upload-photo
 .visitors-list
   display: none
 .user-current-status
+  line-height: 1
   .status-connection
     font-style: italic
   a
@@ -1135,7 +1137,7 @@ label.time-spent
   padding: 3px
   min-width: 10px
   text-align: center
-  line-height: 1
+  line-height: 1 
   border-radius: 2px
   font-family: Arial, sans-serif
 
@@ -1145,12 +1147,24 @@ label.time-spent
 .chat-view
   @include blockPosition(left,70%,inline-block)
   min-width: 486px
-  
+  background: #e5e5e5
+
+.chat-container
+  width: 65%
+  height: 100%
+  position: absolute
+.chat-info-sidebar
+  position: absolute
+  width: 35%
+  height: 100%
+  left: 65%
+  background: #434343
 .chat-view-inner
-  border-right: 1px solid #e1e1e1
+  
   position: relative
   min-height: 600px
   background: #fff
+
 .no-chats-page
   text-align: center
   padding-top: 15%
@@ -1162,7 +1176,7 @@ label.time-spent
   @include blockPosition(left,30%,inline-block)
  
 .chat-header
-  @include header
+  
   padding: 10px
   position: absolute
   box-sizing: border-box
@@ -1171,11 +1185,10 @@ label.time-spent
   width: 100%
   min-height: 49px
   text-shadow: 0 1px 0 #fff
-  
-  box-shadow: 0 1px 3px rgba(0,0,0,.1)
+  border-bottom: 1px solid #e1e1e1
 .chat-body
   min-height: 400px
-  padding-top: 49px
+  padding-top: 50px
   position: relative
   overflow: hidden
   
