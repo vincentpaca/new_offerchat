@@ -23,15 +23,14 @@
       .block.tr.group.settings-section
         .label
           Widget Position
-        .dropdown-group
-          %button.btn.small
-            Bottom Right 
-            %span.caret
-          %ul.dropdown-menu.wS{ :style => 'display: none'}
-            %li
-              = link_to 'Bottom Left','#'
-            %li
-              = link_to 'Bottom Right','#'
+        .select-container.actions
+          .select-default-val
+            Bottom Right
+          %span.caret
+          %select.select-menu
+            %option Bottom Left
+            %option Bottom Right
+              
       .block.tr.group.settings-section
         .label
           Widget Label
@@ -118,6 +117,7 @@
                   =image_tag "bubble-chat.png", :class => "offerchat-ico-chat-bubble" 
                   Chat with me, I'm here to help
                 .offerchat-inner-wrap
+
                   .offerchat-agent-show.offerchat-block
                     .offerchat-agent-thumbnail
                       =image_tag 'thumbnail40.png'
@@ -135,15 +135,13 @@
                         Jonathan
                       .offerchat-user-message
                         How can I help you today?
-                    .offerchat-chat.offerchat-visitor
-                      .offerchat-user-timestamp
-                        8: 10 pm
-                      .offerchat-user
-                        You
-                      .offerchat-user-message
-                        I need something but i don't know what
-                      .offerchat-user-message
-                        Maybe you can help me out
+                  .offerchat-response-wrapper
+                    .offerchat-field-wrap
+                      %textarea.offerchat-input{ :placeholder => 'Type your message and hit enter' }
+                  .offerchat-footer
+                    = image_tag 'offerchat-banner.png'
+                
+                    
 
           .widget-option-box.last
             .widget-select-option.selected.widget-2
@@ -167,22 +165,14 @@
                         Jonathan
                       .offerchat-user-message
                         How can I help you today?
-                    .offerchat-chat.offerchat-visitor
-                      .offerchat-user-timestamp
-                        8: 10 pm
-                      .offerchat-user
-                        You
-                      .offerchat-user-message
-                        I need something but i don't know what
-                      .offerchat-user-message
-                        Maybe you can help me out
-                    .offerchat-chat.offerchat-agent
-                      .offerchat-user-timestamp
-                        8:10 pm
-                      .offerchat-user
-                        Jonathan
-                      .offerchat-user-message
-                        How can I help you today?
+                    
+                    
+                  .offerchat-response-wrapper
+                    .offerchat-field-wrap
+                      %textarea.offerchat-input{ :placeholder => 'Type your message and hit enter' }
+                  .offerchat-footer
+                    = image_tag 'offerchat-banner.png'
+
         
 
 
