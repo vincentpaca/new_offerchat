@@ -522,15 +522,14 @@
                 .chat-status-inner.red
                   %p Visitor-y43fddp has left the conversation
       .modal-footer
-        .dropdown-group
-          %button.btn.small
-            Export Transcript 
-            %span.caret
-          %ul.dropdown-menu.wS{ :style => 'display: none'}
-            %li
-              = link_to '.csv','#'
-            %li
-              = link_to '.pdf','#'
+        .select-container.actions
+          .select-default-val
+            Export Transcript
+          %span.caret
+          %select.select-menu
+            %option .csv
+            %option .pdf
+            
         %button.btn.small#sendToEmailBtn
           Forward to email
        

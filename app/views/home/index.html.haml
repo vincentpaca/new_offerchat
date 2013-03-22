@@ -1,21 +1,69 @@
 .chat-view
-
+  
   .chat-view-inner
+    .chat-info-sidebar
+      %button.close.close-rounded#closeChat{ :title => 'End this chat',:style => 'top: 15px; right: 15px' }
+      %ul.more-info-list
+        %li
+          .select-container.dark.actions
+            .select-default-val
+              Select an action
+            %span.caret
+            %select.select-menu
+              %option Transfer chat
+              %option Export Transcript
+              %option Forward to Email
+          / .dropdown-group
+          /   %button.btn.small
+          /     Select an action
+          /     %span.caret
+          /   %ul.dropdown-menu.wS{ :style => 'display: none'}
+          /     %li
+          /       = link_to 'Transfer this Chat','#'
+          /     %li
+          /       = link_to 'Forward to email','#'
+          /     %li
+          /       = link_to 'Export chat transcript','#'
+        %li
+          %label
+            Chat duration
+          %span.time-spent
+            13:50
+        %li
+          %label
+            Location
+          Davao City, Philippines
+        %li
+          %label
+            From
+          http://www.google.com.ph
+        %li
+          %label
+            IP Address
+          192.168.2.32
+        %li
+          %label
+            System / Browser
+          Windows Vista / Mozilla Firefox 14.2
+        
+
     .chat-container
       .chat-header      
-        %button.close-dark#closeChat{ :title => 'End this chat',:style => 'top: 5px' }
+        
         .visitor-info-wrapper{ :style => 'position: relative; top:-2px' } 
           %ul.visitor-info-list               
             %li
-              %span.visitor-username{ :style => 'position: relative; top: 1px' } y43fddp
+              %span.visitor-username{ :style => 'position: relative; top: 1px' } 
+                y43fddp
+                %i.icon.icon-edit.g0{ :style => 'top: -1px' }
               / .input-wrapper.visitor-input
               /   %input{ :type => 'text', :value => 'visitor-443fddp' }
               /   %a.btn.check-submit
               /   %a.btn.delete-submit
                         
-              %button.btn.small#transferChatBtn
-                Transfer chat 
+             
       .chat-body
+        
         .chat-content-area.scrollable
           %ul.chat-list
             %li.chat-group.ls
@@ -78,8 +126,7 @@
         .chat-area
           %input{ :type => 'text', :placeholder => 'Enter your message' }
             %button.send-msg-btn{ :type => 'submit' }
-    .chat-info-sidebar
-      fsdfsdfds
+    
                
         
       .visitor-more-info        
