@@ -2,7 +2,7 @@
   
   .chat-view-inner
     .chat-info-sidebar
-      %button.close.close-rounded#closeChat{ :title => 'End this chat',:style => 'top: 15px; right: 15px' }
+      
       %ul.more-info-list
         %li
           .select-container.dark.actions
@@ -13,6 +13,8 @@
               %option Transfer chat
               %option Export Transcript
               %option Forward to Email
+          %button.btn.small.action-delete.bB#closeChat
+            End chat
           / .dropdown-group
           /   %button.btn.small
           /     Select an action
@@ -27,8 +29,10 @@
         %li
           %label
             Chat duration
+          
           %span.time-spent
             13:50
+
         %li
           %label
             Location
@@ -161,55 +165,55 @@
             
       .chat-responses-container.scrollable.sL
         %a.response-trigger
-          %strong hello
+          %strong /hello
           %span Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin tempus sodales augue, ut mattis nibh aliquet nec...
         %a.response-trigger
-          %strong anything else
+          %strong /anything else
           %span Duis tempor fermentum justo, eget ornare quam congue a. Curabitur malesuada dui et
         %a.response-trigger
-          %strong hello
+          %strong /hello
           %span Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin tempus sodales augue, ut mattis nibh aliquet nec...
         %a.response-trigger
-          %strong anything else
+          %strong /anything else
           %span Duis tempor fermentum justo, eget ornare quam congue a. Curabitur malesuada dui et
         %a.response-trigger
-          %strong hello
+          %strong /hello
           %span Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin tempus sodales augue, ut mattis nibh aliquet nec...
         %a.response-trigger
-          %strong anything else
+          %strong /anything else
           %span Duis tempor fermentum justo, eget ornare quam congue a. Curabitur malesuada dui et
         %a.response-trigger
-          %strong hello
+          %strong /hello
           %span Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin tempus sodales augue, ut mattis nibh aliquet nec...
         %a.response-trigger
-          %strong anything else
+          %strong /anything else
           %span Duis tempor fermentum justo, eget ornare quam congue a. Curabitur malesuada dui et
         %a.response-trigger
-          %strong hello
+          %strong /hello
           %span Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin tempus sodales augue, ut mattis nibh aliquet nec...
         %a.response-trigger
-          %strong anything else
+          %strong /anything else
           %span Duis tempor fermentum justo, eget ornare quam congue a. Curabitur malesuada dui et
         %a.response-trigger
-          %strong hello
+          %strong /hello
           %span Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin tempus sodales augue, ut mattis nibh aliquet nec...
         %a.response-trigger
-          %strong anything else
+          %strong /anything else
           %span Duis tempor fermentum justo, eget ornare quam congue a. Curabitur malesuada dui et
         %a.response-trigger
-          %strong anything else
+          %strong /anything else
           %span Duis tempor fermentum justo, eget ornare quam congue a. Curabitur malesuada dui et
         %a.response-trigger
-          %strong anything else
+          %strong /anything else
           %span Duis tempor fermentum justo, eget ornare quam congue a. Curabitur malesuada dui et
         %a.response-trigger
-          %strong hello
+          %strong /hello
           %span Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin tempus sodales augue, ut mattis nibh aliquet nec...
         %a.response-trigger
-          %strong anything else
+          %strong /anything else
           %span Duis tempor fermentum justo, eget ornare quam congue a. Curabitur malesuada dui et
         %a.response-trigger
-          %strong anything else
+          %strong /anything else
           %span Duis tempor fermentum justo, eget ornare quam congue a. Curabitur malesuada dui et
 
 

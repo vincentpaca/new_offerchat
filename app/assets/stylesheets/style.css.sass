@@ -313,9 +313,6 @@ strong
   height: 38px
   /* overflow: hidden
   background: #1a5da4
-  background: -webkit-gradient(linear, left top, left bottom, from(#2266af), to(#1b5ea5))
-  background: -moz-linear-gradient(top,  #2266af,  #1b5ea5)
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#2266af', endColorstr='#1b5ea5')
   border-top: 1px solid #2e5e8f
   box-shadow: 0 1px 0 rgba(255,255,255,.1) inset
 
@@ -413,6 +410,7 @@ button
     &:active
       background: #209cdd
       box-shadow: 0 1px 1px rgba(0,0,0,.1) inset
+  
   &.action-delete
     @extend .action
     background: #eb4141
@@ -420,6 +418,8 @@ button
     &:active
       background: #e63c3c
       box-shadow: 0 1px 1px rgba(0,0,0,.1) inset
+    &.bB
+      border: 1px solid #212121
   &.websites
     font-size: 14px
     padding: 7px
@@ -1503,23 +1503,32 @@ input.ui-button-input
       padding: 5px 15px
 
 a.response-trigger
-  color: #333
   text-shadow: 0 1px 0 #fff
-  padding: 5px 10px
+  padding: 3px 7px 
   line-height: 1.4
   display: block
+  
   -webkit-transition: all .1s ease-in-out
   -moz-transition: all .1s ease-in-out
   -o-transition: all .1s ease-in-out
   transition: all .1s ease-in-out
-  
+  margin: 5px
+  background: #f5f5f5
+  border-radius: 3px
   strong
     margin-right: 5px
     font-weight: 700
+    color: #333
+
+
   span
-    color: #676767
+    color: #999
   &:hover
-    background: #f5f5f5
+    background: #4cb0ef
+    color: #fff
+    text-shadow: 0 -1px 0 #3295d3
+    span,strong
+      color: #fff
 
 .chat-side-info
   float: right
